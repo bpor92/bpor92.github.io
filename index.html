@@ -5,18 +5,96 @@
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" >
 	<title>Bartosz Porębski - Portfolio</title>
 	<link href="styles/reset.css" rel="stylesheet" />
-	<link href='https://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
 	<link href="styles/main.css" rel="stylesheet" />
 	<script type="text/javascript" src="js/main.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 </head>
 <body>
-
-<div style="background-color:red; width:100%; height:100vh;">
-
-<p>dsadsadasdsad</p>
+<div class="wrapper">
+	<header class="navbar" id="navbar">
+		<nav>
+			<a href="#" class="logo"></a>
+			<a href="#" class="logo-name">BARTOSZ PORĘBSKI</a>
+			<ul>
+				<a href="" class="nav-link"><li>O MNIE</li></a>
+				<a href="" class="nav-link"><li>PROJEKTY</li></a>
+				<a href="" class="nav-link"><li>KONTAKT</li></a>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section class="landing-page">
+			<section class="heading">
+				<p>WITAJ ŚWIECIE! MAM NA IMIĘ BARTEK.</p>
+				<p>JESTEM JUNIOR FRONT-END DEVELOPEREM</p>
+				<p>ORAZ PRZYSZŁYM WEB DEVELOPEREM!</p>
+			</section>
+		</section>
+		<section class="about-me">
+			<h1>O mnie</h1>
+			<article>
+				<p>Quisque ac urna vitae nulla fermentum tristique nec vel mi. Donec mi orci, tincidunt ac lectus nec, vestibulum pretium diam. Cras facilisis nunc sed dui sodales, vel condimentum magna bibendum. Sed sit amet pretium augue, quis bibendum augue. Nam nec nulla malesuada, cursus risus eu, semper nibh. Nulla luctus magna vitae commodo elementum. Sed odio velit, suscipit posuere quam eget, fringilla tincidunt neque. Integer leo arcu, blandit iaculis felis vel, porta bibendum sem.
+				</p>
+			</article>
+		</section>
+		<section class="projects">
+			<h1>Projekty</h1>
+			<div class="projects-item">
+				
+			</div>
+			<div class="projects-item">
+				
+			</div>
+			<div class="projects-item">
+				
+			</div>
+			<div class="clear"></div>
+		</section>
+		<section class="contact">
+			<h1>Kontakt</h1>
+			<form>
+				<div>
+					<label>E-mail</label>
+					<input type="text" name="">
+				</div>
+				<div>
+					<label>Temat</label>
+					<input type="text" name="">
+				</div>
+				<div>
+					<label>Wiadmoość</label>
+					<input type="text" name="">
+				</div>
+				<input type="button" name="Wyślij" value="Wyślij">
+			</form>
+		</section>
+		<footer>
+			<div class="social">
+				<div class="social-icon">
+					<a href="#" class="social-item">GitHub</a>
+					<a href="#" class="social-item">LinkedIn</a>
+					<a href="#" class="social-item">Facebook</a>
+				</div>
+			</div>
+			<p class="copy">
+				@ Bartosz Porębski 2016
+			</p>
+		</footer>
+	</main>
 </div>
-
-
-
+<script type="text/javascript">
+	var z = $(window).height() * 0.85;
+	$(document).scroll(function() {
+    var y = $(document).scrollTop(),
+     //get page y value 
+        header = $("#navbar");
+    if(y >= z)  {
+        header.css({position: "fixed", "top" : "0", "left" : "0"});
+    } else {
+        header.css("position", "absolute");
+    }
+});
+</script>
 </body>
 
