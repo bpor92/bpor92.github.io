@@ -13,43 +13,49 @@
 <body>
 <div class="wrapper">
 	<header class="navbar" id="navbar">
-		<nav>
-			<a href="#" class="logo"></a>
-			<a href="#" class="logo-name">BARTOSZ PORĘBSKI</a>
-			<ul>
-				<a href="" class="nav-link"><li>O MNIE</li></a>
-				<a href="" class="nav-link"><li>PROJEKTY</li></a>
-				<a href="" class="nav-link"><li>KONTAKT</li></a>
+		<nav id="nav">
+			<a href="#" class="logo" id="logo"></a>
+			<a href="#" class="logo-name" id="logo-name">BARTOSZ PORĘBSKI</a>
+			<ul id="nav-ul">
+				<a href="" class="nav-link" ><li>O MNIE</li></a>
+				<a href="" class="nav-link" ><li>PROJEKTY</li></a>
+				<a href="" class="nav-link" ><li>KONTAKT</li></a>
 			</ul>
 		</nav>
 	</header>
 	<main>
-		<section class="landing-page">
+		<section class="landing-page" id="landing">
 			<section class="heading">
-				<p>WITAJ ŚWIECIE! MAM NA IMIĘ BARTEK.</p>
-				<p>JESTEM JUNIOR FRONT-END DEVELOPEREM</p>
-				<p>ORAZ PRZYSZŁYM WEB DEVELOPEREM!</p>
+				<h1><span class="welcome">WITAJ ŚWIECIE!</span> MAM NA IMIĘ BARTEK.
+				JESTEM JUNIOR FRONT-END DEVELOPEREM
+				ORAZ PRZYSZŁYM WEB DEVELOPEREM.</h1>
 			</section>
 		</section>
-		<section class="about-me">
-			<h1>O mnie</h1>
-			<article>
-				<p>Quisque ac urna vitae nulla fermentum tristique nec vel mi. Donec mi orci, tincidunt ac lectus nec, vestibulum pretium diam. Cras facilisis nunc sed dui sodales, vel condimentum magna bibendum. Sed sit amet pretium augue, quis bibendum augue. Nam nec nulla malesuada, cursus risus eu, semper nibh. Nulla luctus magna vitae commodo elementum. Sed odio velit, suscipit posuere quam eget, fringilla tincidunt neque. Integer leo arcu, blandit iaculis felis vel, porta bibendum sem.
-				</p>
-			</article>
+		<section class="landing-page-2">
+			<div class="page">
+				<article>
+					<h1 class="h1-articles">O mnie</h1>
+					<p>Quisque ac urna vitae nulla fermentum tristique nec vel mi. Donec mi orci, tincidunt ac lectus nec, vestibulum pretium diam. Cras facilisis nunc sed dui sodales, vel condimentum magna bibendum. Sed sit amet pretium augue, quis bibendum augue. Nam nec nulla malesuada, cursus risus eu, semper nibh. Nulla luctus magna vitae commodo elementum. Sed odio velit, suscipit posuere quam eget, fringilla tincidunt neque. Integer leo arcu, blandit iaculis felis vel, porta bibendum sem.
+					</p>
+				</article>
+			</div>
 		</section>
-		<section class="projects">
-			<h1>Projekty</h1>
-			<div class="projects-item">
-				
-			</div>
-			<div class="projects-item">
-				
-			</div>
-			<div class="projects-item">
-				
-			</div>
-			<div class="clear"></div>
+		<section class="projects css3gradient">
+			<div class="page">
+				<h1>Projekty</h1>
+				<div class="flex-container">
+					<div class="flex-item item-1">
+						
+					</div>
+					<div class="flex-item item-2">
+						
+					</div>
+					<div class="flex-item item-3">
+						
+					</div>
+					<div class="clear"></div>
+				</div>
+			<div class="page">
 		</section>
 		<section class="contact">
 			<h1>Kontakt</h1>
@@ -85,16 +91,44 @@
 </div>
 <script type="text/javascript">
 	var z = $(window).height();
+
 	$(document).scroll(function() {
     var y = $(document).scrollTop(),
      //get page y value 
         header = $("#navbar");
+        nav = $("#nav");
+        logo = $("#logo");
+        logoName = $("#logo-name");
+        navUl = $("#nav-ul");
+        navlink = $(".nav-link");
     if(y >= z)  {
+
         header.css({position: "fixed", "top" : "0", "left" : "0"});
+        nav.css({"background" : "rgba(23, 22, 26, 0.95)", "min-height": "61px","transition": ".5s background linear" });
+        navlink.css({"color": "#c7d4e5"});
+        logo.css({"margin": "10px", "width": "40px", "height": "40px"});
+        logoName.css({"top": "20px", "left" : "60px"});
+        navUl.css({"top": "20px"});
+        header.fadeIn(3000);
+        nav.fadeIn(3000);
+        logo.fadeIn(3000);
+        logoName.fadeIn(3000);
+        navUl.fadeIn(3000);
+
     } else {
         header.css("position", "absolute");
+        nav.css({"background" : "rgba(0, 0, 0, 0.0)","min-height": "120px" ,"transition": "none"});
+        logo.css({"margin": "20px", "width": "80px", "height": "80px"});
+        logoName.css({"top": "50px", "left" : "120px"});
+        navUl.css({"top": "50px"});
+        navlink.css({"color": "#0C2032"});
+
+     
     }
 });
+
+
+
 </script>
 </body>
 
