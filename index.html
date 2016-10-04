@@ -11,15 +11,18 @@
 	<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
 	<link href="styles/reset.css" rel="stylesheet">
 	<link href="styles/main.css" rel="stylesheet">
+	<link href="styles/font-awesome.css" rel="stylesheet" >
 	<script type="text/javascript" src="js/main.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	
 </head>
 <body>
 <div class="wrapper">
 	<header class="navbar" id="navbar">
+	<a href="#" class="logo" id="logo"></a>
+	<a href="#" class="logo-name" id="logo-name">BARTOSZ PORĘBSKI</a>
 		<nav id="nav">
-			<a href="#" class="logo" id="logo"></a>
-			<a href="#" class="logo-name" id="logo-name">BARTOSZ PORĘBSKI</a>
+			
 			<ul id="nav-ul">
 				<a href="" class="nav-link" ><li>O MNIE</li></a>
 				<a href="" class="nav-link" ><li>PROJEKTY</li></a>
@@ -65,40 +68,55 @@
 
 
 		</section>
-
-		<section class="contact ">
-			<div class="page-upper-middle">
+		<section class="transition"></section>
+<footer>
+		<section class="contact">
+			<div class="page-contact">
 				<h1>Kontakt</h1>
 
 				<form>
 					<div>
-						<label>E-mail</label>
-						<input type="text" name="">
+						<label for="name-input">Imię i nazwisko:</label>
+						<input type="text" name="name" id="name-input"  required>
+						
+						<span></span>
 					</div>
 					<div>
-						<label>Temat</label>
-						<input type="text" name="">
+						<label for="email-input">Adres E-mail:</label>
+						<input type="text" name="email" id="email-input" required>
+						<span></span>
 					</div>
 					<div>
-						<label>Wiadmoość</label>
-						<input type="text" name="">
+						<label for="email-input">Tytuł:</label>
+						<input type="text" name="title" id="title-input" required>
+						<span></span>
 					</div>
-					<input type="button" name="Wyślij" value="Wyślij">
+					<div>
+						<textarea name="message" id="message-input" required class="textarea-contact" placeholder="Wiadomość..."></textarea>
+						<span></span>
+					</div>
+					<input class="submit" type="submit" name="form-send" value="Wyślij">
 				</form>
 
-			</div>	
-		</section>
-		<footer>
-			<div class="social">
-				<div class="social-icon">
-					<a href="#" class="social-item">GitHub</a>
-					<a href="#" class="social-item">LinkedIn</a>
-					<a href="#" class="social-item">Facebook</a>
-				</div>
 			</div>
-			<p class="copy">
-				@ Bartosz Porębski 2016
-			</p>
+
+		<div style="clear:both;"></div>	
+		</section>
+		
+			<div class="footer">
+				<div class="social">
+					<div class="social-icon">
+						<a href="#" class="social-item github"><i class="fa fa-github" aria-hidden="true"></i></a>
+						<a href="#" class="social-item linkedin"><i class="fa fa-linkedin-square" aria-hidden="true"></i>
+						</a>
+						<a href="#" class="social-item facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+					</div>
+				<p class="copy">
+					@ Bartosz Porębski 2016
+				</p>
+				</div>
+				
+			</div>
 		</footer>
 	</main>
 </div>

@@ -1,10 +1,11 @@
 body{
+ 
 	height: 100%;
 	width: 100%;
 	margin: 0;
 	padding: 0;
 	font-family: 'Playfair Display', serif;
-
+    overflow-x: hidden;
 }
 h1{
 	font-size: 50px;
@@ -25,8 +26,8 @@ a{
 article{
 	margin-right: auto;
 	margin-left: auto;
-	width: 800px;
-	padding: 20px;
+	width: 80%;
+	padding: 10px;
 }
 article p{
 	margin: 20px auto;
@@ -126,7 +127,7 @@ nav{
 .page-middle{
 	position: relative;
 	left: 50%;
-	top: 50%;
+	top: 46%;
 	transform: translate(-50%, -50%);
 }
 .page-under-middle{
@@ -159,18 +160,21 @@ article p{
 
 
 .flex-container{
-	display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
+	margin-top: 50px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
     -webkit-box-pack: center;
     -moz-box-pack: center;
     -webkit-flex-pack: center;
+
 }
 .flex-item {
     padding: 5px;
     width: 200px;
     height: 150px;
-    margin: 61px 15px 30px 15px;
+    margin: 20px auto;
     line-height: 150px;
     font-weight: lighter;
     font-size: 30px;
@@ -186,9 +190,9 @@ article p{
 	float: left;
 	margin: 20px;
 }
-.contact{
+.transition{
 	width:100%;
-	height:200px;
+	height: 10vh;
 	background-color:#002a76;
 	filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#002a76, endColorstr=#012476);
 	background-image:-moz-linear-gradient(top, #002a76 0%, #012476 100%);
@@ -198,8 +202,128 @@ article p{
 	background-image:-o-linear-gradient(top, #002a76 0%, #012476 100%);
 	background-image:-webkit-gradient(linear, right top, right bottom, color-stop(0%,#002a76), color-stop(100%,#012476));
 }
-footer{
-	background: url(../img/footer22.jpg) top no-repeat;
-	background-size: cover;
-	height: 90vh;
+.page-contact{
+	position: relative;
+    left: 50%;
+	transform: translate(-50%, -25%);
+    width: 400px; 
+
 }
+.page-contact h1{
+	color: #d2f6fe;
+}
+.contact .page-contact form{
+	display: inline-block;
+}
+.contact .page-contact div{
+	margin: 30px auto;
+}
+.contact .page-contact label{
+	color: #ffffff;
+	text-transform: uppercase;
+	line-height: 37px;
+}
+
+.contact .page-contact input{
+	padding: 10px;
+	border: 1px solid #01358b;
+	background: transparent;
+	float: right;
+
+}
+.contact .page-contact .submit{
+	padding: 10px;
+	margin-top: -20px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.15);
+    background-color: #60b044;
+    background-image: -webkit-linear-gradient(#8add6d, #60b044);
+    background-image: linear-gradient(#8add6d, #60b044);
+    border-color: #5ca941;
+}
+.contact .page-contact .textarea-contact{
+	width: 400px;
+	height: 200px;
+	padding: 10px;
+	border: 1px solid #01358b;
+	background: transparent;
+	resize: none;
+	color: #ffffff;
+}
+.contact .page-contact .textarea-contact:focus,
+.contact .page-contact input:focus{
+	border: 1px solid #01e3f6;
+
+}
+.submit:focus{
+	outline: 0!important;
+	border: 0!important;
+}
+
+
+
+
+
+
+
+footer{
+	background: url(../img/footer222.png) top no-repeat;
+	background-size: cover;
+
+}
+.footer {
+   position:relative;
+   left:0px;
+   width:100%;
+   background-color:rgba(0,0,0,0.7);
+}
+.footer::after{
+  content: "";
+  transform: skewY(-10deg);
+  width: 100%;
+  position: relative;
+}
+.social{    
+	height: 60px;
+    padding-top: 100px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+.social-icon{
+	text-align: center;
+    font-size: 40px;
+    margin-top: -50px;
+}
+.social-icon a{
+	margin-left: 15px;
+}
+
+
+i.fa.fa-github{
+	color: #ffffff;
+}
+i.fa.fa-github:hover{
+	color: #4078c0;
+}
+
+
+i.fa.fa-linkedin-square{
+	color: #1060a6;
+}
+i.fa.fa-linkedin-square:hover{
+	color: #0b2b5c;
+}
+
+
+i.fa.fa-facebook-official{
+	color: #ffffff;
+}
+i.fa.fa-facebook-official:hover{
+	color: #4a65a0;
+}
+
+
+
