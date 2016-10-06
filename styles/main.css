@@ -161,6 +161,12 @@ article p{
 
 .flex-container{
 	margin-top: 50px;
+
+	-webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+
+
     display: -webkit-flex;
     display: flex;
     -webkit-flex-wrap: wrap;
@@ -174,7 +180,7 @@ article p{
     padding: 5px;
     width: 200px;
     height: 150px;
-    margin: 20px auto;
+    
     line-height: 150px;
     font-weight: lighter;
     font-size: 30px;
