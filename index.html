@@ -16,9 +16,9 @@
 </head>
 <body>
 	<header class="navbar" id="navbar">
-	<a href="#" class="logo" id="logo"></a>
-	<a href="#" class="logo-name" id="logo-name">BARTOSZ PORĘBSKI</a>
 		<nav id="nav">
+		<a href="#" class="logo" id="logo"></a>
+		<a href="#" class="logo-name" id="logo-name">BARTOSZ PORĘBSKI</a>
 			<ul id="nav-ul">
 				<li><a href="">O MNIE</a></li>
 				<li><a href="">PROJEKTY</a></li>
@@ -109,7 +109,7 @@
 
 
 
-
+<!--  
 
 <script type="text/javascript">
 	var z = $(window).height();
@@ -124,7 +124,6 @@
         navUl = $("#nav-ul");
         navlink = $(".nav-link");
     if(y >= z)  {
-
         header.css({position: "fixed", "top" : "0", "left" : "0"});
         nav.css({"background" : "rgba(23, 22, 26, 0.95)", "min-height": "61px","transition": ".5s background linear" });
         navlink.css({"color": "#c7d4e5"});
@@ -136,7 +135,6 @@
         logo.fadeIn(3000);
         logoName.fadeIn(3000);
         navUl.fadeIn(3000);
-
     } else {
         header.css("position", "absolute");
         nav.css({"background" : "rgba(0, 0, 0, 0.0)","min-height": "120px" ,"transition": "none"});
@@ -144,13 +142,35 @@
         logoName.css({"top": "50px", "left" : "120px"});
         navUl.css({"top": "50px"});
         navlink.css({"color": "#0C2032"});
-
-     
+    
     }
 });
-
-
-
 </script>
+-->
+
+<script type="text/javascript">
+	var z = $(window).height();
+
+$(document).scroll(function() {
+	var y = $(document).scrollTop();
+	if(y >= z){
+		$("#navbar").addClass("navbar-fixed");
+		$("#nav").addClass("nav-fixed");
+		$("#nav-ul").addClass("position-fixed");
+		$("#logo-name").addClass("position-fixed");
+    } else {
+		$("#navbar").removeClass("navbar-fixed");
+		$("#nav").removeClass("nav-fixed");
+		$("#nav-ul").removeClass("position-fixed");
+		$("#logo-name").removeClass("position-fixed");
+    		
+    }
+});   
+</script>
+
+
+
+
+
 </body>
 

@@ -47,16 +47,12 @@ article{
     line-height: 12px;
 }
 
-//NAVIGATION
+//NAVIGATION	top": "20px"
 .navbar{
 	position: absolute;
 	margin: 0 auto;
 	width: 100%;
 	z-index: 10;
-	nav{
-		width: 100%;
-    	min-height: 120px;
-	}
 	ul{
 		position: relative;
 		top: 50px;
@@ -72,6 +68,33 @@ article{
 			}
 		}
 	}
+}
+//NAVIGATION - FIXED TO TOP
+.navbar-fixed{
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+.nav-fixed{
+	background:rgba(23, 22, 26, 0.95);
+	min-height: 61px;
+	transition: .5s background linear;
+	.logo{
+		display: none;
+	}
+	.logo-name{
+		left: 20px;
+		top: 10px!important;
+		padding: 10px;
+		border: 1px solid #828283;
+	}
+	a{
+		color: #ffffff!important;
+	}
+}
+.position-fixed{
+	top: 20px!important;
+	line-height: 20px!important;
 }
 
 //START PAGE
@@ -90,9 +113,7 @@ article{
 		background: rgba(0, 0, 0, 0.2);
 		z-index: 5;
 	}
-}
-
-.heading{
+	.heading{
 	position: absolute;
 	left: 50%;
 	top: 45%;
@@ -102,7 +123,10 @@ article{
 	z-index: 10;
 	text-align: center;
     width: 80%;
+	}
 }
+
+
 
 //CONTENT PAGE (SITE 2 & 3)
 .content-page{
@@ -116,7 +140,7 @@ article{
 		top: 28%;
 		transform: translate(-50%, -50%);
 	}
-}
+
 	//PROJECT PAGE
 	.page-middle{
 	position: relative;
@@ -148,7 +172,7 @@ article{
     -moz-box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.15);
     box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.15);
 	}
-
+}
 //TRANSITION SECTION
 .transition{
 	width:100%;
@@ -288,11 +312,11 @@ footer{
 		    }
 		}
 		.icon-transition{
-			-o-transition:color .2s ease-out, background 1s ease-in;
-			-ms-transition:color .2s ease-out, background 1s ease-in;
-			-moz-transition:color .2s ease-out, background 1s ease-in;
-			-webkit-transition:color .2s ease-out, background 1s ease-in;
-			transition:color .2s ease-out, background 1s ease-in;
+			-o-transition:color .2s ease-out, background 0.2s ease-in;
+			-ms-transition:color .2s ease-out, background 0.2s ease-in;
+			-moz-transition:color .2s ease-out, background 0.2s ease-in;
+			-webkit-transition:color .2s ease-out, background 0.2s ease-in;
+			transition:color .2s ease-out, background 0.2s ease-in;
 		}
 	}
 }
