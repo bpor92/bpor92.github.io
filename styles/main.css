@@ -202,6 +202,10 @@ article p {
   transform: translate(-50%, -50%);
 }
 
+.content-page .page-middle h1 {
+  color: #ffffff;
+}
+
 .content-page .flex-container {
   display: -webkit-box;
   display: -moz-box;
