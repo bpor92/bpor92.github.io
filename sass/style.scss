@@ -43,6 +43,8 @@ article{
 	top:50px;
 	left: 120px;
 	font-size: 20px;
+	font-family: 'Neuton', serif;
+    font-weight: lighter;
     color: #021e2f;
     line-height: 12px;
 }
@@ -77,24 +79,31 @@ article{
 }
 .nav-fixed{
 	background:rgba(23, 22, 26, 0.95);
-	min-height: 61px;
+	min-height: 67px;
 	transition: .5s background linear;
 	.logo{
 		display: none;
 	}
 	.logo-name{
 		left: 20px;
-		top: 10px!important;
+		top: 13px!important;
 		padding: 10px;
 		border: 1px solid #828283;
+		font-family: 'Neuton', serif;
+		font-weight: lighter;
+		line-height: 20px;
 	}
 	a{
 		color: #ffffff!important;
+		
+	}
+	ul{
+		line-height: 32px!important;
 	}
 }
 .position-fixed{
 	top: 20px!important;
-	line-height: 20px!important;
+	
 }
 
 //START PAGE
@@ -206,15 +215,16 @@ article{
 		color: #d2f6fe;
 		}
 		form{
-		display: inline-block;
+
 		}
 		div{
-		margin: 30px auto;
+		margin: 10px auto;
 		}
 		label{
+		display: inline-block;
+		margin: 5px;
+		padding-left: 15px;
 		color: #ffffff;
-		text-transform: uppercase;
-		line-height: 37px;
 		}
 		textarea, input{
 		font-family: 'Playfair Display', serif;
@@ -222,10 +232,11 @@ article{
     	font-size: 16px;
 		}
 		input{
-		padding: 10px;
+		padding: 5px;
 		border: 1px solid #01358b;
+		border-radius: 25px;
 		background: transparent;
-		float: right;
+		width: 100%;
 		}
 		.submit{
 		padding: 10px;
@@ -321,7 +332,142 @@ footer{
 	}
 }
 
-	
+/* FISH
+/* Animation webkit */
+@-webkit-keyframes myfirst
+{
+  0% {margin-left: -235px}
+  90% {margin-left: 100%;}
+  100% {margin-left: 100%;}
+}
+
+/* Animation */
+@keyframes myfirst
+{
+  0% {margin-left: -235px}
+  70% {margin-left: 100%;}
+  100% {margin-left: 100%;}
+}
+
+.fish{
+  background-image: url('http://www.geertjanhendriks.nl/codepen/form/fish.png');
+  width: 235px;
+  height: 104px;
+  margin-left: -235px;
+  position: relative; 
+  animation: myfirst 24s;
+  -webkit-animation: myfirst 24s;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  -webkit-animation-timing-function: linear;
+}
+
+#fish{
+  top: 120px;
+}
+
+#fish2{
+  top: 260px;
+  animation-delay: 12s;
+  -webkit-animation-delay: 12s;
+}
+
+#form{
+  height: 100%; 
+  background-image: transparent;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 150px;
+
+  
+}
+form{
+  margin: -230px auto 0 auto;
+
+  width: 500px;
+  padding-top: 40px;
+  color: white;
+  position: relative;
+  
+  
+}
+label, input, textarea{
+  display: block; 
+}
+input, textarea{
+  background-color: transparent;
+  width: 500px; 
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  padding: 10px;
+  font-family: 'Neuton', serif;
+  font-size: 20px;
+  color: #d3d3e2;
+  transition: border 0.5s;
+  -webkit-transition: border 0.5s;
+  -moz-transition: border 0.5s;
+  -o-transition: border 0.5s;
+  border: solid 1px #01358b;  
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+  
+}
+input:focus, textarea:focus{
+  border: solid 1px #77bde0;  
+}
+
+textarea{
+  height: 100px;  
+  resize: none; 
+  overflow: auto;
+}
+input[type="submit"]{
+  background-color: #27ae60;
+  color: white;
+  height: 50px;
+  cursor: pointer;
+  margin-top: 30px;
+  font-size: 1.29em;
+  font-family: 'Sniglet', cursive;
+  -webkit-transition: background-color 0.5s;
+  -moz-transition: background-color 0.5s;
+  -o-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+}
+input[type="submit"]:hover{
+  background-color: #2ecc71;
+  
+}
+label{
+  font-size: 1.5em;
+  margin-top: 20px;
+  padding-left: 20px;
+}
+.formgroup, .formgroup-active, .formgroup-error{
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 10.5%;
+  transition: background-image 0.7s;
+  -webkit-transition: background-image 0.7s;
+  -moz-transition: background-image 0.7s;
+  -o-transition: background-image 0.7s;
+  width: 566px;
+  padding-top: 2px;
+}
+
+.formgroup{
+  background-image: url('http://www.geertjanhendriks.nl/codepen/form/pixel.gif'); 
+}
+.formgroup-active{
+  background-image: url('http://www.geertjanhendriks.nl/codepen/form/octo.png');
+}
+.formgroup-error{
+  background-image: url('http://www.geertjanhendriks.nl/codepen/form/octo-error.png');
+  color: red;
+}	
 
 
 
