@@ -138,7 +138,7 @@ article{
 .back2{
 	background: url(../img/3in1v2.png) top no-repeat;
 	background-size: cover;
-	height: 365vh;
+
 }
 
 //CONTENT PAGE (SITE 2 & 3)
@@ -165,6 +165,7 @@ article{
 	transform: translate(-50%, -50%);
 	*/
 	min-height: 100vh;
+	padding-top: 25%;
 	h1{
 			color: #ffffff;
 		}
