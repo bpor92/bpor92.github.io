@@ -189,23 +189,12 @@ article p {
 .content-page article {
   position: relative;
   min-height: 100vh;
-  /*
-		margin: 0;
-		left: 50%;
-		top: 28%;
-		transform: translate(-50%, -50%);
-		*/
+  top: 450px;
 }
 
 .content-page .page-middle {
-  /*
-	position: relative;
-	left: 50%;
-	top: 46%;
-	transform: translate(-50%, -50%);
-	*/
   min-height: 100vh;
-  padding-top: 25%;
+  padding-top: 300px;
 }
 
 .content-page .page-middle h1 {
@@ -260,76 +249,152 @@ article p {
   clear: both;
 }
 
-.contact .page-contact {
+@-webkit-keyframes myfirst {
+  0% {
+    margin-left: -235px;
+  }
+  90% {
+    margin-left: 100%;
+  }
+  100% {
+    margin-left: 100%;
+  }
+}
+
+@keyframes myfirst {
+  0% {
+    margin-left: -235px;
+  }
+  70% {
+    margin-left: 100%;
+  }
+  100% {
+    margin-left: 100%;
+  }
+}
+
+.contact .fish {
+  background-image: url("http://www.geertjanhendriks.nl/codepen/form/fish.png");
+  width: 235px;
+  height: 104px;
+  margin-left: -235px;
   position: relative;
-  left: 50%;
-  transform: translate(-50%, -25%);
-  width: 420px;
-  padding: 30px;
-  background: rgba(0, 0, 0, 0.2);
-  -webkit-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.15);
-  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.15);
+  animation: myfirst 24s;
+  -webkit-animation: myfirst 24s;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  -webkit-animation-timing-function: linear;
 }
 
-.contact .page-contact h1 {
-  color: #d2f6fe;
+.contact #fish {
+  top: 120px;
 }
 
-.contact .page-contact div {
-  margin: 10px auto;
+.contact #fish2 {
+  top: 260px;
+  animation-delay: 12s;
+  -webkit-animation-delay: 12s;
 }
 
-.contact .page-contact label {
-  display: inline-block;
-  margin: 5px;
-  padding-left: 15px;
-  color: #ffffff;
+.contact #form {
+  min-height: 100vh;
+  height: 100%;
+  background-image: transparent;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 150px;
 }
 
-.contact .page-contact textarea, .contact .page-contact input {
-  font-family: 'Playfair Display', serif;
-  color: #ffffff;
-  font-size: 16px;
+.contact form {
+  margin: -230px auto 0 auto;
+  width: 500px;
+  padding-top: 40px;
+  color: white;
+  position: relative;
 }
 
-.contact .page-contact input {
-  padding: 5px;
-  border: 1px solid #01358b;
-  border-radius: 25px;
-  background: transparent;
-  width: 100%;
+.contact label, .contact input, .contact textarea {
+  display: block;
 }
 
-.contact .page-contact .submit {
+.contact input, .contact textarea {
+  background-color: transparent;
+  width: 500px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
   padding: 10px;
-  margin-top: -20px;
-  color: #ffffff;
-  text-transform: uppercase;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.15);
-  background-color: #60b044;
-  background-image: -webkit-linear-gradient(#8add6d, #60b044);
-  background-image: linear-gradient(#8add6d, #60b044);
-  border-color: #5ca941;
+  font-family: 'Neuton', serif;
+  font-size: 20px;
+  color: #d3d3e2;
+  transition: border 0.5s;
+  -webkit-transition: border 0.5s;
+  -moz-transition: border 0.5s;
+  -o-transition: border 0.5s;
+  border: solid 1px #01358b;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-.contact .page-contact .textarea-contact {
-  width: 400px;
-  height: 200px;
-  padding: 10px;
-  border: 1px solid #01358b;
-  background: transparent;
+.contact input:focus, .contact textarea:focus {
+  border: solid 1px #77bde0;
+}
+
+.contact textarea {
+  height: 100px;
   resize: none;
-  color: #ffffff;
+  overflow: auto;
 }
 
-.contact .page-contact .textarea-contact:focus, .contact .page-contact input:focus {
-  border: 1px solid #01e3f6;
+.contact input[type="submit"] {
+  background-color: #27ae60;
+  color: white;
+  height: 50px;
+  cursor: pointer;
+  margin-top: 30px;
+  font-size: 1.29em;
+  font-family: 'Sniglet', cursive;
+  -webkit-transition: background-color 0.5s;
+  -moz-transition: background-color 0.5s;
+  -o-transition: background-color 0.5s;
+  transition: background-color 0.5s;
 }
 
-.contact .page-contact .submit:focus {
-  outline: 0 !important;
-  border: 0 !important;
+.contact input[type="submit"]:hover {
+  background-color: #2ecc71;
+}
+
+.contact label {
+  font-size: 1.5em;
+  margin-top: 20px;
+  padding-left: 20px;
+}
+
+.contact .formgroup, .contact .formgroup-active, .contact .formgroup-error {
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 10.5%;
+  transition: background-image 0.7s;
+  -webkit-transition: background-image 0.7s;
+  -moz-transition: background-image 0.7s;
+  -o-transition: background-image 0.7s;
+  width: 566px;
+  padding-top: 2px;
+}
+
+.contact .formgroup {
+  background-image: url("http://www.geertjanhendriks.nl/codepen/form/pixel.gif");
+}
+
+.contact .formgroup-active {
+  background-image: url("http://www.geertjanhendriks.nl/codepen/form/octo.png");
+}
+
+.contact .formgroup-error {
+  background-image: url("http://www.geertjanhendriks.nl/codepen/form/octo-error.png");
+  color: red;
 }
 
 footer {
@@ -403,155 +468,4 @@ footer .social-icon .icon-transition {
   -moz-transition: color .2s ease-out, background 0.2s ease-in;
   -webkit-transition: color .2s ease-out, background 0.2s ease-in;
   transition: color .2s ease-out, background 0.2s ease-in;
-}
-
-/* FISH
-/* Animation webkit */
-@-webkit-keyframes myfirst {
-  0% {
-    margin-left: -235px;
-  }
-  90% {
-    margin-left: 100%;
-  }
-  100% {
-    margin-left: 100%;
-  }
-}
-
-/* Animation */
-@keyframes myfirst {
-  0% {
-    margin-left: -235px;
-  }
-  70% {
-    margin-left: 100%;
-  }
-  100% {
-    margin-left: 100%;
-  }
-}
-
-.fish {
-  background-image: url("http://www.geertjanhendriks.nl/codepen/form/fish.png");
-  width: 235px;
-  height: 104px;
-  margin-left: -235px;
-  position: relative;
-  animation: myfirst 24s;
-  -webkit-animation: myfirst 24s;
-  animation-iteration-count: infinite;
-  -webkit-animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  -webkit-animation-timing-function: linear;
-}
-
-#fish {
-  top: 120px;
-}
-
-#fish2 {
-  top: 260px;
-  animation-delay: 12s;
-  -webkit-animation-delay: 12s;
-}
-
-#form {
-  min-height: 100vh;
-  height: 100%;
-  background-image: transparent;
-  overflow: hidden;
-  position: relative;
-  margin-bottom: 150px;
-}
-
-form {
-  margin: -230px auto 0 auto;
-  width: 500px;
-  padding-top: 40px;
-  color: white;
-  position: relative;
-}
-
-label, input, textarea {
-  display: block;
-}
-
-input, textarea {
-  background-color: transparent;
-  width: 500px;
-  border: none;
-  border-radius: 20px;
-  outline: none;
-  padding: 10px;
-  font-family: 'Neuton', serif;
-  font-size: 20px;
-  color: #d3d3e2;
-  transition: border 0.5s;
-  -webkit-transition: border 0.5s;
-  -moz-transition: border 0.5s;
-  -o-transition: border 0.5s;
-  border: solid 1px #01358b;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-input:focus, textarea:focus {
-  border: solid 1px #77bde0;
-}
-
-textarea {
-  height: 100px;
-  resize: none;
-  overflow: auto;
-}
-
-input[type="submit"] {
-  background-color: #27ae60;
-  color: white;
-  height: 50px;
-  cursor: pointer;
-  margin-top: 30px;
-  font-size: 1.29em;
-  font-family: 'Sniglet', cursive;
-  -webkit-transition: background-color 0.5s;
-  -moz-transition: background-color 0.5s;
-  -o-transition: background-color 0.5s;
-  transition: background-color 0.5s;
-}
-
-input[type="submit"]:hover {
-  background-color: #2ecc71;
-}
-
-label {
-  font-size: 1.5em;
-  margin-top: 20px;
-  padding-left: 20px;
-}
-
-.formgroup, .formgroup-active, .formgroup-error {
-  background-repeat: no-repeat;
-  background-position: right bottom;
-  background-size: 10.5%;
-  transition: background-image 0.7s;
-  -webkit-transition: background-image 0.7s;
-  -moz-transition: background-image 0.7s;
-  -o-transition: background-image 0.7s;
-  width: 566px;
-  padding-top: 2px;
-}
-
-.formgroup {
-  background-image: url("http://www.geertjanhendriks.nl/codepen/form/pixel.gif");
-}
-
-.formgroup-active {
-  background-image: url("http://www.geertjanhendriks.nl/codepen/form/octo.png");
-}
-
-.formgroup-error {
-  background-image: url("http://www.geertjanhendriks.nl/codepen/form/octo-error.png");
-  color: red;
 }
