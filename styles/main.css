@@ -181,25 +181,31 @@ article p {
   width: 80%;
 }
 
-.content-page {
-  background: url(../img/background-second.jpg) top no-repeat;
+.back2 {
+  background: url(../img/3in1v2.png) top no-repeat;
   background-size: cover;
-  height: 230vh;
+  height: 365vh;
 }
 
 .content-page article {
   position: relative;
-  margin: 0;
-  left: 50%;
-  top: 28%;
-  transform: translate(-50%, -50%);
+  min-height: 100vh;
+  /*
+		margin: 0;
+		left: 50%;
+		top: 28%;
+		transform: translate(-50%, -50%);
+		*/
 }
 
 .content-page .page-middle {
-  position: relative;
-  left: 50%;
-  top: 46%;
-  transform: translate(-50%, -50%);
+  /*
+	position: relative;
+	left: 50%;
+	top: 46%;
+	transform: translate(-50%, -50%);
+	*/
+  min-height: 100vh;
 }
 
 .content-page .page-middle h1 {
@@ -246,11 +252,6 @@ article p {
   background-image: linear-gradient(top, #002a76 0%, #012476 100%);
   background-image: -o-linear-gradient(top, #002a76 0%, #012476 100%);
   background-image: -webkit-gradient(linear, right top, right bottom, color-stop(0%, #002a76), color-stop(100%, #012476));
-}
-
-.contact {
-  background: url(../img/footer.png) top no-repeat;
-  background-size: cover;
 }
 
 .contact:after {
@@ -456,6 +457,7 @@ footer .social-icon .icon-transition {
 }
 
 #form {
+  min-height: 100vh;
   height: 100%;
   background-image: transparent;
   overflow: hidden;

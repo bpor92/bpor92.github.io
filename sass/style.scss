@@ -135,28 +135,36 @@ article{
 	}
 }
 
-
+.back2{
+	background: url(../img/3in1v2.png) top no-repeat;
+	background-size: cover;
+	height: 365vh;
+}
 
 //CONTENT PAGE (SITE 2 & 3)
 .content-page{
-	background: url(../img/background-second.jpg) top no-repeat;
-	background-size: cover;
-	height: 230vh;
+	
 	article{		
 		position: relative;
+		min-height: 100vh;
+		/*
 		margin: 0;
 		left: 50%;
 		top: 28%;
 		transform: translate(-50%, -50%);
+		*/
 
 	}
 
 	//PROJECT PAGE
 	.page-middle{
+	/*
 	position: relative;
 	left: 50%;
 	top: 46%;
 	transform: translate(-50%, -50%);
+	*/
+	min-height: 100vh;
 	h1{
 			color: #ffffff;
 		}
@@ -202,8 +210,7 @@ article{
 
 //FOOTER WITH CONTACT
 .contact{
-	background: url(../img/footer.png) top no-repeat;
-	background-size: cover;
+
 	@include clearFix;	
 	.page-contact{
 		position: relative;
@@ -378,6 +385,7 @@ footer{
 }
 
 #form{
+	min-height:100vh;
   height: 100%; 
   background-image: transparent;
   overflow: hidden;
