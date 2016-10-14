@@ -482,7 +482,10 @@ footer{
 	.nav-fixed{
 		background: none;
 	}
+	.navbar-fixed {
+	    background-color: #9bb6d2!important;
 
+	}
 	.navbar{
 		display: none;
 		background-color: rgb(179, 175, 176);
@@ -509,10 +512,6 @@ footer{
 	    		}
     		}
 	 	}
-	}
-		.navbar-fixed {
-	    background-color: #9bb6d2;
-
 	}
 
 

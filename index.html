@@ -200,17 +200,24 @@ $(document).scroll(function() {
 		$("#logo-name").removeClass("position-fixed");
 		$("#nav-icon").removeClass("nav-icon-fixed");
 		$("#logo").removeClass("logo-fixed");
-		
+
     		
     }
 }); 
+$(window).resize(function() {
+	if (screen.width > 768) {
+	    $("#navbar").css("display", "block");
+	}else if(screen.width < 768){
+		$("#navbar").css("display", "none");
+	}
+});
 
 $(document).ready(function(){
 	$('#nav-icon').click(function(){
 		$(this).toggleClass('open');
 		$("#navbar").toggle();
 	});
-	$("#navbar").addClass("navbar-fixed");
+
 	
 });  
 </script>

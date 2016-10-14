@@ -563,6 +563,9 @@ footer .social-icon .icon-transition {
   .nav-fixed {
     background: none;
   }
+  .navbar-fixed {
+    background-color: #9bb6d2 !important;
+  }
   .navbar {
     display: none;
     background-color: #b3afb0;
@@ -588,9 +591,6 @@ footer .social-icon .icon-transition {
   }
   .navbar ul a:last-child {
     margin-right: 0px;
-  }
-  .navbar-fixed {
-    background-color: #9bb6d2;
   }
   .content-page .flex-container {
     align-items: center;
