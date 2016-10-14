@@ -230,7 +230,7 @@ article p {
   padding: 5px;
   width: 200px;
   height: 150px;
-  margin: 61px 15px 30px 15px;
+  margin: 60px 35px 30px 35px;
   line-height: 150px;
   font-weight: lighter;
   font-size: 30px;
@@ -488,6 +488,9 @@ footer .social-icon .icon-transition {
   .logo {
     z-index: 30;
   }
+  .logo-fixed {
+    position: fixed;
+  }
   .hamburger-nav {
     display: block;
   }
@@ -554,9 +557,15 @@ footer .social-icon .icon-transition {
     -o-transform: rotate(-135deg);
     transform: rotate(-135deg);
   }
+  .nav-icon-fixed {
+    position: fixed !important;
+  }
+  .nav-fixed {
+    background: none;
+  }
   .navbar {
     display: none;
-    background-color: #ffffff;
+    background-color: #b3afb0;
     z-index: 20;
   }
   .navbar ul {
@@ -579,6 +588,9 @@ footer .social-icon .icon-transition {
   }
   .navbar ul a:last-child {
     margin-right: 0px;
+  }
+  .navbar-fixed {
+    background-color: #9bb6d2;
   }
   .content-page .flex-container {
     align-items: center;
