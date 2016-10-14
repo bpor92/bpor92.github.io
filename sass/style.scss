@@ -35,7 +35,8 @@ article{
 	height: 80px;
     -webkit-box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.15);
     -moz-box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.15);
-    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.15);
+    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.15);	
+    border-radius: 50px;
 }
 
 .logo-name{
@@ -53,6 +54,7 @@ article{
 .navbar{
 	position: absolute;
 	margin: 0 auto;
+	display: block;
 	width: 100%;
 	z-index: 10;
 	ul{
@@ -89,14 +91,24 @@ article{
 		top: 13px!important;
 		padding: 10px;
 		border: 1px solid #828283;
+		border-radius: 50px;
 		font-family: 'Neuton', serif;
 		font-weight: lighter;
 		line-height: 20px;
+		&:hover{
+			border: 1px solid #049bf6;
+        -webkit-transition: border-color 1s ease;
+         -moz-transition: border-color 1s ease;
+           -o-transition: border-color 1s ease;
+          -ms-transition: border-color 1s ease;
+              transition: border-color 1s ease; 
+		}
 	}
 	a{
 		color: #ffffff!important;
-		
+			
 	}
+
 	ul{
 		line-height: 32px!important;
 	}
@@ -159,12 +171,10 @@ article{
 	}
 
 	.flex-container{
-	display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    -webkit-box-pack: center;
-    -moz-box-pack: center;
-    -webkit-flex-pack: center;
+	display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
     @include clearFix;	
 	}
 
@@ -180,6 +190,7 @@ article{
     -webkit-box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.15);
     -moz-box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.15);
     box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.15);
+    border-radius: 80px;
 	}
 }
 //TRANSITION SECTION
@@ -384,5 +395,148 @@ footer{
 	}
 }
 
+@media(max-width: $breakPointTablet){
+	h1{
+		font-size: 40px;
+	}
+	.logo{
+		z-index: 30;
+	}
+	.hamburger-nav{
+		display:block;
+	}
+	#nav-icon{
+	    display: block;
+	    width: 40px;
+	    height: 40px;
+	    position: absolute;
+	    top: 35px;
+	    right: 35px;
+	    z-index: 20;
+	    -webkit-transform: rotate(0deg);
+	    -moz-transform: rotate(0deg);
+	    -o-transform: rotate(0deg);
+	    transform: rotate(0deg);
+	    -webkit-transition: .5s ease-in-out;
+	    -moz-transition: .5s ease-in-out;
+	    -o-transition: .5s ease-in-out;
+	    transition: .5s ease-in-out;
+	    cursor: pointer;
+		span{
+			display: block;
+			position: absolute;
+			height: 5px;
+			width: 100%;
+			background: $deepBlue;
+			border-radius: 9px;
+			opacity: 1;
+			left: 0;
+			-webkit-transform: rotate(0deg);
+			-moz-transform: rotate(0deg);
+			-o-transform: rotate(0deg);
+			transform: rotate(0deg);
+			-webkit-transition: .25s ease-in-out;
+			-moz-transition: .25s ease-in-out;
+			-o-transition: .25s ease-in-out;
+			transition: .25s ease-in-out;
+				&:nth-child(1){
+				 	top: 0px;
+				}
+				&:nth-child(2){
+				 	top: 12px;
+				}
+				&:nth-child(3){
+				 	top: 24px;
+				}
+			}
+		}
+		#nav-icon.open{ 
+			span{
+				&:nth-child(1) {
+					top: 18px;
+					-webkit-transform: rotate(135deg);
+					-moz-transform: rotate(135deg);
+					-o-transform: rotate(135deg);
+					transform: rotate(135deg);
+				}
+				&:nth-child(2) {
+					opacity: 0;
+					left: -60px;
+				}
+				&:nth-child(3) {
+					top: 18px;
+					-webkit-transform: rotate(-135deg);
+					-moz-transform: rotate(-135deg);
+					-o-transform: rotate(-135deg);
+					transform: rotate(-135deg);
+				}
+			}
+
+		}
+
+	.navbar{
+		display: none;
+		background-color: #ffffff;
+		z-index: 20;
+		ul{
+		    margin: 50px auto;
+		    width: 180px;
+		    position: relative;
+		    top: 0px;
+		    display: block;
+		    float: none;
+		    li{
+		    	margin-top: 30px;
+		    	border-bottom: 1px solid #dcdcdc;
+
+		    }
+			a{
+	    		display: block;
+	    		text-align: center;
+	    		float: none;
+	    		margin-left: 0px;
+	    		&:last-child{
+	    			margin-right: 0px;
+	    		}
+    		}
+	 	}
+	}
 
 
+	.content-page{
+		.flex-container{
+			align-items: center; 
+			display: -webkit-flex;
+		    display: flex;
+		    -webkit-flex-direction: column;
+		    flex-direction: column;
+		}
+	}
+
+
+
+	.contact{
+		form, input, textarea, .formgroup{
+			width: 100%;	
+		}
+	}
+
+}
+@media(max-width: $breakPointTelephone){
+	h1{
+		font-size: 35px;
+	}
+	.logo{
+		width: 60px;
+		height: 60px;
+	}
+	.logo-name{
+		display: none;
+	}
+	.navbar{
+		ul{
+			width: 130px;
+		}
+	}
+
+}

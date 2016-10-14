@@ -18,16 +18,23 @@
 </head>
 <body>
 	<header class="navbar" id="navbar">
+
 		<nav id="nav">
-		<a href="#" class="logo" id="logo"></a>
-		<a href="#" class="logo-name" id="logo-name">BARTOSZ PORĘBSKI</a>
+
 			<ul id="nav-ul">
 				<li><a href="">O MNIE</a></li>
 				<li><a href="">PROJEKTY</a></li>
 				<li><a href="">KONTAKT</a></li>
 			</ul>
 		</nav>
-	</header>
+	</header>			
+	<div id="nav-icon">
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>		
+	<a href="#" class="logo" id="logo"></a>
+	<a href="#" class="logo-name" id="logo-name">BARTOSZ PORĘBSKI</a>
 	<main>
 		<section class="starting-page">
 			<div class="heading">
@@ -191,7 +198,16 @@ $(document).scroll(function() {
 		$("#logo-name").removeClass("position-fixed");
     		
     }
-});   
+}); 
+
+$(document).ready(function(){
+	$('#nav-icon').click(function(){
+		$(this).toggleClass('open');
+		$("#navbar").toggle();
+	});
+	$("#navbar").addClass("navbar-fixed");
+	
+});  
 </script>
 
 
