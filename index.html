@@ -183,6 +183,7 @@
 
 <script type="text/javascript">
 	var z = $(window).height();
+	var w = $(window).width();
 
 $(document).scroll(function() {
 	var y = $(document).scrollTop();
@@ -204,13 +205,7 @@ $(document).scroll(function() {
     		
     }
 }); 
-$(window).resize(function() {
-	if (screen.width > 768) {
-	    $("#navbar").css("display", "block");
-	}else if(screen.width < 768){
-		$("#navbar").css("display", "none");
-	}
-});
+
 
 $(document).ready(function(){
 	$('#nav-icon').click(function(){
