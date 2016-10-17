@@ -183,7 +183,7 @@
 
 <script type="text/javascript">
 	var z = $(window).height();
-	var w = $(window).width();
+
 
 $(document).scroll(function() {
 	var y = $(document).scrollTop();
@@ -212,9 +212,21 @@ $(document).ready(function(){
 		$(this).toggleClass('open');
 		$("#navbar").toggle();
 	});
+});  
+
 
 	
-});  
+$( window ).resize(function() {
+  	var w = $(window).width();
+		if( w > 768){
+			$("#navbar").attr("style", "display: block!important");
+		}else{
+			$("#navbar").attr("style", "display: none!important");
+
+		}
+});
+
+
 </script>
 
 
