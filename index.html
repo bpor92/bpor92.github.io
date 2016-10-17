@@ -183,48 +183,6 @@
 
 <script type="text/javascript">
 	
-
-
-$(document).scroll(function() {
-
-	var y = $(document).scrollTop();
-	var z = $(window).height();
-	var w = $(window).width();
-
-	if(y >= z && w >= 768){
-
-		$("#navbar").addClass("navbar-fixed");
-		$("#nav").addClass("nav-fixed");
-		$("#nav-ul").addClass("position-fixed");
-		$("#logo-name").addClass("position-fixed");
-		$("#nav-icon").addClass("nav-icon-fixed");
-		$("#logo").addClass("logo-fixed");
-    } else if(w < 768){
-    	$("#navbar").addClass("navbar-fixed");
-    	$("#logo").addClass("logo-fixed");
-    	$("#nav-icon").addClass("nav-icon-fixed");
-    	$("#logo-name").removeClass("position-fixed");	
-    }else if(y < z && w >= 768) {
-    	$("#nav").removeClass("nav-fixed");
-		$("#navbar").removeClass("navbar-fixed");
-		$("#logo-name").removeClass("position-fixed");
-    	$("#nav-ul").removeClass("position-fixed");	
-    }else if( w >= 768){
-			$("#navbar").attr("style", "display: block!important");
-			$("#nav").removeClass("nav-fixed");
-			$("#nav-ul").removeClass("position-fixed");
-		} else {
-
-
-		$("#logo-name").removeClass("position-fixed");
-		$("#nav-icon").removeClass("nav-icon-fixed");
-		$("#logo").removeClass("logo-fixed");
-
-    		
-    }
-}); 
-
-
 $(document).ready(function(){
 	$('#nav-icon').click(function(){	
 		$(this).toggleClass('open');
@@ -233,12 +191,63 @@ $(document).ready(function(){
 });  
 
 
+$(document).scroll(function() {
+
+	var y = $(document).scrollTop();
+	var z = $(window).height();
+	var w = $(window).width();
+
+	if(y >= z && w >= 752){
+
+		$("#navbar").addClass("navbar-fixed");
+		$("#nav").addClass("nav-fixed");
+		$("#nav-ul").addClass("position-fixed");
+		$("#logo-name").addClass("position-fixed");
+		$("#nav-icon").addClass("nav-icon-fixed");
+		$("#logo").addClass("logo-fixed");
+    } else if(w < 752){
+    	$("#navbar").addClass("navbar-fixed");
+    	$("#logo").addClass("logo-fixed");
+    	$("#nav-icon").addClass("nav-icon-fixed");
+    	$("#logo-name").removeClass("position-fixed");	
+    }else if(y < z && w >= 752) {
+    	$("#nav").removeClass("nav-fixed");
+		$("#navbar").removeClass("navbar-fixed");
+		$("#logo-name").removeClass("position-fixed");
+    	$("#nav-ul").removeClass("position-fixed");	
+    }else if( w >= 752){
+			$("#navbar").attr("style", "display: block!important");
+			$("#nav").removeClass("nav-fixed");
+			$("#nav-ul").removeClass("position-fixed");
+	}else {
+		$("#logo-name").removeClass("position-fixed");
+		$("#nav-icon").removeClass("nav-icon-fixed");
+		$("#logo").removeClass("logo-fixed");		
+    }
+}); 
+
+
 	
 $( window ).resize(function() {
   	var w = $(window).width();
-		if( w >= 768){
+	var y = $(document).scrollTop();
+	var z = $(window).height();
+		if( w >= 752){
 			$("#navbar").attr("style", "display: block!important");
-			
+			$("#nav").removeClass("nav-fixed");
+			$("#navbar").removeClass("navbar-fixed");
+			$("#logo-name").removeClass("position-fixed");
+	    	$("#nav-ul").removeClass("position-fixed");	
+
+		}else if(y >= z && w >= 752){
+			$("#navbar").addClass("navbar-fixed");
+			$("#nav").addClass("nav-fixed");
+			$("#nav-ul").addClass("position-fixed");
+			$("#logo-name").addClass("position-fixed");
+			$("#nav-icon").addClass("nav-icon-fixed");
+			$("#logo").addClass("logo-fixed");
+
+
 		}else{
 			$("#navbar").attr("style", "display: none!important");
 			$("#nav-icon").removeClass("open");
