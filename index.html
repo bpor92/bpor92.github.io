@@ -186,7 +186,7 @@
 
 
 $(document).scroll(function() {
-	
+
 	var y = $(document).scrollTop();
 	var z = $(window).height();
 	var w = $(window).width();
@@ -209,7 +209,11 @@ $(document).scroll(function() {
 		$("#navbar").removeClass("navbar-fixed");
 		$("#logo-name").removeClass("position-fixed");
     	$("#nav-ul").removeClass("position-fixed");	
-    }else {
+    }else if( w >= 768){
+			$("#navbar").attr("style", "display: block!important");
+			$("#nav").removeClass("nav-fixed");
+			$("#nav-ul").removeClass("position-fixed");
+		} else {
 
 
 		$("#logo-name").removeClass("position-fixed");
@@ -234,8 +238,7 @@ $( window ).resize(function() {
   	var w = $(window).width();
 		if( w >= 768){
 			$("#navbar").attr("style", "display: block!important");
-			$("#nav").removeClass("nav-fixed");
-			$("#nav-ul").removeClass("position-fixed");
+			
 		}else{
 			$("#navbar").attr("style", "display: none!important");
 			$("#nav-icon").removeClass("open");
