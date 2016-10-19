@@ -194,8 +194,8 @@ article p {
 }
 
 main {
-  background: url(../img/3in1v2.png) top no-repeat;
-  background-size: cover;
+  background: url(../img/3in1v2.png) top no-repeat !important;
+  background-size: cover !important;
 }
 
 .content-page article {

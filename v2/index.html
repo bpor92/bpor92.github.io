@@ -13,32 +13,34 @@
 	<link href="https://fonts.googleapis.com/css?family=Gentium+Basic:400,700&subset=latin-ext" rel="stylesheet">
 	<link href="styles/main.css" rel="stylesheet">
 	 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> 
-	  <script type="text/javascript" src="js/jquery.onepage-scroll.js"></script>
-  <link href='styles/onepage-scroll.css' rel='stylesheet' type='text/css'>
+	  <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+	  <script type="text/javascript" src="js/scrolloverflow.js"></script>
+  <link href='styles/jquery.fullPage.css' rel='stylesheet' type='text/css'>
 </head>
 <body>
 <script>
-	  $(document).ready(function(){
-      $(".main").onepage_scroll({
-        sectionContainer: "section",
-        responsiveFallback: 600,
-        loop: true
-      });
-		});
+	  $(document).ready(function() {
+            $('#fullpage').fullpage({
+                verticalCentered: true,
+                anchors: ['anchor1', 'anchor2', 'anchor3' , 'anchor4'],
+                menu: '#menu',
+                sectionsColor: ['transparent', 'transparent', 'transparent', 'transparent']
+            });
+        });
 		
 	</script>
 
 
 
 
-<div class="main">
-	<section class="page">
+<div id="fullpage">
+	<section class="section" id="section0">
 		<header class="navbar" id="navbar">
 			<nav id="nav">
-				<ul id="nav-ul">
-					<li><a href="">O MNIE</a></li>
-					<li><a href="">PROJEKTY</a></li>
-					<li><a href="">KONTAKT</a></li>
+				<ul id="nav-ul" id="menu">
+					<li data-menuanchor="anchor1"><a href="#anchor1">O MNIE</a></li>
+					<li data-menuanchor="anchor2"><a href="#anchor2">PROJEKTY</a></li>
+					<li data-menuanchor="anchor3"><a href="#anchor3">KONTAKT</a></li>
 				</ul>
 			</nav>
 		</header>			
@@ -61,8 +63,8 @@
 		</div>
 	</section>
 	<main>
-	<section class="page2">
-
+	<section class="section fp-auto-height" id="section1">
+	
 			<div class="content-page">
 				<article>
 					<h1>O mnie</h1>
@@ -72,7 +74,7 @@
 			</div>
 		
 	</section>
-	<section class="page">
+	<section class="section fp-auto-height" id="section2">
 			<div class="page-middle">
 				<h1>Projekty</h1>
 				<div class="flex-container">
@@ -88,7 +90,7 @@
 				</div>
 			</div>	
 	</section>
-	<section class="page">
+	<section class="section fp-auto-height" id="section3">
 			<div class="contact">
 				<div id="form">
 					<div class="fish" id="fish"></div>
@@ -112,7 +114,7 @@
 				</div>
 			</div>
 	</section>
-	<section class="page">			
+	<section class="section fp-auto-height">			
 			<footer>
 				<div class="social">
 					<div class="social-icon">
