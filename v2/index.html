@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="UTF-8">	
+	<title>Bartosz Porębski - Portfolio </title>
+	<meta name="description" content="Bartosz Porębski - Portfolio - Zrealizowane projekty, kontakt">
+	<meta name="keywords" content="Bartosz, Porebski, portfolio, projekt-matma">
+	<meta name="author" content="Bartosz Porębski">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-Ua-Compatible" content="IE=edge">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Neuton:200,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Gentium+Basic:400,700&subset=latin-ext" rel="stylesheet">
+	<link href="styles/main.css" rel="stylesheet">
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> 
+	  <script type="text/javascript" src="js/jquery.onepage-scroll.js"></script>
+  <link href='styles/onepage-scroll.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<script>
+	  $(document).ready(function(){
+      $(".main").onepage_scroll({
+        sectionContainer: "section",
+        responsiveFallback: 600,
+        loop: true
+      });
+		});
+		
+	</script>
+
+
+
+
+<div class="main">
+	<section class="page">
+		<header class="navbar" id="navbar">
+			<nav id="nav">
+				<ul id="nav-ul">
+					<li><a href="">O MNIE</a></li>
+					<li><a href="">PROJEKTY</a></li>
+					<li><a href="">KONTAKT</a></li>
+				</ul>
+			</nav>
+		</header>			
+		<div id="nav-icon">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>		
+		<a href="#" class="logo" id="logo"></a>
+		<a href="#" class="logo-name" id="logo-name">BARTOSZ PORĘBSKI</a>
+
+		
+			<div class="starting-page">
+				<div class="heading">
+					<h1><span>WITAJ ŚWIECIE!</span> MAM NA IMIĘ BARTEK.
+					JESTEM JUNIOR FRONT-END DEVELOPEREM
+					ORAZ PRZYSZŁYM WEB DEVELOPEREM.</h1>
+				</div>
+			
+		</div>
+	</section>
+	<main>
+	<section class="page2">
+
+			<div class="content-page">
+				<article>
+					<h1>O mnie</h1>
+					<p>Quisque ac urna vitae nulla fermentum tristique nec vel mi. Donec mi orci, tincidunt ac lectus nec, vestibulum pretium diam. Cras facilisis nunc sed dui sodales, vel condimentum magna bibendum. Sed sit amet pretium augue, quis bibendum augue. Nam nec nulla malesuada, cursus risus eu, semper nibh. Nulla luctus magna vitae commodo elementum. Sed odio velit, suscipit posuere quam eget, fringilla tincidunt neque. Integer leo arcu, blandit iaculis felis vel, porta bibendum sem.
+					</p>
+				</article>
+			</div>
+		
+	</section>
+	<section class="page">
+			<div class="page-middle">
+				<h1>Projekty</h1>
+				<div class="flex-container">
+					<div class="flex-item item-1">
+						
+					</div>
+					<div class="flex-item item-2">
+						
+					</div>
+					<div class="flex-item item-3">
+						
+					</div>
+				</div>
+			</div>	
+	</section>
+	<section class="page">
+			<div class="contact">
+				<div id="form">
+					<div class="fish" id="fish"></div>
+		  			<div class="fish" id="fish2"></div>
+				  	<form id="waterform" method="post">
+				  		<h1>Kontakt</h1>
+					    <div class="formgroup" id="name-form">
+					      <label for="name">Imię*</label>
+					      <input type="text" id="name" name="name" />
+					    </div>
+					    <div class="formgroup" id="email-form">
+					      <label for="email">Adres E-mail*</label>
+					      <input type="email" id="email" name="email" />
+					    </div>
+					    <div class="formgroup" id="message-form">
+					      <label for="message">Wiadomość</label>
+					      <textarea id="message" name="message"></textarea>
+					    </div>
+					    <input type="submit" value="Wyślij" />
+				  </form>
+				</div>
+			</div>
+	</section>
+	<section class="page">			
+			<footer>
+				<div class="social">
+					<div class="social-icon">
+						<a href="#" class="git icon-transition"></a>
+						<a href="#" class="linkedin icon-transition"></a>
+						<a href="#" class="facebook icon-transition"></a>
+					</div>
+				<p class="copy">
+					@ Bartosz Porębski 2016
+				</p>
+				</div>
+			</footer>
+		
+	</section>
+	</main>
+</div>
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+	
+$(document).ready(function(){
+	$('#nav-icon').click(function(){	
+		$(this).toggleClass('open');
+		$("#navbar").toggle();
+	});
+});  
+
+
+$(document).scroll(function() {
+
+	var y = $(document).scrollTop();
+	var z = $(window).height();
+	var w = $(window).width();
+
+	if(y >= z && w >= 752){
+
+		$("#navbar").addClass("navbar-fixed");
+		$("#nav").addClass("nav-fixed");
+		$("#nav-ul").addClass("position-fixed");
+		$("#logo-name").addClass("position-fixed");
+		$("#nav-icon").addClass("nav-icon-fixed");
+		$("#logo").addClass("logo-fixed");
+    } else if(w < 752){
+    	$("#navbar").addClass("navbar-fixed");
+    	$("#logo").addClass("logo-fixed");
+    	$("#nav-icon").addClass("nav-icon-fixed");
+    	$("#logo-name").removeClass("position-fixed");	
+    }else if(y < z && w >= 752) {
+    	$("#nav").removeClass("nav-fixed");
+		$("#navbar").removeClass("navbar-fixed");
+		$("#logo-name").removeClass("position-fixed");
+    	$("#nav-ul").removeClass("position-fixed");	
+    }else if( w >= 752){
+			$("#navbar").attr("style", "display: block!important");
+			$("#nav").removeClass("nav-fixed");
+			$("#nav-ul").removeClass("position-fixed");
+	}else {
+		$("#logo-name").removeClass("position-fixed");
+		$("#nav-icon").removeClass("nav-icon-fixed");
+		$("#logo").removeClass("logo-fixed");		
+    }
+}); 
+
+
+	
+$( window ).resize(function() {
+  	var w = $(window).width();
+	var y = $(document).scrollTop();
+	var z = $(window).height();
+		if( w >= 752){
+			$("#navbar").attr("style", "display: block!important");
+			$("#nav").removeClass("nav-fixed");
+			$("#navbar").removeClass("navbar-fixed");
+			$("#logo-name").removeClass("position-fixed");
+	    	$("#nav-ul").removeClass("position-fixed");	
+
+		}else if(y >= z && w >= 752){
+			$("#navbar").addClass("navbar-fixed");
+			$("#nav").addClass("nav-fixed");
+			$("#nav-ul").addClass("position-fixed");
+			$("#logo-name").addClass("position-fixed");
+			$("#nav-icon").addClass("nav-icon-fixed");
+			$("#logo").addClass("logo-fixed");
+
+
+		}else{
+			$("#navbar").attr("style", "display: none!important");
+			$("#nav-icon").removeClass("open");
+
+		}
+});
+
+
+</script>
+
+
+
+
+
+</body>
+
