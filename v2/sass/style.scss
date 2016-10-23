@@ -182,6 +182,20 @@ main{
 			    	filter:grayscale(0%);
 			    	background-color: rgba(220, 220, 220, 0.8);
 			    }
+			    &:hover:before{
+					content:attr(data-tooltip);
+					width:100%;
+					font-size: 15px;
+					line-height:1.5em;
+					padding:15px;
+					border:1px solid #000;
+					border-radius: 80px;
+					background-color:#FAFAFA;
+					position:absolute;
+					top: 93px;
+   					left: -17px;
+					
+			    }
 			    &:first-child{
 			    	margin-left: 0px;
 			    }
