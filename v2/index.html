@@ -12,23 +12,10 @@
 	<link href="https://fonts.googleapis.com/css?family=Neuton:200,400,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Gentium+Basic:400,700&subset=latin-ext" rel="stylesheet">
 	<link href="styles/main.css" rel="stylesheet">
-	 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> 
-	  <script type="text/javascript" src="js/jquery.fullPage.js"></script>
-	  <script type="text/javascript" src="js/scrolloverflow.js"></script>
-  <link href='styles/jquery.fullPage.css' rel='stylesheet' type='text/css'>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> 
 </head>
 <body>
-<script>
-	  $(document).ready(function() {
-            $('#fullpage').fullpage({
-                verticalCentered: true,
-                anchors: ['anchor1', 'anchor2', 'anchor3' , 'anchor4'],
-                menu: '#menu',
-                sectionsColor: ['transparent', 'transparent', 'transparent', 'transparent']
-            });
-        });
-		
-	</script>
+
 
 
 
@@ -38,9 +25,9 @@
 		<header class="navbar" id="navbar">
 			<nav id="nav">
 				<ul id="nav-ul" id="menu">
-					<li data-menuanchor="anchor1"><a href="#anchor1">O MNIE</a></li>
-					<li data-menuanchor="anchor2"><a href="#anchor2">PROJEKTY</a></li>
-					<li data-menuanchor="anchor3"><a href="#anchor3">KONTAKT</a></li>
+					<li><a href="#">O MNIE</a></li>
+					<li><a href="#">PROJEKTY</a></li>
+					<li><a href="#">KONTAKT</a></li>
 				</ul>
 			</nav>
 		</header>			
@@ -60,75 +47,88 @@
 					ORAZ PRZYSZŁYM WEB DEVELOPEREM.</h1>
 				</div>
 			
-		</div>
+			</div>
 	</section>
 	<main>
-	<section class="section fp-auto-height" id="section1">
+		<section id="section1">
 	
 			<div class="content-page">
+				<div class="skills">
+					<ul class="circle-container">
+						<li><img src="img/html5.png" width="50px"></li>
+						<li><img src="img/css3.png" width="50px"></li>
+						<li><img src="img/sass.png" width="50px"></li>
+						<li><img src="img/js.png" width="50px"></li>
+						<li><img src="img/php.png" width="50px"></li>
+						<li><img src="img/git.ico" width="50px"></li>
+						<li><img src="img/bootstrap.png" width="50px"></li>
+						<li><img src="img/ps.png" width="50px"></li>
+
+					</ul>
+				</div>
 				<article>
 					<h1>O mnie</h1>
 					<p>Quisque ac urna vitae nulla fermentum tristique nec vel mi. Donec mi orci, tincidunt ac lectus nec, vestibulum pretium diam. Cras facilisis nunc sed dui sodales, vel condimentum magna bibendum. Sed sit amet pretium augue, quis bibendum augue. Nam nec nulla malesuada, cursus risus eu, semper nibh. Nulla luctus magna vitae commodo elementum. Sed odio velit, suscipit posuere quam eget, fringilla tincidunt neque. Integer leo arcu, blandit iaculis felis vel, porta bibendum sem.
 					</p>
 				</article>
 			</div>
-		
-	</section>
-	<section class="section fp-auto-height" id="section2">
-			<div class="page-middle">
-				<h1>Projekty</h1>
-				<div class="flex-container">
-					<div class="flex-item item-1">
-						
+			
+		</section>
+		<section id="section2">
+				<div class="page-middle">
+					<h1>Projekty</h1>
+					<div class="flex-container">
+						<div class="flex-item item-1">
+							
+						</div>
+						<div class="flex-item item-2">
+							
+						</div>
+						<div class="flex-item item-3">
+							
+						</div>
 					</div>
-					<div class="flex-item item-2">
-						
-					</div>
-					<div class="flex-item item-3">
-						
+				</div>	
+		</section>
+		<section id="section3">
+				<div class="contact">
+					<div id="form">
+						<div class="fish" id="fish"></div>
+			  			<div class="fish" id="fish2"></div>
+					  	<form id="waterform" method="post">
+					  		<h1>Kontakt</h1>
+						    <div class="formgroup" id="name-form">
+						      <label for="name">Imię*</label>
+						      <input type="text" id="name" name="name" />
+						    </div>
+						    <div class="formgroup" id="email-form">
+						      <label for="email">Adres E-mail*</label>
+						      <input type="email" id="email" name="email" />
+						    </div>
+						    <div class="formgroup" id="message-form">
+						      <label for="message">Wiadomość</label>
+						      <textarea id="message" name="message"></textarea>
+						    </div>
+						    <input type="submit" value="Wyślij" />
+					  </form>
 					</div>
 				</div>
-			</div>	
-	</section>
-	<section class="section fp-auto-height" id="section3">
-			<div class="contact">
-				<div id="form">
-					<div class="fish" id="fish"></div>
-		  			<div class="fish" id="fish2"></div>
-				  	<form id="waterform" method="post">
-				  		<h1>Kontakt</h1>
-					    <div class="formgroup" id="name-form">
-					      <label for="name">Imię*</label>
-					      <input type="text" id="name" name="name" />
-					    </div>
-					    <div class="formgroup" id="email-form">
-					      <label for="email">Adres E-mail*</label>
-					      <input type="email" id="email" name="email" />
-					    </div>
-					    <div class="formgroup" id="message-form">
-					      <label for="message">Wiadomość</label>
-					      <textarea id="message" name="message"></textarea>
-					    </div>
-					    <input type="submit" value="Wyślij" />
-				  </form>
-				</div>
-			</div>
-	</section>
-	<section class="section fp-auto-height">			
-			<footer>
-				<div class="social">
-					<div class="social-icon">
-						<a href="#" class="git icon-transition"></a>
-						<a href="#" class="linkedin icon-transition"></a>
-						<a href="#" class="facebook icon-transition"></a>
+		</section>
+		<section id="section4">			
+				<footer>
+					<div class="social">
+						<div class="social-icon">
+							<a href="#" class="git icon-transition"></a>
+							<a href="#" class="linkedin icon-transition"></a>
+							<a href="#" class="facebook icon-transition"></a>
+						</div>
+					<p class="copy">
+						@ Bartosz Porębski 2016
+					</p>
 					</div>
-				<p class="copy">
-					@ Bartosz Porębski 2016
-				</p>
-				</div>
-			</footer>
-		
-	</section>
+				</footer>
+			
+		</section>
 	</main>
 </div>
 

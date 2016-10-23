@@ -155,11 +155,42 @@ main{
 
 //CONTENT PAGE (SITE 2 & 3)
 .content-page{
-	article{		
-		position: relative;
-		min-height: 100vh;
-		top: 450px;
+	min-height: 100vh;
+	.skills{
+		height: 380px;
+		width: 1000px;
+	    position: relative;
+	    top: 190px;
+	    margin-right: auto;
+	    margin-left: auto;
+		ul{
+	    list-style: none;
+	    margin-right: auto;
+	    margin-left: auto;
+	    text-align: center;
+		    li{
+		    	border-radius: 50px;
+			    background-color: rgba(220, 220, 220, 0.3);
+			    position: relative;
+			    top: 20px;
+			    display: inline-block;
+			    list-style: none;
+			    padding: 20px;
+			    margin-left: 20px;
+			    filter:grayscale(100%) blur(2px);
+			    &:hover{
+			    	filter:grayscale(0%);
+			    	background-color: rgba(220, 220, 220, 0.8);
+			    }
+			    &:first-child{
+			    	margin-left: 0px;
+			    }
+		    }
+		}	
 	}
+
+
+
 }
 	//PROJECT PAGE
 	.page-middle{
