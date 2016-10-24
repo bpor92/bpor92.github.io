@@ -56,7 +56,7 @@ article{
 	margin: 0 auto;
 	display: block;
 	width: 100%;
-	z-index: 10;
+	z-index: 10
 	ul{
 		position: relative;
 		top: 50px;
@@ -156,11 +156,16 @@ main{
 //CONTENT PAGE (SITE 2 & 3)
 .content-page{
 	min-height: 100vh;
+	article{
+		position: relative;
+		top: 380px;
+		width: 100%;
+		margin: 0 auto;
+	}
 	.skills{
-		height: 380px;
-		width: 1000px;
-	    position: relative;
-	    top: 190px;
+		position: relative;
+		width: 100%;
+	    top: 390px;
 	    margin-right: auto;
 	    margin-left: auto;
 		ul{
@@ -188,11 +193,10 @@ main{
 					font-size: 15px;
 					line-height:1.5em;
 					padding:15px;
-					border:1px solid #000;
 					border-radius: 80px;
-					background-color:#FAFAFA;
+					background-color: rgba(220, 220, 220, 0.8);
 					position:absolute;
-					top: 93px;
+					top: 94px;
    					left: -17px;
 					
 			    }
@@ -202,42 +206,56 @@ main{
 		    }
 		}	
 	}
-
-
-
 }
-	//PROJECT PAGE
-	.page-middle{
+
+//PROJECT PAGE
+.page-middle{
 	min-height: 100vh;
 	padding-top: 300px;
 	h1{
-			color: #ffffff;
-		}
+		color: #ffffff;
 	}
-
 	.flex-container{
 	display: -webkit-flex;
-    display: flex;
-    -webkit-justify-content: center;
-    justify-content: center;
-    @include clearFix;	
-	}
-
+	display: flex;
+	-webkit-justify-content: center;
+	justify-content: center;
+	@include clearFix;	
 	.flex-item {
-    padding: 5px;
-    width: 200px;
-    height: 150px;
-    margin: 60px 35px 30px 35px;
-    line-height: 150px;
-    font-weight: lighter;
-    font-size: 30px;
-    text-align: center;
-    -webkit-box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.15);
-    -moz-box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.15);
-    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.15);
-    border-radius: 80px;
+	    padding: 5px;
+	    width: 200px;
+	    height: 200px;
+	    margin: 60px 35px 30px 35px;
+	    line-height: 150px;
+	    font-weight: lighter;
+	    font-size: 30px;
+	    text-align: center;
+	    -webkit-box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.15);
+	    -moz-box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.15);
+	    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.15);
+	    border-radius: 180px;
 	}
+	.item-2{
+		opacity: 1;
+  		transition:opacity .5s ease;
+			img{
+				border-radius: 180px;
+				width: 100%;
+				height: 100%;
+			}
+			&:hover{
+				opacity: 0;
+				
+			}	
+		}
 
+	}
+	.overlay{
+		opacity: 0;
+		background: rgba(0,0,0,0.5);
+	}
+	
+}
 //TRANSITION SECTION
 .transition{
 	width:100%;
@@ -437,6 +455,12 @@ footer{
 			-webkit-transition:color .2s ease-out, background 0.2s ease-in;
 			transition:color .2s ease-out, background 0.2s ease-in;
 		}
+		
+	}
+	p{
+		text-align: center;
+	 	margin-top: 30px;
+		color: #ffffff;
 	}
 }
 
