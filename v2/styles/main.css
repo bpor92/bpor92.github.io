@@ -46,7 +46,6 @@ h1 {
   text-align: center;
   font-weight: lighter;
 }
-
 h1 span {
   color: #021e2f;
 }
@@ -57,7 +56,6 @@ article {
   width: 80%;
   padding: 10px;
 }
-
 article p {
   margin: 20px auto;
   max-width: 800px;
@@ -96,7 +94,6 @@ article p {
   width: 100%;
   z-index: 10;
 }
-
 .navbar ul {
   position: relative;
   top: 50px;
@@ -104,13 +101,11 @@ article p {
   float: right;
   display: flex;
 }
-
 .navbar ul a {
   float: right;
   margin-left: 30px;
   color: #0C2032;
 }
-
 .navbar ul a:last-child {
   margin-right: 30px;
 }
@@ -126,11 +121,9 @@ article p {
   min-height: 67px;
   transition: .5s background linear;
 }
-
 .nav-fixed .logo {
   display: none;
 }
-
 .nav-fixed .logo-name {
   left: 20px;
   top: 13px !important;
@@ -141,7 +134,6 @@ article p {
   font-weight: lighter;
   line-height: 20px;
 }
-
 .nav-fixed .logo-name:hover {
   border: 1px solid #049bf6;
   -webkit-transition: border-color 1s ease;
@@ -150,11 +142,9 @@ article p {
   -ms-transition: border-color 1s ease;
   transition: border-color 1s ease;
 }
-
 .nav-fixed a {
   color: #ffffff !important;
 }
-
 .nav-fixed ul {
   line-height: 32px !important;
 }
@@ -169,7 +159,6 @@ article p {
   height: 100vh;
   z-index: 10;
 }
-
 .starting-page:after {
   content: "";
   position: absolute;
@@ -180,7 +169,6 @@ article p {
   background: rgba(0, 0, 0, 0.2);
   z-index: 5;
 }
-
 .starting-page .heading {
   position: absolute;
   left: 50%;
@@ -201,14 +189,11 @@ main {
 .content-page {
   min-height: 100vh;
 }
-
 .content-page article {
   position: relative;
   top: 380px;
-  width: 100%;
   margin: 0 auto;
 }
-
 .content-page .skills {
   position: relative;
   width: 100%;
@@ -216,14 +201,12 @@ main {
   margin-right: auto;
   margin-left: auto;
 }
-
 .content-page .skills ul {
   list-style: none;
   margin-right: auto;
   margin-left: auto;
   text-align: center;
 }
-
 .content-page .skills ul li {
   border-radius: 50px;
   background-color: rgba(220, 220, 220, 0.3);
@@ -235,12 +218,10 @@ main {
   margin-left: 20px;
   filter: grayscale(100%) blur(2px);
 }
-
 .content-page .skills ul li:hover {
   filter: grayscale(0%);
   background-color: rgba(220, 220, 220, 0.8);
 }
-
 .content-page .skills ul li:hover:before {
   content: attr(data-tooltip);
   width: 100%;
@@ -253,7 +234,6 @@ main {
   top: 94px;
   left: -17px;
 }
-
 .content-page .skills ul li:first-child {
   margin-left: 0px;
 }
@@ -262,24 +242,20 @@ main {
   min-height: 100vh;
   padding-top: 300px;
 }
-
 .page-middle h1 {
   color: #ffffff;
 }
-
 .page-middle .flex-container {
   display: -webkit-flex;
   display: flex;
   -webkit-justify-content: center;
   justify-content: center;
 }
-
 .page-middle .flex-container:after {
   content: "";
   display: block;
   clear: both;
 }
-
 .page-middle .flex-container .flex-item {
   padding: 5px;
   width: 200px;
@@ -294,22 +270,18 @@ main {
   box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.15);
   border-radius: 180px;
 }
-
 .page-middle .flex-container .item-2 {
   opacity: 1;
   transition: opacity .5s ease;
 }
-
 .page-middle .flex-container .item-2 img {
   border-radius: 180px;
   width: 100%;
   height: 100%;
 }
-
 .page-middle .flex-container .item-2:hover {
   opacity: 0;
 }
-
 .page-middle .overlay {
   opacity: 0;
   background: rgba(0, 0, 0, 0.5);
@@ -333,7 +305,6 @@ main {
   display: block;
   clear: both;
 }
-
 @-webkit-keyframes myfirst {
   0% {
     margin-left: -235px;
@@ -345,7 +316,6 @@ main {
     margin-left: 100%;
   }
 }
-
 @keyframes myfirst {
   0% {
     margin-left: -235px;
@@ -357,7 +327,6 @@ main {
     margin-left: 100%;
   }
 }
-
 .contact .fish {
   background-image: url("http://www.geertjanhendriks.nl/codepen/form/fish.png");
   width: 235px;
@@ -371,17 +340,14 @@ main {
   animation-timing-function: linear;
   -webkit-animation-timing-function: linear;
 }
-
 .contact #fish {
   top: 120px;
 }
-
 .contact #fish2 {
   top: 260px;
   animation-delay: 12s;
   -webkit-animation-delay: 12s;
 }
-
 .contact #form {
   min-height: 100vh;
   height: 100%;
@@ -390,7 +356,6 @@ main {
   position: relative;
   margin-bottom: 150px;
 }
-
 .contact form {
   margin: -230px auto 0 auto;
   width: 500px;
@@ -398,11 +363,9 @@ main {
   color: white;
   position: relative;
 }
-
 .contact label, .contact input, .contact textarea {
   display: block;
 }
-
 .contact input, .contact textarea {
   background-color: transparent;
   width: 500px;
@@ -422,17 +385,14 @@ main {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-
 .contact input:focus, .contact textarea:focus {
   border: solid 1px #77bde0;
 }
-
 .contact textarea {
   height: 100px;
   resize: none;
   overflow: auto;
 }
-
 .contact input[type="submit"] {
   background-color: #27ae60;
   color: white;
@@ -446,17 +406,14 @@ main {
   -o-transition: background-color 0.5s;
   transition: background-color 0.5s;
 }
-
 .contact input[type="submit"]:hover {
   background-color: #2ecc71;
 }
-
 .contact label {
   font-size: 1.5em;
   margin-top: 20px;
   padding-left: 20px;
 }
-
 .contact .formgroup, .contact .formgroup-active, .contact .formgroup-error {
   background-repeat: no-repeat;
   background-position: right bottom;
@@ -468,15 +425,12 @@ main {
   width: 566px;
   padding-top: 2px;
 }
-
 .contact .formgroup {
   background-image: url("http://www.geertjanhendriks.nl/codepen/form/pixel.gif");
 }
-
 .contact .formgroup-active {
   background-image: url("http://www.geertjanhendriks.nl/codepen/form/octo.png");
 }
-
 .contact .formgroup-error {
   background-image: url("http://www.geertjanhendriks.nl/codepen/form/octo-error.png");
   color: red;
@@ -491,7 +445,6 @@ footer {
   -moz-box-shadow: 10px 0px 100px 40px rgba(0, 0, 0, 0.8);
   box-shadow: 10px 0px 100px 40px rgba(0, 0, 0, 0.8);
 }
-
 footer .social {
   height: 60px;
   padding-top: 100px;
@@ -500,7 +453,6 @@ footer .social {
   margin-right: auto;
   width: 50%;
 }
-
 footer .social-icon {
   display: flex;
   width: 164px;
@@ -508,45 +460,37 @@ footer .social-icon {
   margin-left: auto;
   margin-top: -70px;
 }
-
 footer .social-icon a:nth-child(2) {
   margin-left: 10px;
   margin-right: 10px;
 }
-
 footer .social-icon .git {
   display: block;
   height: 48px;
   width: 48px;
   background: transparent url("../img/git.png") center top no-repeat;
 }
-
 footer .social-icon .git:hover {
   background-image: url("../img/git-hover.png");
 }
-
 footer .social-icon .facebook {
   display: block;
   height: 48px;
   width: 48px;
   background: transparent url("../img/fb.png") center top no-repeat;
 }
-
 footer .social-icon .facebook:hover {
   background-image: url("../img/fb-hover.png");
 }
-
 footer .social-icon .linkedin {
   display: block;
   height: 48px;
   width: 48px;
   background: transparent url("../img/in.png") center top no-repeat;
 }
-
 footer .social-icon .linkedin:hover {
   background-image: url("../img/in-hover.png");
 }
-
 footer .social-icon .icon-transition {
   -o-transition: color .2s ease-out, background 0.2s ease-in;
   -ms-transition: color .2s ease-out, background 0.2s ease-in;
@@ -554,7 +498,6 @@ footer .social-icon .icon-transition {
   -webkit-transition: color .2s ease-out, background 0.2s ease-in;
   transition: color .2s ease-out, background 0.2s ease-in;
 }
-
 footer p {
   text-align: center;
   margin-top: 30px;
@@ -565,15 +508,19 @@ footer p {
   h1 {
     font-size: 40px;
   }
+
   .logo {
     z-index: 30;
   }
+
   .logo-fixed {
     position: fixed;
   }
+
   .hamburger-nav {
     display: block;
   }
+
   #nav-icon {
     display: block;
     width: 40px;
@@ -619,6 +566,7 @@ footer p {
   #nav-icon span:nth-child(3) {
     top: 24px;
   }
+
   #nav-icon.open span:nth-child(1) {
     top: 18px;
     -webkit-transform: rotate(135deg);
@@ -637,12 +585,15 @@ footer p {
     -o-transform: rotate(-135deg);
     transform: rotate(-135deg);
   }
+
   .nav-icon-fixed {
     position: fixed !important;
   }
+
   .nav-fixed {
     background: none;
   }
+
   .navbar {
     display: none;
     background-color: #ecf0f1;
@@ -672,6 +623,7 @@ footer p {
   .navbar ul a:last-child {
     margin-right: 0px;
   }
+
   .flex-container {
     align-items: center;
     display: -webkit-flex;
@@ -679,22 +631,25 @@ footer p {
     -webkit-flex-direction: column;
     flex-direction: column;
   }
+
   .contact form, .contact input, .contact textarea, .contact .formgroup {
     width: 100%;
   }
 }
-
 @media (max-width: 430px) {
   h1 {
     font-size: 35px;
   }
+
   .logo {
     width: 60px;
     height: 60px;
   }
+
   .logo-name {
     display: none;
   }
+
   .navbar ul {
     width: 130px;
   }
