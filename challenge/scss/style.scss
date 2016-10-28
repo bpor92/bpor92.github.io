@@ -1,9 +1,7 @@
 body{
 	background: url('../img/background.png')  no-repeat center;
-	min-height: 1459px;
 	background-size: cover;
 	margin: 0;
-	
 	color: #afafaf;
 	font-family: 'Titillium Web';
 }
@@ -29,6 +27,7 @@ header{
 main{
 	.left-side{
 		float: left;
+		margin-bottom: 100px;
 	}
 	.right-side{
 		float: right;
@@ -185,6 +184,7 @@ main{
 	main{
 		.left-side{
 			float: left;
+			margin-bottom: 0px;
 		}
 		.right-side{
 			float: left;
@@ -193,6 +193,7 @@ main{
 	}
 }
 @media only screen and (max-width: 570px) {
+
 	body{
 		font-size: 15px;
 	}

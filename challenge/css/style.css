@@ -1,6 +1,5 @@
 body {
   background: url("../img/background.png") no-repeat center;
-  min-height: 1459px;
   background-size: cover;
   margin: 0;
   color: #afafaf;
@@ -29,6 +28,7 @@ header .logo {
 
 main .left-side {
   float: left;
+  margin-bottom: 100px;
 }
 
 main .right-side {
@@ -208,6 +208,7 @@ main .logo-footer {
   }
   main .left-side {
     float: left;
+    margin-bottom: 0px;
   }
   main .right-side {
     float: left;
