@@ -125,6 +125,9 @@ main{
 			outline: none;
 			border-radius: 5px;
     		-webkit-border-radius: 5px;
+    		&:focus{
+    			border: 1px solid green;
+    		}
 
 		}
 		.checkbox{
@@ -161,7 +164,7 @@ main{
 			width: 140px;
 			margin: 0 20px 15px 0;
 			opacity: 0.6;
-			cursor: default;
+			cursor: pointer;
 		}
 		.thanks{
 			color: #ffffff;

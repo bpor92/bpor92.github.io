@@ -43,7 +43,7 @@ main form {
   -webkit-border-radius: 5px;
   border: 15px solid rgba(0, 0, 0, 0.4);
   background-clip: padding-box;
-}  
+}
 
 main form:after {
   content: '';
@@ -143,6 +143,10 @@ main form textarea {
   -webkit-border-radius: 5px;
 }
 
+main form textarea:focus {
+  border: 1px solid green;
+}
+
 main form .checkbox {
   display: block;
   line-height: 22px;
@@ -183,7 +187,7 @@ main form .done, main form .thanks {
   width: 140px;
   margin: 0 20px 15px 0;
   opacity: 0.6;
-  cursor: default;
+  cursor: pointer;
 }
 
 main form .thanks {
