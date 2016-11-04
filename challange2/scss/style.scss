@@ -15,7 +15,7 @@ h3{
 }
 p, .jumbotron p{
 	font-size: 17px;
-	font-weight: 400px;
+	font-weight: 400;
 }
 .btn{
 	border-radius: 0px;
@@ -37,7 +37,6 @@ p, .jumbotron p{
     color: #000000;
 }
 nav{
-	
 	backface-visibility: hidden;
 	.container{
 		padding: 20px 30px;
@@ -66,11 +65,8 @@ nav{
 				}
 			}
 		}
-		
-
 	}
 }
-
 header{
 	background: url('../img/img.jpg') top center no-repeat;
 	background-position: 50%;
@@ -96,7 +92,7 @@ header{
 		}
 	}
 }
-#about-us{
+.about-us{
 	background-color: #00b1b1;
 	.container{
 		img{
@@ -120,7 +116,7 @@ header{
 		}
 	}
 }
-#services{
+.services{
 	min-height: 790px;
 	background-color: #70bfff;
 	.container{	
@@ -186,33 +182,36 @@ header{
 		}	
 	}
 }
-#gallery{
-	
+.gallery{	
 	background-color: #ffe92f;
 	.container{
 		text-align: center;
 		h2{
-			padding: 100px 0px 50px 0px;
+			padding: 50px 0px 25px 0px;
 			margin: 0px;
 			text-align: center;
 		}
+		p{
+			margin-bottom: 25px;
+		}
 		.thumbnail{
 			margin-bottom: 30px;
-			background-color: transparent;
 			border: none;
 			border-radius: 0px;
+			padding: 0;
+			background-color: transparent;
 		}
 		img{
+			border: 5px solid #ffffff;
 			min-width: auto;
 			max-width: auto;
-			width: 100%;
-			
+			width: 100%;	
 		}
 		.gallery5{
 			margin-top: 1px;
 		}
 		.btn{
-			margin-bottom: 120px;
+			margin-bottom: 50px;
 			background-color: #5585a2;
 			box-shadow: 0px 2px 10px 0px #999999;
 			&:hover{
@@ -221,18 +220,11 @@ header{
 		}
 	}
 }
-
-
-
-
-#subscribe{
+.subscribe{
 	background: url('../img/subscribe.jpg') top center no-repeat;
-	background-size: cover;
+	min-height: 500px;
 	.container{
 		padding-top: 130px;
-		div{
-			margin-bottom: 150px;
-		}
 		p{
 			width: 80%;
 		}
@@ -253,16 +245,10 @@ header{
 		}
 	}
 }
-#blog{
-	min-height: 865px;
+.blog{
 	background-color: #b07cf7;
 	color: #ffffff;
 	.container{
-		div{
-			&:first-child{
-				margin-bottom: 50px;
-			}
-		}
 		.thumbnail{
 			margin-bottom: 30px;
 			background-color: transparent;
@@ -271,14 +257,11 @@ header{
 			width: 383px;
 			padding: 10px;
 		}
-
-		//hover effect - prototype
 		img{
 			max-height: 304px;
 			min-width: 363px;
 		}
 		figcaption{
-
 			position: absolute;
 		    top: 10px;
 			height: 304px;
@@ -318,126 +301,35 @@ header{
 		    left: 0;
 		    margin: 20px;
 		}
-		//end
-
 		h2{
-			padding: 100px 0px 30px 0px;
+			padding: 50px 0px 25px 0px;
 		}
 		h2, p{
 			text-align: center;
 		}
+		p{
+			margin-bottom: 25px;
+		}
 		.btn{
 			background-color: #f72b3b;
 			box-shadow: 0px 20px 40px -10px #f72b3b;
-			margin-bottom: 150px;
+			margin-bottom: 50px;
 			&:hover{
 				background-color: #f50b1b;
 			}
 		}
-		
-
-
-		//Hover effect for image (BLOG SECTION)
-		.hovereffect {
-		  min-width: 200px;
-		  max-width: 380px;
-		  margin: 0 auto;
-		  overflow: hidden;
-		  position: relative;
-		  text-align: center;
-		  cursor: default;
-		  background: -webkit-linear-gradient(45deg, #ff89e9 0%, #05abe0 100%);
-		  background: linear-gradient(45deg, #ff89e9 0%,#05abe0 100%);
-		}
-
-		.hovereffect .overlay {
-		  width: 100%;
-		  height: 100%;
-		  position: absolute;
-		  overflow: hidden;
-		  top: 0;
-		  left: 0;
-		  padding: 3em;
-		  text-align: left;
-		}
-
-		.hovereffect img {
-		  display: block;
-		  position: relative;
-		  max-width: none;
-		  width: calc(100% + 60px);
-		  -webkit-transition: opacity 0.35s, -webkit-transform 0.45s;
-		  transition: opacity 0.35s, transform 0.45s;
-		  -webkit-transform: translate3d(-40px,0,0);
-		  transform: translate3d(-40px,0,0);
-		}
-
-		.hovereffect h2 {
-		  text-transform: uppercase;
-		  color: #fff;
-		  position: relative;
-		  font-size: 17px;
-		  background-color: transparent;
-		  padding: 15% 0 10px 0;
-		  text-align: left;
-		}
-
-		.hovereffect .overlay:before {
-		  position: absolute;
-		  top: 20px;
-		  right: 20px;
-		  bottom: 20px;
-		  left: 20px;
-		  border: 1px solid #fff;
-		  content: '';
-		  opacity: 0;
-		  filter: alpha(opacity=0);
-		  -webkit-transition: opacity 0.35s, -webkit-transform 0.45s;
-		  transition: opacity 0.35s, transform 0.45s;
-		  -webkit-transform: translate3d(-20px,0,0);
-		  transform: translate3d(-20px,0,0);
-		}
-
-		.hovereffect a, .hovereffect p {
-		  color: #FFF;
-		  opacity: 0;
-		  filter: alpha(opacity=0);
-		  -webkit-transition: opacity 0.35s, -webkit-transform 0.45s;
-		  transition: opacity 0.35s, transform 0.45s;
-		  -webkit-transform: translate3d(-10px,0,0);
-		  transform: translate3d(-10px,0,0);
-		}
-
-		.hovereffect:hover img {
-		  opacity: 0.6;
-		  filter: alpha(opacity=60);
-		  -webkit-transform: translate3d(0,0,0);
-		  transform: translate3d(0,0,0);
-		}
-
-		.hovereffect:hover .overlay:before,
-		.hovereffect:hover a, .hovereffect:hover p {
-		  opacity: 1;
-		  filter: alpha(opacity=100);
-		  -webkit-transform: translate3d(0,0,0);
-		  transform: translate3d(0,0,0);
-		}
-		//END
-
-
-
-
 	}
 }
-#contact{
-	margin-top: -50px;
+.contact{
 	min-height: 865px;
 	background: url('../img/contact.png') bottom center no-repeat;
 	background-size: cover;
 	.container{
-		padding-top: 100px;
 		h2,p{
 			text-align: center;
+		}
+		h2{
+			padding-top: 50px;
 		}
 		p{
 			margin-bottom: 45px;
@@ -469,10 +361,6 @@ header{
 				background-color: #3363a1;
 			}
 		}
-
-
-
-
 		input, textarea{
 			color: #ffffff;
 			background-color: #00c4c4;
@@ -524,19 +412,17 @@ footer{
 			text-align: center;
 			line-height: 20px;
 		}
-
 	}
 }
-
 @media (max-width: 1200px) {
-	#about-us{
+	.about-us{
 		.container{
 			aside{
 				margin-top: 10px;
 			}
 		}
 	}
-	#services{
+	.services{
 		padding-bottom: 100px;
 		.container{
 			.flexbox{
@@ -553,30 +439,30 @@ footer{
 			}
 		}
 	}
-	#gallery{
+	.gallery{
 		.container{
 			img{
 				min-width: 200px;
 				max-width: 380px;
-				width: 100%;
-				
+				width: 100%;			
 			}
 			.thumbnail{
-				margin-bottom: 20px;
+			    width: auto;
+				margin: 10px auto;
 			}
 			.big-img{
-				margin: 20px 0px -20px 0px;
+				margin: 10px auto;
 			}
 		}
 	}
-	#blog{
+	.blog{
 		.container{
 			.thumbnail{
 				margin: 0 auto;
 			}
 		}
 	}
-	#contact{
+	.contact{
 		.flexbox{
 			display:flex;
 	    	flex-wrap:wrap;
@@ -590,7 +476,6 @@ footer{
 	    	}
 		}
 	}
-
 }
 @media (max-width: 992px) {
 	.jumbotron h2{
@@ -601,7 +486,7 @@ footer{
 			text-align: left;
 		}
 	}
-	#about-us{
+	.about-us{
 		.container{
 			img{
 				margin-left: -20px;
@@ -611,7 +496,7 @@ footer{
 			}
 		}
 	}
-	#services{
+	.services{
 		.container{
 			.flexbox{
 		    	.a{
@@ -625,7 +510,7 @@ footer{
 			}
 		}
 	}
-	#gallery{
+	.gallery{
 		.container{
 			figure{
 				text-align: center;
@@ -637,7 +522,7 @@ footer{
 			}
 		}
 	}
-	#subscribe{
+	.subscribe{
 		.container{
 			input{
 				width: 81%;
@@ -647,7 +532,7 @@ footer{
 			}
 		}
 	}
-	#blog{
+	.blog{
 		.container{
 			.thumbnail{
 				margin: 0 auto;
@@ -655,7 +540,7 @@ footer{
 		}
 		
 	}
-	#contact{
+	.contact{
 		.flexbox{
 	    	.a{
 	    		order: 1;
@@ -685,7 +570,6 @@ footer{
 		}
 	}
 }
-
 @media (max-width: 768px) {
 	h2,.jumbotron h3{
 		font-size: 50px;
@@ -719,7 +603,7 @@ footer{
 			}
 		}
 	}
-	#services{
+	.services{
 		.container{
 			.flexbox{
 		    	.a{
@@ -733,7 +617,7 @@ footer{
 			}
 		}
 	}
-	#gallery{
+	.gallery{
 		.container{
 			img{
 				min-width: 200px;
@@ -743,7 +627,7 @@ footer{
 			}
 		}
 	}
-	#contact{
+	.contact{
 		.container{
 			.flexbox{
 	    		.a{
@@ -764,12 +648,9 @@ footer{
 			}
 		}
 	}
-	
 }
-
-
 @media (max-width: 470px) {
-	#blog{
+	.blog{
 		.container{
 			img{
 				min-width: auto;
@@ -783,14 +664,10 @@ footer{
 			    width: calc(100% - 50px);
 			}
 		}
-	}
-    
+	}  
 }
-
-
-
 @media (max-width: 423px) {
-	#blog{
+	.blog{
 		.container{
 			.badge{
 				font-size: 20px;
@@ -805,7 +682,7 @@ footer{
 			}
 		}
 	}
-	#services{	
+	.services{	
 		.container{	
 			h2{
 				font-size: 50px;
@@ -820,7 +697,7 @@ footer{
 	}
 }	
 @media (max-width: 362px) {
-	#services{	
+	.services{	
 		.container{	
 			h2{
 				top: 211px;

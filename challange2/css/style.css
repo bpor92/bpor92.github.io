@@ -19,7 +19,7 @@ h3 {
 
 p, .jumbotron p {
   font-size: 17px;
-  font-weight: 400px;
+  font-weight: 400;
 }
 
 .btn {
@@ -110,59 +110,59 @@ header .container .jumbotron h2 {
   font-size: 60px;
 }
 
-#about-us {
+.about-us {
   background-color: #00b1b1;
 }
 
-#about-us .container img {
+.about-us .container img {
   width: 100%;
   min-width: 240px;
 }
 
-#about-us .container aside {
+.about-us .container aside {
   margin-top: 60px;
 }
 
-#about-us .container .jumbotron {
+.about-us .container .jumbotron {
   background-color: transparent;
   padding-left: 0px;
   padding-right: 0px;
 }
 
-#about-us .container .jumbotron h2 {
+.about-us .container .jumbotron h2 {
   color: #ffffff;
 }
 
-#about-us .container .jumbotron p {
+.about-us .container .jumbotron p {
   color: #ffffff;
 }
 
-#services {
+.services {
   min-height: 790px;
   background-color: #70bfff;
 }
 
-#services .container .flexbox {
+.services .container .flexbox {
   display: flex;
   flex-wrap: wrap;
 }
 
-#services .container .flexbox .a {
+.services .container .flexbox .a {
   order: 1;
   width: auto;
 }
 
-#services .container .flexbox .b {
+.services .container .flexbox .b {
   order: 2;
   width: 47%;
   margin-top: -50px;
 }
 
-#services .container img {
+.services .container img {
   width: 100%;
 }
 
-#services .container h2 {
+.services .container h2 {
   font-size: 83px;
   text-align: center;
   position: relative;
@@ -170,39 +170,39 @@ header .container .jumbotron h2 {
   color: #ffffff;
 }
 
-#services .container .left-panel {
+.services .container .left-panel {
   margin-top: 160px;
 }
 
-#services .container .text-right {
+.services .container .text-right {
   text-align: right;
 }
 
-#services .container .panel-default {
+.services .container .panel-default {
   border: none;
   box-shadow: 0px 2px 5px 1px #44739a;
 }
 
-#services .container .panel {
+.services .container .panel {
   border-radius: 0px;
   text-align: center;
   font-weight: bold;
   font-size: 20px;
 }
 
-#services .container .panel:after {
+.services .container .panel:after {
   content: '';
   display: block;
   clear: both;
 }
 
-#services .container .panel .panel-body {
+.services .container .panel .panel-body {
   float: left;
   width: 77%;
   padding: 30px;
 }
 
-#services .container .glyphicon {
+.services .container .glyphicon {
   border-left: 1px solid #9d9d9d;
   position: absolute;
   right: 15px;
@@ -211,97 +211,94 @@ header .container .jumbotron h2 {
   font-size: 34px;
 }
 
-#services .container .big-panel {
+.services .container .big-panel {
   padding: 41px 30px;
 }
 
-#gallery {
+.gallery {
   background-color: #ffe92f;
 }
 
-#gallery .container {
+.gallery .container {
   text-align: center;
 }
 
-#gallery .container h2 {
-  padding: 100px 0px 50px 0px;
+.gallery .container h2 {
+  padding: 50px 0px 25px 0px;
   margin: 0px;
   text-align: center;
 }
 
-#gallery .container .thumbnail {
-  margin-bottom: 30px;
-  background-color: transparent;
-  border: none;
-  border-radius: 0px;
+.gallery .container p {
+  margin-bottom: 25px;
 }
 
-#gallery .container img {
+.gallery .container .thumbnail {
+  margin-bottom: 30px;
+  border: none;
+  border-radius: 0px;
+  padding: 0;
+  background-color: transparent;
+}
+
+.gallery .container img {
+  border: 5px solid #ffffff;
   min-width: auto;
   max-width: auto;
   width: 100%;
 }
 
-#gallery .container .gallery5 {
+.gallery .container .gallery5 {
   margin-top: 1px;
 }
 
-#gallery .container .btn {
-  margin-bottom: 120px;
+.gallery .container .btn {
+  margin-bottom: 50px;
   background-color: #5585a2;
   box-shadow: 0px 2px 10px 0px #999999;
 }
 
-#gallery .container .btn:hover {
+.gallery .container .btn:hover {
   background-color: #3363a0;
 }
 
-#subscribe {
+.subscribe {
   background: url("../img/subscribe.jpg") top center no-repeat;
-  background-size: cover;
+  min-height: 500px;
 }
 
-#subscribe .container {
+.subscribe .container {
   padding-top: 130px;
 }
 
-#subscribe .container div {
-  margin-bottom: 150px;
-}
-
-#subscribe .container p {
+.subscribe .container p {
   width: 80%;
 }
 
-#subscribe .container input {
+.subscribe .container input {
   width: 77%;
   height: 55px;
   padding: 10px;
   border: 1px solid #262626;
 }
 
-#subscribe .container .btn {
+.subscribe .container .btn {
   margin: -1px 0px 0px 30px;
   height: 55px;
   background-color: #96b92c;
   box-shadow: 0px 4px 10px 0px #616161;
 }
 
-#subscribe .container .btn:hover {
+.subscribe .container .btn:hover {
   background-color: #74b70c;
 }
 
-#blog {
-  min-height: 865px;
+.blog {
   background-color: #b07cf7;
   color: #ffffff;
 }
 
-#blog .container div:first-child {
-  margin-bottom: 50px;
-}
-
-#blog .container .thumbnail {
+.blog .container .thumbnail {
   margin-bottom: 30px;
   background-color: transparent;
   border: none;
@@ -310,12 +307,12 @@ header .container .jumbotron h2 {
   padding: 10px;
 }
 
-#blog .container img {
+.blog .container img {
   max-height: 304px;
   min-width: 363px;
 }
 
-#blog .container figcaption {
+.blog .container figcaption {
   position: absolute;
   top: 10px;
   height: 304px;
@@ -323,7 +320,7 @@ header .container .jumbotron h2 {
   width: 363px;
 }
 
-#blog .container figcaption:hover {
+.blog .container figcaption:hover {
   opacity: 1;
   background-color: transparent;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(49, 49, 49, 0.25), color-stop(100%, rgba(0, 0, 0, 0.94))));
@@ -335,7 +332,7 @@ header .container .jumbotron h2 {
   -webkit-transform: translate3d(0, 0, 0);
 }
 
-#blog .container .badge {
+.blog .container .badge {
   width: 80px;
   white-space: normal;
   font-size: 30px;
@@ -343,7 +340,7 @@ header .container .jumbotron h2 {
   margin: 20px;
 }
 
-#blog .container .blog-title {
+.blog .container .blog-title {
   font-weight: bold;
   font-size: 20px;
   margin: 20px;
@@ -352,170 +349,88 @@ header .container .jumbotron h2 {
   left: 0;
 }
 
-#blog .container .blog-autor {
+.blog .container .blog-autor {
   position: absolute;
   bottom: 0px;
   left: 0;
   margin: 20px;
 }
 
-#blog .container h2 {
-  padding: 100px 0px 30px 0px;
+.blog .container h2 {
+  padding: 50px 0px 25px 0px;
 }
 
-#blog .container h2, #blog .container p {
+.blog .container h2, .blog .container p {
   text-align: center;
 }
 
-#blog .container .btn {
-  background-color: #f72b3b;
-  box-shadow: 0px 20px 40px -10px #f72b3b;
-  margin-bottom: 150px;
+.blog .container p {
+  margin-bottom: 25px;
 }
 
-#blog .container .btn:hover {
+.blog .container .btn {
+  background-color: #f72b3b;
+  box-shadow: 0px 20px 40px -10px #f72b3b;
+  margin-bottom: 50px;
+}
+
+.blog .container .btn:hover {
   background-color: #f50b1b;
 }
 
-#blog .container .hovereffect {
-  min-width: 200px;
-  max-width: 380px;
-  margin: 0 auto;
-  overflow: hidden;
-  position: relative;
-  text-align: center;
-  cursor: default;
-  background: -webkit-linear-gradient(45deg, #ff89e9 0%, #05abe0 100%);
-  background: linear-gradient(45deg, #ff89e9 0%, #05abe0 100%);
-}
-
-#blog .container .hovereffect .overlay {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  overflow: hidden;
-  top: 0;
-  left: 0;
-  padding: 3em;
-  text-align: left;
-}
-
-#blog .container .hovereffect img {
-  display: block;
-  position: relative;
-  max-width: none;
-  width: calc(100% + 60px);
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.45s;
-  transition: opacity 0.35s, transform 0.45s;
-  -webkit-transform: translate3d(-40px, 0, 0);
-  transform: translate3d(-40px, 0, 0);
-}
-
-#blog .container .hovereffect h2 {
-  text-transform: uppercase;
-  color: #fff;
-  position: relative;
-  font-size: 17px;
-  background-color: transparent;
-  padding: 15% 0 10px 0;
-  text-align: left;
-}
-
-#blog .container .hovereffect .overlay:before {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  bottom: 20px;
-  left: 20px;
-  border: 1px solid #fff;
-  content: '';
-  opacity: 0;
-  filter: alpha(opacity=0);
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.45s;
-  transition: opacity 0.35s, transform 0.45s;
-  -webkit-transform: translate3d(-20px, 0, 0);
-  transform: translate3d(-20px, 0, 0);
-}
-
-#blog .container .hovereffect a, #blog .container .hovereffect p {
-  color: #FFF;
-  opacity: 0;
-  filter: alpha(opacity=0);
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.45s;
-  transition: opacity 0.35s, transform 0.45s;
-  -webkit-transform: translate3d(-10px, 0, 0);
-  transform: translate3d(-10px, 0, 0);
-}
-
-#blog .container .hovereffect:hover img {
-  opacity: 0.6;
-  filter: alpha(opacity=60);
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-}
-
-#blog .container .hovereffect:hover .overlay:before,
-#blog .container .hovereffect:hover a, #blog .container .hovereffect:hover p {
-  opacity: 1;
-  filter: alpha(opacity=100);
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-}
-
-#contact {
-  margin-top: -50px;
+.contact {
   min-height: 865px;
   background: url("../img/contact.png") bottom center no-repeat;
   background-size: cover;
 }
 
-#contact .container {
-  padding-top: 100px;
-}
-
-#contact .container h2, #contact .container p {
+.contact .container h2, .contact .container p {
   text-align: center;
 }
 
-#contact .container p {
+.contact .container h2 {
+  padding-top: 50px;
+}
+
+.contact .container p {
   margin-bottom: 45px;
 }
 
-#contact .container .panel {
+.contact .container .panel {
   background-color: transparent;
   border: none;
   box-shadow: none;
 }
 
-#contact .container .panel-heading {
+.contact .container .panel-heading {
   padding: 0px 5px;
   background-color: transparent;
   border: none;
 }
 
-#contact .container .panel-body {
+.contact .container .panel-body {
   padding: 5px;
 }
 
-#contact .container .panel-title {
+.contact .container .panel-title {
   font-weight: 700;
 }
 
-#contact .container .form-contact {
+.contact .container .form-contact {
   margin-top: 45px;
 }
 
-#contact .container .btn {
+.contact .container .btn {
   color: #ffffff;
   background-color: #5585a2;
   box-shadow: 0px 20px 40px -10px #5585a2;
 }
 
-#contact .container .btn:hover {
+.contact .container .btn:hover {
   background-color: #3363a1;
 }
 
-#contact .container input, #contact .container textarea {
+.contact .container input, .contact .container textarea {
   color: #ffffff;
   background-color: #00c4c4;
   border: none;
@@ -524,24 +439,24 @@ header .container .jumbotron h2 {
   opacity: 0.6;
 }
 
-#contact .container input:focus, #contact .container textarea:focus {
+.contact .container input:focus, .contact .container textarea:focus {
   opacity: 1;
   border-left: 5px solid #355b82;
 }
 
-#contact .container input {
+.contact .container input {
   height: 50px;
 }
 
-#contact .container textarea {
+.contact .container textarea {
   resize: none;
 }
 
-#contact .container input::-webkit-input-placeholder, #contact .container textarea::-webkit-input-placeholder {
+.contact .container input::-webkit-input-placeholder, .contact .container textarea::-webkit-input-placeholder {
   color: #ffffff;
 }
 
-#contact .container input:-moz-placeholder, #contact .container textarea:-moz-placeholder {
+.contact .container input:-moz-placeholder, .contact .container textarea:-moz-placeholder {
   color: #ffffff;
 }
 
@@ -580,45 +495,46 @@ footer .container .logo-footer {
 }
 
 @media (max-width: 1200px) {
-  #about-us .container aside {
+  .about-us .container aside {
     margin-top: 10px;
   }
-  #services {
+  .services {
     padding-bottom: 100px;
   }
-  #services .container .flexbox .a {
+  .services .container .flexbox .a {
     order: 2;
     width: 50%;
     margin: 0 auto;
   }
-  #services .container .flexbox .b {
+  .services .container .flexbox .b {
     order: 1;
     width: auto;
     margin: 0 auto 50px auto;
   }
-  #gallery .container img {
+  .gallery .container img {
     min-width: 200px;
     max-width: 380px;
     width: 100%;
   }
-  #gallery .container .thumbnail {
-    margin-bottom: 20px;
+  .gallery .container .thumbnail {
+    width: auto;
+    margin: 10px auto;
   }
-  #gallery .container .big-img {
-    margin: 20px 0px -20px 0px;
+  .gallery .container .big-img {
+    margin: 10px auto;
   }
-  #blog .container .thumbnail {
+  .blog .container .thumbnail {
     margin: 0 auto;
   }
-  #contact .flexbox {
+  .contact .flexbox {
     display: flex;
     flex-wrap: wrap;
   }
-  #contact .flexbox .a {
+  .contact .flexbox .a {
     order: 1;
     width: 60%;
   }
-  #contact .flexbox .b {
+  .contact .flexbox .b {
     order: 2;
     width: auto;
   }
@@ -631,40 +547,40 @@ footer .container .logo-footer {
   header .jumbotron h2 {
     text-align: left;
   }
-  #about-us .container img {
+  .about-us .container img {
     margin-left: -20px;
   }
-  #about-us .container aside {
+  .about-us .container aside {
     margin-top: 0px;
   }
-  #services .container .flexbox .a {
+  .services .container .flexbox .a {
     width: auto;
     margin: 0 auto;
   }
-  #services .container .flexbox .b {
+  .services .container .flexbox .b {
     width: auto;
     margin: 0 auto 50px auto;
   }
-  #gallery .container figure {
+  .gallery .container figure {
     text-align: center;
     max-width: 420px;
   }
-  #gallery .container img {
+  .gallery .container img {
     width: 100%;
   }
-  #subscribe .container input {
+  .subscribe .container input {
     width: 81%;
   }
-  #subscribe .container .btn {
+  .subscribe .container .btn {
     margin: 30px 0px;
   }
-  #blog .container .thumbnail {
+  .blog .container .thumbnail {
     margin: 0 auto;
   }
-  #contact .flexbox .a {
+  .contact .flexbox .a {
     order: 1;
   }
-  #contact .flexbox .b {
+  .contact .flexbox .b {
     order: 2;
   }
   footer .container div {
@@ -705,44 +621,44 @@ footer .container .logo-footer {
     background-color: #262626;
     color: #ffffff;
   }
-  #services .container .flexbox .a {
+  .services .container .flexbox .a {
     width: auto;
     margin: 0 auto;
   }
-  #services .container .flexbox .b {
+  .services .container .flexbox .b {
     width: auto;
     margin: 0 auto 50px auto;
   }
-  #gallery .container img {
+  .gallery .container img {
     min-width: 200px;
     max-width: 380px;
     width: 100%;
   }
-  #contact .container .flexbox .a {
+  .contact .container .flexbox .a {
     order: 2;
     width: 100%;
     margin: 0 auto;
     text-align: center;
   }
-  #contact .container .flexbox .b {
+  .contact .container .flexbox .b {
     order: 1;
     width: 100%;
     margin: 0 auto;
     text-align: center;
   }
-  #contact .container button {
+  .contact .container button {
     margin-bottom: 100px;
   }
 }
 
 @media (max-width: 470px) {
-  #blog .container img {
+  .blog .container img {
     min-width: auto;
   }
-  #blog .container .thumbnail {
+  .blog .container .thumbnail {
     width: auto;
   }
-  #blog .container figcaption {
+  .blog .container figcaption {
     height: calc(100% - 20px);
     opacity: 0;
     width: calc(100% - 50px);
@@ -750,42 +666,42 @@ footer .container .logo-footer {
 }
 
 @media (max-width: 423px) {
-  #blog .container .badge {
+  .blog .container .badge {
     font-size: 20px;
     width: 50px;
   }
-  #blog .container .blog-title {
+  .blog .container .blog-title {
     font-size: 15px;
     margin: 0px 0px 2px 20px;
   }
-  #blog .container .blog-autor {
+  .blog .container .blog-autor {
     font-size: 12px;
   }
-  #services .container h2 {
+  .services .container h2 {
     font-size: 50px;
     position: relative;
     top: 253px;
     margin-top: -30px;
   }
-  #services .container .big-panel {
+  .services .container .big-panel {
     padding: 55px 30px;
   }
 }
 
 @media (max-width: 362px) {
-  #services .container h2 {
+  .services .container h2 {
     top: 211px;
   }
-  #services .container .glyphicon {
+  .services .container .glyphicon {
     padding: 23px 30px;
   }
-  #services .container .big-panel {
+  .services .container .big-panel {
     padding: 43px 30px;
   }
-  #services .container .panel {
+  .services .container .panel {
     font-size: 14px;
   }
-  #services .container .panel .panel-body {
+  .services .container .panel .panel-body {
     width: 67%;
     padding: 30px 30px 30px 1px;
   }
