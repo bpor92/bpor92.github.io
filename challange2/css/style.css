@@ -269,6 +269,7 @@ header .container .jumbotron h2 {
 .subscribe {
   background: url("../img/subscribe.jpg") top center no-repeat;
   min-height: 500px;
+  padding-top: 120px;
 }
 
 .subscribe .container p {
@@ -632,6 +633,7 @@ footer .container .logo-footer {
   }
   .subscribe {
     min-height: auto;
+    padding-top: 60px;
   }
   .contact .container .flexbox .a {
     order: 2;
