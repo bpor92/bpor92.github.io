@@ -1,0 +1,12 @@
+Zadanie nr 2:
+http://downloadpsd.com/templates/minimalistic-vibrant-food-blog-template-free-psd
+1. Minimalistic Vibrant Food (2)
+2. Start 22.01.
+3. Deadline: 29.01., godz. 23:59 :)
+4. Technika wykonania: Bootstrap 3.
+Uwagi dodatkowe: menu ma siê przyklejaæ do góry przy skrolowaniu (navbar-fixed-top), fajnie by by³o dodaæ smooth scroll (po klikniêciu na odnoœnik w menu ma p³ynnie przenosiæ do danej sekcji, trzeba dodaæ id od ka¿dej sekcji).
+Poczytaj o w³aœciwoœci background css, linear gradient to transparent oraz o przestawianiu kolumn https://kursbootstrap.pl/przestawianie-kolumn/ 
+mo¿e to siê przydaæ :)
+Dodatkowo dla chêtnych, którzy potrafi¹ to zrobiæ: po klikniêciu na button view more ma siê ³adowaæ dodatkowa treœæ (ajaxem, czy czym tam chcecie).
+PS ¿eby pobraæ plik, nale¿y udostêpniæ plik, np. na fb. Ja to robiê tak, ¿e wchodzê w ustawienia niestandardowe -> tylko ja, wtedy nikt oprócz Was nie zobaczy tego posta.
+Powodzenia!
