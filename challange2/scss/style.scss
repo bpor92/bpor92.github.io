@@ -227,7 +227,6 @@ header{
 	background: url('../img/subscribe.jpg') top center no-repeat;
 	min-height: 500px;
 	.container{
-		padding-top: 130px;
 		p{
 			width: 80%;
 		}
@@ -529,7 +528,7 @@ footer{
 				width: 81%;
 			}
 			.btn{
-				margin: 30px 0px;
+				margin: 30px 0px 80px 0px;
 			}
 		}
 	}
@@ -613,7 +612,7 @@ footer{
 		    	}
 		    	.b{
 		    		width: auto;
-		    		margin: 0 auto 50px auto;
+		    		margin: -40px auto 50px auto;
 		    	}
 			}
 		}
@@ -627,6 +626,9 @@ footer{
 				
 			}
 		}
+	}
+	.subscribe{
+		min-height: auto;
 	}
 	.contact{
 		.container{

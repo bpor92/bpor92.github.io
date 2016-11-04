@@ -271,10 +271,6 @@ header .container .jumbotron h2 {
   min-height: 500px;
 }
 
-.subscribe .container {
-  padding-top: 130px;
-}
-
 .subscribe .container p {
   width: 80%;
 }
@@ -572,7 +568,7 @@ footer .container .logo-footer {
     width: 81%;
   }
   .subscribe .container .btn {
-    margin: 30px 0px;
+    margin: 30px 0px 80px 0px;
   }
   .blog .container .thumbnail {
     margin: 0 auto;
@@ -627,12 +623,15 @@ footer .container .logo-footer {
   }
   .services .container .flexbox .b {
     width: auto;
-    margin: 0 auto 50px auto;
+    margin: -40px auto 50px auto;
   }
   .gallery .container img {
     min-width: 200px;
     max-width: 380px;
     width: 100%;
+  }
+  .subscribe {
+    min-height: auto;
   }
   .contact .container .flexbox .a {
     order: 2;
