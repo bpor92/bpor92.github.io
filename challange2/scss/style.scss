@@ -506,7 +506,7 @@ footer{
 		    	}
 		    	.b{
 		    		width: auto;
-		    		margin: 0 auto 50px auto;
+		    		margin: -70px auto 50px auto;
 		    	}
 			}
 		}
@@ -654,6 +654,16 @@ footer{
 		}
 	}
 }
+@media (max-width: 579px) {
+	.services{
+		.container{
+			.flexbox{
+		        margin: -160px auto 50px auto;
+		    }
+			
+		}
+	}
+}
 @media (max-width: 470px) {
 	.blog{
 		.container{
@@ -672,6 +682,16 @@ footer{
 	}  
 }
 @media (max-width: 423px) {
+	.services{
+		.container{
+			.flexbox{
+		    	.b{
+		    		width: auto;
+		    		margin: 120px auto 50px auto;
+		    	}
+			}
+		}
+	}
 	.blog{
 		.container{
 			.badge{
