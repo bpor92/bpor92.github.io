@@ -437,7 +437,7 @@ footer{
 		    	.b{
 		    		order: 1;
 		    		width: auto;
-		    		margin: 0 auto 50px auto;
+		    		margin: -150px auto 50px auto;
 		    	}
 			}
 		}
@@ -451,10 +451,8 @@ footer{
 			}
 			.thumbnail{
 			    width: auto;
-				margin: 10px auto;
 			}
 			.big-img{
-				margin: 10px auto;
 			}
 		}
 	}
@@ -492,7 +490,7 @@ footer{
 	.about-us{
 		.container{
 			img{
-				margin-left: -20px;
+				display: none;
 			}
 			aside{
 				margin-top: 0px;

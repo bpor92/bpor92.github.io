@@ -513,7 +513,7 @@ footer .container .logo-footer {
   .services .container .flexbox .b {
     order: 1;
     width: auto;
-    margin: 0 auto 50px auto;
+    margin: -150px auto 50px auto;
   }
   .gallery .container img {
     min-width: 200px;
@@ -522,10 +522,6 @@ footer .container .logo-footer {
   }
   .gallery .container .thumbnail {
     width: auto;
-    margin: 10px auto;
-  }
-  .gallery .container .big-img {
-    margin: 10px auto;
   }
   .blog .container .thumbnail {
     margin: 0 auto;
@@ -552,7 +548,7 @@ footer .container .logo-footer {
     text-align: left;
   }
   .about-us .container img {
-    margin-left: -20px;
+    display: none;
   }
   .about-us .container aside {
     margin-top: 0px;
