@@ -5,15 +5,15 @@
 	<title>Cahee</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-Ua-Compatible" content="IE=edge">
-	<link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Raleway:400,700,900" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,700,900">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="0">
+<body data-spy="scroll" data-target=".navbar" data-offset="60">
 	<header id="home">
 		<nav class="navbar navbar-default navbar-fixed-top">
 			<div class="container">
@@ -267,11 +267,27 @@
 	</footer>
 
 <script>
+
 	$(document).on('click','.navbar-collapse.in',function(e) {
 	    if( $(e.target).is('a') ) {
 	        $(this).collapse('hide');
 	    }
 	});
+	
+$(document).ready(function () {
+        
+     $("#bs-example-navbar-collapse-1 a").on('click', function(event) {
+        if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+                }, 800, function(){
+                window.location.hash = hash;
+            });
+         }
+     });
+});
 </script>
 </body>
 </html>
