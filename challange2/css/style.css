@@ -3,6 +3,10 @@ body {
   margin: 0px;
 }
 
+body > section {
+  padding-top: 50px;
+}
+
 h2 {
   font-weight: 700;
   font-size: 90px;
