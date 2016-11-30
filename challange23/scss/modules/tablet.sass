@@ -1,0 +1,82 @@
+@import 'mixins';
+@media (min-width: 780px)
+	
+	.a-button
+		+m('form')
+			margin: 0px 0px 0px 100px
+	.section
+		+e('blog')
+			padding: 100px 0px 20px 0px
+		+e('contact')
+			padding: 100px 20px
+			@include clearfix
+
+			
+			
+
+	.article
+		padding: 40px 0px 100px 0px
+		@include clearfix
+		+m('first-column')
+			width: 50%
+			float: left
+			box-sizing: border-box
+			padding: 0px 20px 0px 0px
+		+m('second-column')
+			width: 50%
+			float: left
+			box-sizing: border-box
+			padding: 0px 0px 0px 20px
+
+
+	.profile
+		max-width: 1600px
+		margin: 60px auto 0px auto
+		@include clearfix
+		+e('box')
+			width: 50%
+			float: left
+			+m('image')
+				min-width: auto
+				margin: 0
+			+m('image-big')
+				width: 100%
+				float: left
+			+m('image-small')
+				width: 50%
+				float: left
+
+	.windows
+		padding: 0px 20px 0px 0px
+		+e('box')
+			display: flex
+			+m('card')
+				width: 50%
+				float: left
+		+e('articles')
+			width: 50%
+			margin: 20px 0px 20px 20px
+			+m('little-panel')
+				width: calc(50% - 20px)
+				margin: 0px 0px 0px 20px
+			+m('big-panel')
+				width: 100%
+				margin: 0px 0px 0px 20px
+	.contact-address, .contact-email
+		width: 50%
+		float: left
+		box-sizing: border-box
+	.contact-email
+		margin-top: 63px
+		padding: 0px 10px
+		+e('form')
+    		+m('label')
+    			float: left
+    			width: 100px
+    			margin: 20px 0px 0px 0px
+    		+m('input') 
+    			width: 60%
+    			max-width: 360px
+    			padding: 15px
+	.social
+		width: auto

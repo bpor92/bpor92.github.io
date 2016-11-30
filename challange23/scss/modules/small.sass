@@ -1,0 +1,299 @@
+@import 'mixins'
+@media (min-width: 270px)
+	body
+		font-family: 'Lato', sans-serif
+		color: #fff
+	.align-left
+		text-align: left!important
+	.align-center
+		text-align: center!important
+
+	.nav
+		min-height: 150px
+	.header
+		background-image: url('../img/background.png')
+		background-size: cover
+		min-height: 100vh
+		padding: 0px 0px 50px 0px
+		@include clearfix
+	.jumbotron
+		max-width: 570px
+	.model
+		display: none
+
+	.wrapper
+		padding: 0px 20px
+		max-width: 1200px
+		margin: 0 auto
+	.blue-span
+		color: #0081ff
+	.h2-cursive
+		font-family: 'Leckerli One', cursive
+		font-size: 33px
+		font-weight: bold
+		margin-bottom: 30px
+		+m('white')
+			color: #fff
+		+m('grey')
+			color: #575757
+	.h1-section
+		font-family: 'Montserrat', sans-serif
+		font-size: 35px;
+		font-weight: bold
+		margin-bottom: 10px
+
+		+m('black')
+			color: #000
+		+m('white')
+			color: #fff
+
+	.h2-section
+		font-family: 'Montserrat', sans-serif
+		margin-bottom: 10px
+		font-size: 30px
+		font-weight: normal
+		+m('black')
+			color: #000
+		+m('white')
+			color: #fff
+	.p-section
+		font-size: 17px
+		line-height: 25px
+		padding: 40px 0px
+		text-align: justify
+		+m('white')
+			color: #fff
+		+m('black')
+			color: #000
+
+	.a-button
+		padding: 15px 30px
+		border-radius: 20px
+		text-decoration: none
+		color: #fff
+		font-size: 15px
+		+m('blue')
+			background-color: #00aeed
+			+m('left-padding')
+				margin-left: 0px
+		+m('purple')
+			background-color:  #3b4374
+		+m('form')
+			display: block
+			border: 1px solid transparent
+			outline: 0
+			width: 200px
+			&:focus
+				border: 1px solid #3b4374
+
+	.section
+		padding: 100px 0px
+		+e('about')
+			background-color: #0081ff
+		+e('services')
+			background-color: #007af3;
+		+e('profile')
+			padding: 100px 0px 0px 0px
+		+e('client')
+			background-image: url('../img/blog.png')
+			background-size: cover
+		+e('blog')
+			padding: 100px 0px 0px 0px
+			max-width: 1200px
+			margin: 0 auto
+		+e('contact')
+			padding: 100px 20px 50px 20px
+			max-width: 1200px
+			margin: 0 auto
+	.footer
+		background-image: url('../img/contact-background.png')
+		background-size: cover
+
+
+
+	.article
+		+m('first-column')
+			padding: 40px 0px 0px 0px
+
+
+	.services
+		@include clearfix
+
+		+e('box')
+			box-sizing: border-box
+			max-width: 500px
+			margin: 30px auto
+			+m('title')
+				font-size: 17px
+				font-weight: bold
+				text-transform: uppercase
+				color: #fff
+				line-height: 20px
+				text-align: justify
+				padding: 10px 0px
+			+m('p')
+				font-size: 16px
+				color: #fff
+				line-height: 25px
+				text-align: justify
+			+m('last')
+				margin-bottom: 60px
+		+e('image')
+			+m('item')
+				padding: 25px
+				width: 50px
+				display: block
+				margin: 0 auto
+			
+	.profile
+		max-width: 450px
+		margin: 40px auto 10px auto
+		padding: 0px 10px
+		+e('image')
+			position: relative
+			&:hover:after
+				content: ''
+				width: 100%
+				height: 100%
+				background: rgba(255,0,0,0.5)
+				position: absolute
+				top: 0
+				left: 0
+		+e('box')
+			
+			+m('image')
+				
+				max-width: 100%
+				min-width: 100%
+				margin-bottom: -2px
+				
+	.clients
+		+e('logo')
+			+m('img')
+				max-width: 100%
+				display: block
+				margin: 50px auto
+			+m('img-first')
+				margin: 0 auto
+	.windows
+		
+		+e('articles')
+			margin: 10px
+			+m('little-panel')
+				margin: 10px;
+			+m('big-panel')
+				margin: 10px	
+			+m('blue')
+				background-color: #007ef9
+				color: #fff
+				min-height: 130px
+				padding: 50px
+				margin: 0px
+			+m('grey')
+				background-color: #eaeaea
+				color: #353535
+				min-height: 130px
+				padding: 50px 0px
+			+m('black')
+				background-color: #000
+				color: #fff
+				min-height: 130px
+				padding: 50px 0px
+			+m('background')
+				background-image: url('../img/blog-4.png')
+				background-size: cover
+				color: #fff
+				padding: 50px 0px
+			+m('pink')
+				background-color: #e91d62
+				color: #fff
+				min-height: 170px
+				padding: 30px
+
+			+m('p')
+				font-size: 20px
+				font-weight: bold
+				letter-spacing: 1px
+				text-align: center
+			+m('date')
+				font-size: 20px
+				font-weight: normal
+				text-align: center
+			+m('title')
+				font-size: 30px
+				text-align: center
+				font-weight: bold
+	.contact-address
+		padding: 0px 0px 100px 0px
+		+m('item')
+			margin-bottom: 100px
+		+m('first')
+			margin-top: 70px
+		+m('last')
+			margin-bottom: 20px
+		+m('img')
+			float: left
+			margin-right: 55px
+		+m('img-mobile')
+			margin-left: 8px
+			margin-right: 63px
+
+	.contact-email
+		+e('form')
+			padding: 50px 0px 0px 0px
+			+m('label')
+				margin-left: 5px
+			+m('input')
+				border: 1px solid #2b2b2b
+				padding: 10px
+				border-radius: 15px
+				margin: 5px auto 20px auto;
+				background-color: #2b2b2b
+				color: #fff
+				outline: 0
+				width: calc(100% - 20px)
+				&:focus
+					border: 1px solid #00aeed
+			+m('textarea')
+				resize: none
+	.social
+		width: 250px
+		margin: 0 auto
+		text-align: center
+		+e('item')
+			border-radius: 50px
+			margin: 10px
+			+m('fb')
+				&:hover
+					background-color: #3B5998
+			+m('google')
+				&:hover
+					background-color: #d34836
+			+m('vk')
+				&:hover
+					background-color: #45668e
+			+m('yt')
+				&:hover
+					background-color: #cc181e
+			+m('linkedin')
+				&:hover
+					background-color: #0077b5
+			+m('zz')
+				&:hover
+					background-color: darken(#00aeed, 30%)
+	.copyright
+		padding: 20px 0px 20px 0px
+		text-align: center
+
+
+
+
+
+
+
+
+
+
+
+
+
