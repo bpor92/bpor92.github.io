@@ -1,0 +1,17 @@
+/*mixins*/
+
+=e($element)
+	&__#{$element}
+		@content;
+
+=m($modifier)
+	&--#{$modifier}
+		@content;
+
+@mixin clearfix 
+  &:after 
+    content: ""
+    display: table
+    clear: both
+  
+		

@@ -1,0 +1,94 @@
+/*blog*/
+
+@media (min-width: 220px)
+	.blog
+		padding: 100px 0px 0px 0px
+		max-width: 1200px
+		margin: 0 auto
+	
+	.cards
+		@include clearfix
+		+e('prelude')
+			margin: 10px
+			+m('blue')
+				background-color: #007ef9
+				color: #fff
+				min-height: 130px
+				padding: 50px
+				margin: 0px
+				transition: 0.2s ease-in-out
+				cursor: pointer
+				&:hover
+					background-color: darken(#007ef9, 10%)
+					transform: rotate(2deg)
+					filter: drop-shadow(8px 8px 10px #000)
+		+e('articles')
+			margin: 10px
+			cursor: pointer
+			+m('little-panel')
+				margin: 10px;
+			+m('big-panel')
+				margin: 10px	
+
+			+m('grey')
+				background-color: #eaeaea
+				color: #353535
+				min-height: 130px
+				padding: 50px 0px
+				transition: 0.2s ease-in-out
+				&:hover
+					background-color: darken(#eaeaea, 10%)
+					transform: rotate(2deg)
+					filter: drop-shadow(8px 8px 10px #000)
+			+m('black')
+				background-color: #000
+				color: #fff
+				min-height: 130px
+				padding: 50px 0px
+				transition: 0.2s ease-in-out
+				&:hover
+					background-color: darken(#000, 10%)
+					transform: rotate(-2deg)
+					filter: drop-shadow(8px 8px 10px #000)
+			+m('background')
+				background-image: url('../img/blog-4.png')
+				min-height: 367px
+				color: #fff
+				padding: 50px 0px
+				transition: 0.2s ease-in-out
+				&:hover
+					transform: rotate(-2deg)
+					filter: drop-shadow(8px 8px 10px #000) 
+			+m('pink')
+				background-color: #e91d62
+				color: #fff
+				min-height: 170px
+				padding: 30px
+				transition: 0.2s ease-in-out
+				&:hover
+					transform: rotate(2deg)
+					filter: drop-shadow(8px 8px 10px #000) 
+
+
+@media (min-width: 780px)
+	.blog
+		padding: 100px 0px 20px 0px	
+	.cards
+		padding: 0px 20px 0px 0px
+		+e('box')
+			display: flex
+			+m('two')
+				width: 50%
+				float: left
+		+e('prelude')
+			width: 50%
+			margin: 20px 0px 20px 20px
+		+e('articles')
+			width: 50%
+			margin: 20px 0px 20px 20px
+			+m('little-panel')
+				width: calc(50% - 20px)
+				margin: 0px 0px 0px 20px
+			+m('big-panel')
+				width: 100%
+				margin: 0px 0px 0px 20px

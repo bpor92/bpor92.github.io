@@ -3,22 +3,19 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title></title>
+	<title>!st Agency</title>
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Leckerli+One" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-	
 	<link rel="stylesheet" href="css/lightbox.css">
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/fontello.css">
-
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
 <body>
-	<header class="header">
-		<nav class="nav">
-			<ul class="topnav" id="myTopnav">
-			  <h1 class="topnav__item--logo"><a href="#"><span class="blue-span">!st</span> Agency</a></h1>
+	<header id="home">
+		<nav class="topnav">
+			<ul class="topnav__list" id="myTopnav">
+			  <h1 class="topnav__logo"><a href="#"><span class="blue-span">!st</span> Agency</a></h1>
 			  <li class="topnav__item topnav__item--first"><a href="#news">Home</a></li>
 			  <li class="topnav__item"><a href="#contact">About Us</a></li>
 			  <li class="topnav__item"><a href="#contact">Services</a></li>
@@ -28,98 +25,97 @@
 			  <li class="topnav__item topnav__item--last"><a href="#about">Contact</a></li>
 			  <li class="topnav__icon">
 			  	<button class="btn-hamburger" onclick="myFunction()">
-					<span class="btn-hamburger__span"></span>
-					<span class="btn-hamburger__span"></span>
-					<span class="btn-hamburger__span"></span>
+			  		<span class="sr-only">Menu</span>
+					<span class="btn-hamburger__line" aria-label="menu"></span>
+					<span class="btn-hamburger__line"></span>
+					<span class="btn-hamburger__line"></span>
 				</button>
 			  </li>
 			</ul>
 		</nav>
 		<div class="wrapper">
 			<div class="jumbotron">
-				<h2 class="h2-cursive h2-cursive--white">
+				<h1 class="h1-lecker h1-lecker--white">
 				Hello
-				</h2>
+				</h1>
 				<h1 class="h1-section h1-section--white">
 					My Name is <span class="blue-span">John Doe</span>
 				</h1>
-				<h2 class="h2-section h2-section--white">
+				<h3 class="h3-section">
 					Ceo |  !st Agency
-				</h2>
+				</h3>
 				<p class="p-section p-section--white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-				<a href="#" class="a-button a-button--blue a-button--blue--left-padding">Click here</a>	
+				<a href="#" class="button button--blue">Click here</a>	
 			</div>
 			<div class="model">
 				<img src="img/dancer.png" alt="" class="model__img">
 			</div>		
 		</div>
 	</header>
-	<section class="section section__about">
+	<section class="about">
 		<div class="wrapper">
-			<h2 class="h2-cursive h2-cursive--white">Who we are</h2>
-			<h1 class="h1-section h1-section--white">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
-				<article class="article">
-					<p class="p-section p-section--white article--first-column">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa sed mollitia, vel soluta quidem, hic distinctio iusto ad eum omnis amet, nemo perferendis sit. Neque eius repellat omnis vitae eveniet? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed repellendus explicabo quam quaerat nostrum quia, iusto vel eos. Delectus voluptatem mollitia optio rerum possimus itaque animi a facere odio, voluptatum.</p>
-					<p class="p-section p-section--white article--second-column">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa sed mollitia, vel soluta quidem, hic distinctio iusto ad eum omnis amet, nemo perferendis sit. Neque eius repellat omnis vitae eveniet? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed repellendus explicabo quam quaerat nostrum quia, iusto vel eos. Delectus voluptatem mollitia optio rerum possimus itaque animi a facere odio, voluptatum.</p>
+			<h1 class="h1-lecker h1-lecker--white">Who we are</h1>
+			<h2 class="h2-section h2-section--white">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+				<article class="article-two-columns">
+					<p class="article-two-columns__first-column p-section p-section--white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa sed mollitia, vel soluta quidem, hic distinctio iusto ad eum omnis amet, nemo perferendis sit. Neque eius repellat omnis vitae eveniet? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed repellendus explicabo quam quaerat nostrum quia, iusto vel eos. Delectus voluptatem mollitia optio rerum possimus itaque animi a facere odio, voluptatum.</p>
+					<p class="article-two-columns__second-column p-section p-section--white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa sed mollitia, vel soluta quidem, hic distinctio iusto ad eum omnis amet, nemo perferendis sit. Neque eius repellat omnis vitae eveniet? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed repellendus explicabo quam quaerat nostrum quia, iusto vel eos. Delectus voluptatem mollitia optio rerum possimus itaque animi a facere odio, voluptatum.</p>
 				</article>
 			
-			<a href="" class="a-button a-button--purple">Click here</a>
+			<a href="" class="button button--purple">Click here</a>
 		</div>
 	</section>
-	<section class="section section__services">
+	<section class="services">
 		<div class="wrapper">
-			<h2 class="h2-cursive h2-cursive--white align-center">Services</h2>
-			<h1 class="h1-section h1-section--white align-center">What I Do..</h1>
-			<div class="services">
-				<div class="services__box">
-					<div class="services__image">
-						<img src="img/services-1.png" class="services__image--item" alt="">
-					</div>
-					
-					<h2 class="services__box--title">Lorem ipsum dolor sit amet.</h2>
-					<p class=" services__box--p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam cum dolores sint dolore culpa amet optio quo, excepturi, ratione delectus eos recusandae atque itaque cupiditate, doloremque tenetur accusantium. Sit, sapiente?</p>
+			<h1 class="h1-lecker h1-lecker--white center">Services</h1>
+			<h2 class="h2-section h2-section--white center">What I Do..</h2>
+			<div class="services__box">
+				<div class="services__image">
+					<img src="img/services-1.png" class="services__image--item" alt="">
 				</div>
-				<div class="services__box">
-					<div class="services__image">
-						<img src="img/services-2.png" class="services__image--item services__image--item-eye" alt="">
-					</div>
-					
-					<h2 class="services__box--title">Lorem ipsum dolor sit amet.</h2>
-					<p class="services__box--p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia unde voluptate repudiandae nesciunt, totam perspiciatis facilis nemo fuga, consectetur tempora sint est, amet ipsum blanditiis laborum nostrum repellat. Amet, debitis!</p>
+				
+				<h4 class="h4-section">Lorem ipsum dolor sit amet.</h4>
+				<p class="p-section p-section--services p-section--white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam cum dolores sint dolore culpa amet optio quo, excepturi, ratione delectus eos recusandae atque itaque cupiditate, doloremque tenetur accusantium. Sit, sapiente?</p>
+			</div>
+			<div class="services__box">
+				<div class="services__image">
+					<img src="img/services-2.png" class="services__image--item services__image--item-eye" alt="">
 				</div>
-				<div class="services__box services__box--last">
-					<div class="services__image">
-						<img src="img/services-3.png" class="services__image--item" alt="">
-					</div>
-					
-					<h2 class="services__box--title">Lorem ipsum dolor sit amet.</h2>
-					<p class="services__box--p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores pariatur omnis voluptas dicta assumenda repellendus perspiciatis optio, ipsam porro quia? Quas, repellendus! Dolore nostrum harum voluptates ab, reiciendis voluptatibus nisi!</p>
+				
+				<h4 class="h4-section">Lorem ipsum dolor sit amet.</h4>
+				<p class="p-section p-section--services p-section--white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia unde voluptate repudiandae nesciunt, totam perspiciatis facilis nemo fuga, consectetur tempora sint est, amet ipsum blanditiis laborum nostrum repellat. Amet, debitis!</p>
+			</div>
+			<div class="services__box">
+				<div class="services__image">
+					<img src="img/services-3.png" class="services__image--item" alt="">
 				</div>
+				
+				<h4 class="h4-section">Lorem ipsum dolor sit amet.</h4>
+				<p class="p-section p-section--services p-section--white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores pariatur omnis voluptas dicta assumenda repellendus perspiciatis optio, ipsam porro quia? Quas, repellendus! Dolore nostrum harum voluptates ab, reiciendis voluptatibus nisi!</p>
 			</div>
 		</div>
 
 	</section>
-	<section class="section section__profile">
+	<section class="profile">
 		<div class="wrapper">
-			<h2 class="h2-cursive h2-cursive--grey align-center">Profile</h2>
-			<h1 class="h1-section h1-section--black align-center">I Make Beautiful Things</h1>
+			<h1 class="h1-lecker h1-lecker--grey center">Profile</h1>
+			<h2 class="h2-section h2-section--black center">I Make Beautiful Things</h2>
 		</div>
-		<div class="profile">
+		<div class="profile__lightbox">
 			<div class="profile__box">
-				<div class="profile__image">
+				<div class="profile__box-content">
 					<div class="profile__hover">
 						<a href="img/img1.jpg" data-lightbox="image-1" data-title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, ducimus." class="profile__hover--lightbox"></a>
 					</div>
 					<img src="img/img1.jpg" class="profile__box--image profile__box--image-big" alt="">
 				</div>			
-				<div class="profile__image">
+				<div class="profile__box-content profile__box-content--small">
 					<div class="profile__hover">
 						<a href="img/img2.jpg" data-lightbox="image-1" data-title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, quam!" class="profile__hover--lightbox"></a>
 					</div>
 					<img src="img/img2.jpg" class="profile__box--image profile__box--image-small" alt="">
 					
 				</div>
-				<div class="profile__image">
+				<div class="profile__box-content profile__box-content--small">
 					<div class="profile__hover">
 						<a href="img/img3.jpg" data-lightbox="image-1" data-title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, delectus?" class="profile__hover--lightbox"></a>
 					</div>
@@ -129,19 +125,19 @@
 				
 			</div>
 			<div class="profile__box">
-				<div class="profile__image">
+				<div class="profile__box-content profile__box-content--small">
 					<div class="profile__hover">
 						<a href="img/img-4.png" data-lightbox="image-1" data-title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, et!" class="profile__hover--lightbox"></a>
 					</div>
 					<img src="img/img-4.png" class="profile__box--image profile__box--image-small" alt="">
 				</div>
-				<div class="profile__image">
+				<div class="profile__box-content profile__box-content--small">
 					<div class="profile__hover">
 						<a href="img/img-5.png" data-lightbox="image-1" data-title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, quo." class="profile__hover--lightbox"></a>
 					</div>
 					<img src="img/img-5.png" class="profile__box--image profile__box--image-small" alt="">
 				</div>
-				<div class="profile__image">
+				<div class="profile__box-content profile__box-content--small">
 					<div class="profile__hover">
 						<a href="img/img-6.png" data-lightbox="image-1" data-title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, quo." class="profile__hover--lightbox"></a>
 					</div>
@@ -151,25 +147,25 @@
 		</div>
 		
 	</section>
-	<section class="section section__client">
+	<section class="client">
 		<div class="wrapper">
-			<h2 class="h2-cursive h2-cursive--white align-center">
+			<h1 class="h1-lecker h1-lecker--white center">
 			Client
-			</h2>
-			<h1 class="h1-section h1-section--white align-center">What I Do..</h1>
-			<p class="p-section p-section--white align-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga esse beatae mollitia, praesentium ipsum natus doloremque perspiciatis, delectus eos sunt repellat. Unde tenetur, quae alias accusantium, mollitia repellat illum consequatur.</p>
-			<div class="clients">
-				<div class="clients__logo">
-					<img src="img/client-1.png" alt="" class="clients__logo--img clients__logo--img-first">
+			</h1>
+			<h2 class="h2-section h2-section--white center">What I Do..</h2>
+			<p class="p-section p-section--white center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga esse beatae mollitia, praesentium ipsum natus doloremque perspiciatis, delectus eos sunt repellat. Unde tenetur, quae alias accusantium, mollitia repellat illum consequatur.</p>
+			<div class="contractor">
+				<div class="contractor__logo">
+					<img src="img/client-1.png" alt="" class="contractor__logo--img clients__logo--img-first">
 				</div>
-				<div class="clients__logo">
-					<img src="img/client-2.png" alt="" class="clients__logo--img">
+				<div class="contractor__logo">
+					<img src="img/client-2.png" alt="" class="contractor__logo--img">
 				</div>
-				<div class="clients__logo">
-					<img src="img/client-3.png" alt="" class="clients__logo--img">
+				<div class="contractor__logo">
+					<img src="img/client-3.png" alt="" class="contractor__logo--img">
 				</div>
-				<div class="clients__logo">
-					<img src="img/client-4.png" alt="" class="clients__logo--img">
+				<div class="contractor__logo">
+					<img src="img/client-4.png" alt="" class="contractor__logo--img">
 				</div>
 				
 				
@@ -178,69 +174,67 @@
 			</div>
 		</div>
 	</section>
-	<section class="section section__blog">
-		<div class="windows">
-			<div class="windows__box">
-				<div class="windows__articles windows__articles--describe">
-					<h2 class="h2-cursive h2-cursive--grey">
-					Blog
-					</h2>
-					<h1 class="h1-section h1-section--black">I write Beautiful Thinks</h1>
-					<p class="p-section p-section--black p-section--half-size">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga esse beatae mollitia, praesentium ipsum natus doloremque perspiciatis.</p>
-					<article class="windows__articles--blue">
-					<p class="windows__articles--p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, dolores!</p>
-					<h3 class="windows__articles--date">11 November</h3>
+	<section class="blog">
+		<div class="cards">
+			<div class="cards__box">
+				<div class="cards__prelude">
+					<h1 class="h1-lecker h1-lecker--grey">Blog</h1>
+					<h2 class="h2-section h2-section--black">I write Beautiful Thinks</h2>
+					<p class="p-section p-section--black">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga esse beatae mollitia, praesentium ipsum natus doloremque perspiciatis.</p>
+					<article class="cards__prelude--blue">
+					<p class="p-section p-section--blog">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, dolores!</p>
+					<h4 class="h4-blog-date h4-blog-date--blue">11 November</h4>
 					</article>
 				</div>
-				<article class="windows__articles windows__articles--background">
-					<h3 class="windows__articles--date">11 November</h3>
-					<h1 class="windows__articles--title">Lorem ipsum dolor.</h1>
-					<p class="windows__articles--p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, provident.</p>
+				<article class="cards__articles cards__articles--background">
+					<h4 class="h4-blog-date">12 November</h4>
+					<h3 class="h3-section h3-section--blog h3-section--blog-background">Lorem ipsum dolor.</h3>
+					<p class="p-section p-section--blog">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, provident.</p>
 				</article>
 			</div>
-			<div class="windows__box windows__box--card">
-				<article class="windows__articles--little-panel windows__articles--grey">
-					<h3 class="windows__articles--date">11 November</h3>
-					<h1 class="windows__articles--title">Lorem ipsum dolor.</h1>
+			<div class="cards__box cards__box--two">
+				<article class="cards__articles cards__articles--little-panel cards__articles--grey">
+					<h4 class="h4-blog-date">11 November</h4>
+					<h1 class="h3-section h3-section--blog">Lorem ipsum dolor.</h1>
 				</article>
-				<article class="windows__articles--little-panel windows__articles--black">
-					<h3 class="windows__articles--date">11 November</h3>
-					<h1 class="windows__articles--title">Lorem ipsum dolor.</h1>
+				<article class="cards__articles cards__articles--little-panel cards__articles--black">
+					<h4 class="h4-blog-date">11 November</h4>
+					<h1 class="h3-section h3-section--blog">Lorem ipsum dolor.</h1>
 				</article>
 			</div>	
-			<div class="windows__box">
-				<article class="windows__articles--big-panel windows__articles--pink">
-					<h3 class="windows__articles--date">11 November</h3>
-					<h1 class="windows__articles--title">Lorem ipsum dolor.</h1>
-					<p class="windows__articles--p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, laborum.</p>
+			<div class="cards__box">
+				<article class="cards__articles cards__articles--big-panel cards__articles--pink">
+					<h4 class="h4-blog-date">11 November</h4>
+					<h1 class="h3-section h3-section--blog">Lorem ipsum dolor.</h1>
+					<p class="p-section p-section--blog">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 				</article>
 			</div>
 		</div>
 	</section>
 	<footer class="footer">
-		<section class="section section__contact">
+		<section class="contact">
 			<div class="contact-address">
-				<h2 class="h2-cursive h2-cursive--white">Contacts</h2>
-				<h1 class="h1-section h1-section--white">Address Info</h1>
-				<div class="contact-address--item contact-address--first">
-					<img src="img/email.png" class="contact-address--img" alt="">
-					<p class="windows__articles--p align-left">Email</p>
-					<p class="windows__articles--p align-left">free@psdfreebies.com</p>
+				<h1 class="h1-lecker h1-lecker--white">Contacts</h1>
+				<h2 class="h2-section h2-section--white">Address Info</h2>
+				<div class="contact-address__item contact-address__item--first">
+					<img src="img/email.png" class="contact-address__img" alt="">
+					<p class="p-section p-section--address-title">Email</p>
+					<p class="p-section p-section--address">free@psdfreebies.com</p>
 				</div>
-				<div class="contact-address--item contact-address--mobile">
-					<img src="img/tele.png" class="contact-address--img contact-address--img-mobile" alt="">
-					<p class="windows__articles--p align-left">Call Us!</p>
-					<p class="windows__articles--p align-left">+123 456 7890</p>
-					<p class="windows__articles--p align-left">+123 456 7890</p>
+				<div class="contact-address__item contact-address__item--mobile">
+					<img src="img/tele.png" class="contact-address__img-mobile" alt="">
+					<p class="p-section p-section--address-title">Call Us!</p>
+					<p class="p-section p-section--address">+123 456 7890</p>
+					<p class="p-section p-section--address">+123 456 7890</p>
 				</div>
-				<div class="contact-address--item contact-address--last">
-					<img src="img/map.png" class="contact-address--img" alt="">
-					<p class="windows__articles--p align-left">Address</p>
-					<p class="windows__articles--p align-left">123, Main Road, New City,</br> My Country 123456</p>
+				<div class="contact-address__item contact-address__item--last">
+					<img src="img/map.png" class="contact-address__img" alt="">
+					<p class="p-section p-section--address-title">Address</p>
+					<p class="p-section p-section--address">123, Main Road, New City,</br> My Country 123456</p>
 				</div>
 			</div>
 			<div class="contact-email">
-				<h1 class="h1-section h1-section--white">Get In Touch</h1>
+				<h2 class="h2-section h2-section--white">Get In Touch</h2>
 				<form action="" class="contact-email__form">
 					<label for="name" class="contact-email__form--label">Name</label>
 					<input id="name" type="text" class="contact-email__form--input" required>
@@ -250,7 +244,7 @@
 					<input id="phone" type="text" class="contact-email__form--input" required>
 					<label for="message" class="contact-email__form--label">Message</label>
 					<textarea name="" id="message" cols="30" rows="10" class="contact-email__form--input contact-email__form--textarea"></textarea>
-					<button class="a-button a-button--blue a-button--form">Send</button>
+					<button class="button button--blue button--submit">Send</button>
 				</form>
 			</div>
 		</section>
@@ -263,9 +257,9 @@
 			<img src="img/y.png" class="social__item social__item--zz" alt="">
 		</div>
 		<div class="copyright">
-			<p class="copyright__design">Designed by: PSDFreebies.com</p>
-			<p class="copyright__code">Code by: Bartosz Porebski</p>
-			<p class="copyright__date">2017</p>
+			<p class="p-section p-section--autor"><span class="blue-span">Designed by:</span> PSDFreebies.com</p>
+			<p class="p-section p-section--codeby"><span class="blue-span">Code by:</span> Bartosz Porebski</p>
+			<p class="p-section p-section--date">2017</p>
 		</div>
 		
 	</footer>

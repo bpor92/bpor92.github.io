@@ -1,0 +1,136 @@
+/*contact*/
+
+@media (min-width: 220px)
+	.footer
+		background: url('../img/contact-background.png') no-repeat center center fixed
+		background-size: cover
+	.contact
+		padding: 100px 20px 50px 20px
+		max-width: 1200px
+		margin: 0 auto
+	.contact-address
+		padding: 0px 0px 100px 0px
+		+e('item')
+			margin-bottom: 100px
+			+m('first')
+				margin-top: 70px
+			+m('last')
+				margin-bottom: 20px
+		+e('img')
+			float: left
+			margin: 0px 20px 50px 0px
+			width: 30px
+		+e('img-mobile')
+			float: left
+			margin: 0px 26px 50px 4px
+			width: 20px
+
+	.contact-email
+		+e('form')
+			padding: 50px 0px 0px 0px
+			+m('label')
+				margin-left: 5px
+			+m('input')
+				border: 1px solid #2b2b2b
+				padding: 10px
+				border-radius: 15px
+				margin: 5px auto 20px auto;
+				background-color: #2b2b2b
+				color: #fff
+				outline: 0
+				width: calc(100% - 20px)
+				&:focus
+					border: 1px solid #00aeed
+			+m('textarea')
+				resize: none
+	.social
+		width: 250px
+		margin: 0 auto
+		text-align: center
+		+e('item')
+			border-radius: 50px
+			margin: 10px
+			+m('fb')
+				&:hover
+					background-color: #3B5998
+			+m('google')
+				&:hover
+					background-color: #d34836
+			+m('vk')
+				&:hover
+					background-color: #45668e
+			+m('yt')
+				&:hover
+					background-color: #cc181e
+			+m('linkedin')
+				&:hover
+					background-color: #0077b5
+			+m('zz')
+				&:hover
+					background-color: darken(#00aeed, 30%)
+	.copyright
+		padding: 20px 0px 20px 0px
+		text-align: center
+
+
+
+
+
+@media (min-width: 350px)
+	.contact-address
+		+e('img')
+			width: auto
+			float: left
+			margin-right: 55px
+		+e('img-mobile')
+			width: auto
+			margin-left: 8px
+			margin-right: 63px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+@media (min-width: 780px)
+
+	.contact
+		padding: 100px 20px
+		@include clearfix
+	
+		 
+	
+	.contact-address, .contact-email
+		width: 50%
+		float: left
+		box-sizing: border-box
+	.contact-email
+		margin-top: 63px
+		padding: 0px 10px
+		+e('form')
+    		+m('label')
+    			float: left
+    			width: 100px
+    			margin: 20px 0px 0px 0px
+    		+m('input') 
+    			width: 60%
+    			max-width: 360px
+    			padding: 15px
+	.social
+		width: auto
+
+
+@media (min-width: 1200px)
+	.contact-email
+		+e('form')
+    		+m('input') 
+    			width: 62%

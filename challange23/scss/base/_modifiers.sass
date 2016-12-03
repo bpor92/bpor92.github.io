@@ -1,0 +1,106 @@
+/* Font */
+
+.h1-section
+	font-family: $healdings-font
+	font-size: $h1-size
+	font-weight: bold
+	margin-bottom: 10px
+	+m('white')
+		color: #fff
+.h1-lecker
+	font-family: $lecker-font
+	font-size: $lecker-size
+	font-weight: bold
+	margin-bottom: 30px
+	+m('white')
+		color: #fff
+	+m('grey')
+		color: $grey
+.h2-section
+	font-family: $healdings-font
+	margin-bottom: 10px
+	font-size: $h2-size
+	font-weight: normal
+	+m('black')
+		color: #000
+	+m('white')
+		color: #fff
+.h3-section
+	font-family: $healdings-font
+	margin-bottom: 10px
+	font-size: $h3-size
+	font-weight: normal
+	+m('blog')
+		padding: 20px 10px 0px 10px
+		text-align: center
+		font-weight: bold
+	+m('blog-background')
+		padding: 250px 0px 0px 0px
+
+.h4-section
+	font-size: 17px
+	font-weight: bold
+	text-transform: uppercase
+	color: #fff
+	line-height: 20px
+	text-align: center
+	padding: 10px 0px
+.h4-blog-date
+	font-size: $blogDescription-size
+	font-weight: normal
+	text-align: center
+	padding:
+	+m('blue')
+		padding: 30px 0px 0px 0px
+.p-section
+	font-size: $p-size
+	line-height: 25px
+	padding: 40px 0px
+	text-align: justify
+	+m('white')
+		color: #fff
+	+m('black')
+		color: #000	
+	+m('services')
+		padding: 20px 0px
+	+m('blog')
+		font-size: $blogDescription-size
+		font-weight: bold
+		letter-spacing: 1px
+		padding: 0px 20px
+		text-align: center
+	+m('address-title')
+		font-size: $blogDescription-size
+		font-weight: bold
+		padding: 0px
+		text-align: left
+	+m('address')
+		font-size: 15px
+		padding: 0px
+	+m('autor')
+		text-align: center
+		padding: 50px 0px 10px 0px
+	+m('codeby')
+		text-align: center
+		padding: 0
+	+m('date')
+		text-align: center
+		padding: 20px 0px
+
+/* grid and modifiers */
+.wrapper
+	padding: 0px 20px
+	max-width: 1200px
+	margin: 0 auto
+.blue-span
+	color: $blue
+.left
+	text-align: left!important
+.center
+	text-align: center!important
+
+/* Font RWD */
+@media (min-width: 1000px)
+	.p-section
+		+m('services')
+			margin: 0px 0px 0px 102px

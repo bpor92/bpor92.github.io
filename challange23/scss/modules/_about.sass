@@ -1,0 +1,27 @@
+/*about*/
+
+@media (min-width: 220px)
+	.about
+		background-color: $blue
+	.article-two-columns
+		+e('first-column')
+			padding: 40px 0px 0px 0px
+
+@media (min-width: 780px)
+	.article-two-columns
+		padding: 40px 0px 100px 0px
+		@include clearfix
+		+e('first-column')
+			width: 50%
+			float: left
+			box-sizing: border-box
+			padding: 0px 20px 0px 0px
+		+e('second-column')
+			width: 50%
+			float: left
+			box-sizing: border-box
+			padding: 0px 0px 0px 20px
+
+@media (min-width: 1000px)
+	.about
+		margin-top: -145px

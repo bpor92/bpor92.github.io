@@ -1,0 +1,31 @@
+/*services*/
+
+@media (min-width: 220px)
+	.services
+		background-color: #007af3
+		+e('box')
+			box-sizing: border-box
+			max-width: 500px
+			margin: 30px auto
+		+e('image')
+			+m('item')
+				padding: 25px
+				width: 50px
+				display: block
+				margin: 0 auto
+
+@media (min-width: 1000px)
+	.services
+		@include clearfix
+		+e('box')
+			float: left
+			max-width: auto
+			width: 33%
+			padding: 20px
+		+e('image')
+			+m('item')
+				float: left
+				padding: 25px
+				margin-top: -20px
+			+m('item-eye')
+				margin-top: -10px

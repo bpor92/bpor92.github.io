@@ -1,0 +1,55 @@
+/*profile*/
+
+@media (min-width: 220px)
+	.profile
+		padding: 100px 0px 0px 0px
+		+e('lightbox')
+			max-width: 450px
+			margin: 40px auto 2px auto
+			padding: 0px 10px
+		+e('box')
+			+m('image')
+				display: block
+				max-width: 100%
+				min-width: 100%
+				margin-bottom: -2px
+		+e('box-content')
+			position: relative 
+		+e('hover')
+			position: absolute
+			background-color: rgba(41,138,235,0.9)
+			background-image: url('../img/search.png')
+			background-position: center
+			background-repeat: no-repeat
+			height: 100%
+			width: 100%
+			opacity: 0
+			transition: 0.5s ease-in-out
+			&:hover
+				opacity: 1
+			+m('lightbox')
+				display: block
+				width: 100%
+				height: 100%
+
+@media (min-width: 780px)
+	.profile
+		+e('lightbox')
+			max-width: 1600px
+			margin: 60px auto 0px auto
+			@include clearfix
+		+e('box')
+			width: 50%
+			float: left
+			+m('image')
+				min-width: auto
+				margin: 0
+			+m('image-big')
+				width: 100%
+			+m('image-small')
+				width: 100%
+		+e('box-content')
+			position: relative
+			float: left 
+			+m('small')
+				width: 50%

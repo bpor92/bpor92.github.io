@@ -1,0 +1,25 @@
+/*client*/
+
+@media (min-width: 220px)
+	.client
+		background: url('../img/blog.png') center no-repeat fixed
+		background-size: cover
+	.contractor
+		+e('logo')
+			+m('img')
+				max-width: 100%
+				display: block
+				margin: 50px auto
+			+m('img-first')
+				margin: 0 auto
+
+@media (min-width: 1000px)
+	.contractor
+		@include clearfix
+		+e('logo')
+			box-sizing: border-box
+			float: left
+			width: 25%
+			padding: 15px
+			+m('img-first')
+				margin: 50px auto

@@ -1,0 +1,28 @@
+/*buttons*/
+
+@media (min-width: 220px)
+	.button
+		padding: 15px 30px
+		border-radius: 20px
+		text-decoration: none
+		color: #fff
+		font-size: 15px
+		+m('blue')
+			background-color: $btn-header
+			&:active
+				background-color: darken($btn-header, 10%)
+		+m('purple')
+			background-color:  $btn-purple
+			&:active
+				background-color: darken($btn-purple, 10%)
+		+m('submit')
+			display: block
+			border: 1px solid transparent
+			outline: 0
+			width: 200px
+			&:focus
+				border: 1px solid $btn-purple
+@media (min-width: 780px)
+	.button
+		+m('submit')
+			margin: 0px 0px 0px 100px
