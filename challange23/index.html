@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,7 +15,7 @@
 	<header id="home">
 		<nav class="topnav">
 			<ul class="topnav__list" id="myTopnav">
-			  <h1 class="topnav__logo"><a href="#"><span class="blue-span">!st</span> Agency</a></h1>
+			  <li class="topnav__logo"><a href="#home"><span class="blue-span">!st</span> Agency</a></li>
 			  <li class="topnav__item topnav__item--first"><a href="#home">Home</a></li>
 			  <li class="topnav__item"><a href="#about">About Us</a></li>
 			  <li class="topnav__item"><a href="#services">Services</a></li>
@@ -55,12 +55,11 @@
 	<section class="about" id="about">
 		<div class="wrapper">
 			<h2 class="h2-lecker h2-lecker--white">Who we are</h2>
-			<h2 class="h2-section h2-section--white">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
-				<article class="article-two-columns">
-					<p class="article-two-columns__first-column p-section p-section--white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa sed mollitia, vel soluta quidem, hic distinctio iusto ad eum omnis amet, nemo perferendis sit. Neque eius repellat omnis vitae eveniet? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed repellendus explicabo quam quaerat nostrum quia, iusto vel eos. Delectus voluptatem mollitia optio rerum possimus itaque animi a facere odio, voluptatum.</p>
-					<p class="article-two-columns__second-column p-section p-section--white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa sed mollitia, vel soluta quidem, hic distinctio iusto ad eum omnis amet, nemo perferendis sit. Neque eius repellat omnis vitae eveniet? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed repellendus explicabo quam quaerat nostrum quia, iusto vel eos. Delectus voluptatem mollitia optio rerum possimus itaque animi a facere odio, voluptatum.</p>
-				</article>
-			
+			<article class="article-two-columns">
+				<h2 class="h2-section h2-section--white">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+				<p class="article-two-columns__first-column p-section p-section--white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa sed mollitia, vel soluta quidem, hic distinctio iusto ad eum omnis amet, nemo perferendis sit. Neque eius repellat omnis vitae eveniet? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed repellendus explicabo quam quaerat nostrum quia, iusto vel eos. Delectus voluptatem mollitia optio rerum possimus itaque animi a facere odio, voluptatum.</p>
+				<p class="article-two-columns__second-column p-section p-section--white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa sed mollitia, vel soluta quidem, hic distinctio iusto ad eum omnis amet, nemo perferendis sit. Neque eius repellat omnis vitae eveniet? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed repellendus explicabo quam quaerat nostrum quia, iusto vel eos. Delectus voluptatem mollitia optio rerum possimus itaque animi a facere odio, voluptatum.</p>
+			</article>
 			<a href="" class="button button--purple">Click here</a>
 		</div>
 	</section>
@@ -196,7 +195,7 @@
 			<div class="cards__box">
 				<article class="cards__articles cards__articles--big-panel cards__articles--pink">
 					<h4 class="h4-blog-date">11 November</h4>
-					<h1 class="h3-section h3-section--blog">Lorem ipsum dolor.</h1>
+					<h3 class="h3-section h3-section--blog">Lorem ipsum dolor.</h3>
 					<p class="p-section p-section--blog">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 				</article>
 			</div>
@@ -230,8 +229,8 @@
 					<label for="name" class="contact-email__form--label">Name</label>
 					<input id="name" type="text" class="contact-email__form--input" required>
 					<label for="email" class="contact-email__form--label">Email</label>
-					<input id="email" type="text" class="contact-email__form--input" type="email" required>
-					<label for="phone" class="contact-email__form--label">Phone</label>
+					<input id="email" class="contact-email__form--input" type="email" required>
+					<label for="phone" class="contact-email__form--label" type="tel">Phone</label>
 					<input id="phone" type="text" class="contact-email__form--input" required>
 					<label for="message" class="contact-email__form--label">Message</label>
 					<textarea name="message" id="message" cols="30" rows="10" class="contact-email__form--input contact-email__form--textarea"></textarea>
