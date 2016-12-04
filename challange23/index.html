@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="eng">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,13 +16,13 @@
 		<nav class="topnav">
 			<ul class="topnav__list" id="myTopnav">
 			  <h1 class="topnav__logo"><a href="#"><span class="blue-span">!st</span> Agency</a></h1>
-			  <li class="topnav__item topnav__item--first"><a href="#news">Home</a></li>
-			  <li class="topnav__item"><a href="#contact">About Us</a></li>
-			  <li class="topnav__item"><a href="#contact">Services</a></li>
-			  <li class="topnav__item"><a href="#contact">Profile</a></li>
-			  <li class="topnav__item"><a href="#contact">Client</a></li>
-			  <li class="topnav__item"><a href="#contact">Blog</a></li>
-			  <li class="topnav__item topnav__item--last"><a href="#about">Contact</a></li>
+			  <li class="topnav__item topnav__item--first"><a href="#home">Home</a></li>
+			  <li class="topnav__item"><a href="#about">About Us</a></li>
+			  <li class="topnav__item"><a href="#services">Services</a></li>
+			  <li class="topnav__item"><a href="#profile">Profile</a></li>
+			  <li class="topnav__item"><a href="#client">Client</a></li>
+			  <li class="topnav__item"><a href="#blog">Blog</a></li>
+			  <li class="topnav__item topnav__item--last"><a href="#contact">Contact</a></li>
 			  <li class="topnav__icon">
 			  	<button class="btn-hamburger" onclick="myFunction()">
 			  		<span class="sr-only">Menu</span>
@@ -35,9 +35,9 @@
 		</nav>
 		<div class="wrapper">
 			<div class="jumbotron">
-				<h1 class="h1-lecker h1-lecker--white">
+				<h2 class="h2-lecker h2-lecker--white">
 				Hello
-				</h1>
+				</h2>
 				<h1 class="h1-section h1-section--white">
 					My Name is <span class="blue-span">John Doe</span>
 				</h1>
@@ -52,9 +52,9 @@
 			</div>		
 		</div>
 	</header>
-	<section class="about">
+	<section class="about" id="about">
 		<div class="wrapper">
-			<h1 class="h1-lecker h1-lecker--white">Who we are</h1>
+			<h2 class="h2-lecker h2-lecker--white">Who we are</h2>
 			<h2 class="h2-section h2-section--white">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
 				<article class="article-two-columns">
 					<p class="article-two-columns__first-column p-section p-section--white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa sed mollitia, vel soluta quidem, hic distinctio iusto ad eum omnis amet, nemo perferendis sit. Neque eius repellat omnis vitae eveniet? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed repellendus explicabo quam quaerat nostrum quia, iusto vel eos. Delectus voluptatem mollitia optio rerum possimus itaque animi a facere odio, voluptatum.</p>
@@ -64,9 +64,9 @@
 			<a href="" class="button button--purple">Click here</a>
 		</div>
 	</section>
-	<section class="services">
+	<section class="services" id="services">
 		<div class="wrapper">
-			<h1 class="h1-lecker h1-lecker--white center">Services</h1>
+			<h2 class="h2-lecker h2-lecker--white center">Services</h2>
 			<h2 class="h2-section h2-section--white center">What I Do..</h2>
 			<div class="services__box">
 				<div class="services__image">
@@ -95,34 +95,25 @@
 		</div>
 
 	</section>
-	<section class="profile">
+	<section class="profile" id="profile">
 		<div class="wrapper">
-			<h1 class="h1-lecker h1-lecker--grey center">Profile</h1>
+			<h2 class="h2-lecker h2-lecker--grey center">Profile</h2>
 			<h2 class="h2-section h2-section--black center">I Make Beautiful Things</h2>
 		</div>
 		<div class="profile__lightbox">
 			<div class="profile__box">
 				<div class="profile__box-content">
-					<div class="profile__hover">
-						<a href="img/img1.jpg" data-lightbox="image-1" data-title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, ducimus." class="profile__hover--lightbox"></a>
-					</div>
+					<a href="img/img1.jpg" data-lightbox="image-1" data-title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, ducimus." class="profile__hover profile__hover--lightbox"></a>
 					<img src="img/img1.jpg" class="profile__box--image profile__box--image-big" alt="">
 				</div>			
 				<div class="profile__box-content profile__box-content--small">
-					<div class="profile__hover">
-						<a href="img/img2.jpg" data-lightbox="image-1" data-title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, quam!" class="profile__hover--lightbox"></a>
-					</div>
+					<a href="img/img2.jpg" data-lightbox="image-1" data-title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, quam!" class="profile__hover profile__hover--lightbox"></a>
 					<img src="img/img2.jpg" class="profile__box--image profile__box--image-small" alt="">
-					
 				</div>
 				<div class="profile__box-content profile__box-content--small">
-					<div class="profile__hover">
-						<a href="img/img3.jpg" data-lightbox="image-1" data-title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, delectus?" class="profile__hover--lightbox"></a>
-					</div>
-						<img src="img/img3.jpg" class="profile__box--image profile__box--image-small" alt="">
-					
-				</div>
-				
+					<a href="img/img3.jpg" data-lightbox="image-1" data-title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, delectus?" class="profile__hover profile__hover--lightbox"></a>
+					<img src="img/img3.jpg" class="profile__box--image profile__box--image-small" alt="">
+				</div>	
 			</div>
 			<div class="profile__box">
 				<div class="profile__box-content profile__box-content--small">
@@ -147,11 +138,11 @@
 		</div>
 		
 	</section>
-	<section class="client">
+	<section class="client" id="client">
 		<div class="wrapper">
-			<h1 class="h1-lecker h1-lecker--white center">
+			<h2 class="h2-lecker h2-lecker--white center">
 			Client
-			</h1>
+			</h2>
 			<h2 class="h2-section h2-section--white center">What I Do..</h2>
 			<p class="p-section p-section--white center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga esse beatae mollitia, praesentium ipsum natus doloremque perspiciatis, delectus eos sunt repellat. Unde tenetur, quae alias accusantium, mollitia repellat illum consequatur.</p>
 			<div class="contractor">
@@ -174,11 +165,11 @@
 			</div>
 		</div>
 	</section>
-	<section class="blog">
+	<section class="blog" id="blog">
 		<div class="cards">
 			<div class="cards__box">
 				<div class="cards__prelude">
-					<h1 class="h1-lecker h1-lecker--grey">Blog</h1>
+					<h2 class="h2-lecker h2-lecker--grey">Blog</h2>
 					<h2 class="h2-section h2-section--black">I write Beautiful Thinks</h2>
 					<p class="p-section p-section--black">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga esse beatae mollitia, praesentium ipsum natus doloremque perspiciatis.</p>
 					<article class="cards__prelude--blue">
@@ -195,11 +186,11 @@
 			<div class="cards__box cards__box--two">
 				<article class="cards__articles cards__articles--little-panel cards__articles--grey">
 					<h4 class="h4-blog-date">11 November</h4>
-					<h1 class="h3-section h3-section--blog">Lorem ipsum dolor.</h1>
+					<h3 class="h3-section h3-section--blog">Lorem ipsum dolor.</h3>
 				</article>
 				<article class="cards__articles cards__articles--little-panel cards__articles--black">
 					<h4 class="h4-blog-date">11 November</h4>
-					<h1 class="h3-section h3-section--blog">Lorem ipsum dolor.</h1>
+					<h3 class="h3-section h3-section--blog">Lorem ipsum dolor.</h3>
 				</article>
 			</div>	
 			<div class="cards__box">
@@ -211,10 +202,10 @@
 			</div>
 		</div>
 	</section>
-	<footer class="footer">
+	<footer class="footer" id="contact">
 		<section class="contact">
 			<div class="contact-address">
-				<h1 class="h1-lecker h1-lecker--white">Contacts</h1>
+				<h2 class="h2-lecker h2-lecker--white">Contacts</h2>
 				<h2 class="h2-section h2-section--white">Address Info</h2>
 				<div class="contact-address__item contact-address__item--first">
 					<img src="img/email.png" class="contact-address__img" alt="">
@@ -230,21 +221,21 @@
 				<div class="contact-address__item contact-address__item--last">
 					<img src="img/map.png" class="contact-address__img" alt="">
 					<p class="p-section p-section--address-title">Address</p>
-					<p class="p-section p-section--address">123, Main Road, New City,</br> My Country 123456</p>
+					<p class="p-section p-section--address">123, Main Road, New City,<br> My Country 123456</p>
 				</div>
 			</div>
 			<div class="contact-email">
 				<h2 class="h2-section h2-section--white">Get In Touch</h2>
-				<form action="" class="contact-email__form">
+				<form action="#" class="contact-email__form">
 					<label for="name" class="contact-email__form--label">Name</label>
 					<input id="name" type="text" class="contact-email__form--input" required>
 					<label for="email" class="contact-email__form--label">Email</label>
-					<input id="email" type="text" class="contact-email__form--input" required>
+					<input id="email" type="text" class="contact-email__form--input" type="email" required>
 					<label for="phone" class="contact-email__form--label">Phone</label>
 					<input id="phone" type="text" class="contact-email__form--input" required>
 					<label for="message" class="contact-email__form--label">Message</label>
-					<textarea name="" id="message" cols="30" rows="10" class="contact-email__form--input contact-email__form--textarea"></textarea>
-					<button class="button button--blue button--submit">Send</button>
+					<textarea name="message" id="message" cols="30" rows="10" class="contact-email__form--input contact-email__form--textarea"></textarea>
+					<button class="button button--submit">Send</button>
 				</form>
 			</div>
 		</section>

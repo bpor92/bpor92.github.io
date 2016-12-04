@@ -7,21 +7,34 @@
 		text-decoration: none
 		color: #fff
 		font-size: 15px
+		border: 1px solid transparent
 		+m('blue')
 			background-color: $btn-header
+			&:hover
+				background-color: darken($btn-header,5%)
 			&:active
-				background-color: darken($btn-header, 10%)
+				background-color: darken($btn-header, 15%)
+				border: 1px solid #000		
 		+m('purple')
 			background-color:  $btn-purple
+			&:hover
+				background-color: darken($btn-purple,5%)
 			&:active
-				background-color: darken($btn-purple, 10%)
+				background-color: darken($btn-purple, 15%)
+				border: 1px solid #000
 		+m('submit')
 			display: block
-			border: 1px solid transparent
 			outline: 0
 			width: 200px
-			&:focus
-				border: 1px solid $btn-purple
+			background-color: #2E7D32
+			cursor: pointer
+			&:hover
+				background-color: darken(#2E7D32,5%)
+			&:active
+				background-color: darken(#2E7D32, 15%)
+				border: 1px solid #000
+
+				
 @media (min-width: 780px)
 	.button
 		+m('submit')
