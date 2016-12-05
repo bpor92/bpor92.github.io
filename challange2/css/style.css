@@ -123,11 +123,8 @@ header .container .jumbotron h2 {
   min-width: 240px;
 }
 
-.about-us .container aside {
-  margin-top: 60px;
-}
-
 .about-us .container .jumbotron {
+  margin-top: 60px;
   background-color: transparent;
   padding-left: 0px;
   padding-right: 0px;
@@ -266,31 +263,36 @@ header .container .jumbotron h2 {
   background-color: #3363a0;
 }
 
-.subscribe {
+.gallery .subscribe {
   background: url("../img/subscribe.jpg") top center no-repeat;
+  background-color: #ffffff;
   min-height: 500px;
   padding-top: 120px;
 }
 
-.subscribe .container p {
+.gallery .subscribe .container {
+  text-align: left;
+}
+
+.gallery .subscribe .container p {
   width: 80%;
 }
 
-.subscribe .container input {
+.gallery .subscribe .container input {
   width: 77%;
   height: 55px;
   padding: 10px;
   border: 1px solid #262626;
 }
 
-.subscribe .container .btn {
+.gallery .subscribe .container .btn {
   margin: -1px 0px 0px 30px;
   height: 55px;
   background-color: #96b92c;
   box-shadow: 0px 4px 10px 0px #616161;
 }
 
-.subscribe .container .btn:hover {
+.gallery .subscribe .container .btn:hover {
   background-color: #74b70c;
 }
 
@@ -496,7 +498,7 @@ footer .container .logo-footer {
 }
 
 @media (max-width: 1200px) {
-  .about-us .container aside {
+  .about-us .container .jumbotron {
     margin-top: 10px;
   }
   .services {
@@ -547,7 +549,7 @@ footer .container .logo-footer {
   .about-us .container img {
     display: none;
   }
-  .about-us .container aside {
+  .about-us .container .jumbotron {
     margin-top: 0px;
   }
   .services .container .flexbox .a {
@@ -565,10 +567,10 @@ footer .container .logo-footer {
   .gallery .container img {
     width: 100%;
   }
-  .subscribe .container input {
+  .gallery .subscribe .container input {
     width: 81%;
   }
-  .subscribe .container .btn {
+  .gallery .subscribe .container .btn {
     margin: 30px 0px 80px 0px;
   }
   .blog .container .thumbnail {
@@ -631,7 +633,7 @@ footer .container .logo-footer {
     max-width: 380px;
     width: 100%;
   }
-  .subscribe {
+  .gallery .subscribe {
     min-height: auto;
     padding-top: 60px;
   }

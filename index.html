@@ -12,95 +12,122 @@
 	<link href="https://fonts.googleapis.com/css?family=Neuton:200,400,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Gentium+Basic:400,700&subset=latin-ext" rel="stylesheet">
 	<link href="styles/main.css" rel="stylesheet">
-	<script type="text/javascript" src="js/main.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> 
 </head>
 <body>
-	<header class="navbar" id="navbar">
 
-		<nav id="nav">
 
-			<ul id="nav-ul">
-				<li><a href="">O MNIE</a></li>
-				<li><a href="">PROJEKTY</a></li>
-				<li><a href="">KONTAKT</a></li>
-			</ul>
-		</nav>
-	</header>			
-	<div id="nav-icon">
-		<span></span>
-		<span></span>
-		<span></span>
-	</div>		
-	<a href="#" class="logo" id="logo"></a>
-	<a href="#" class="logo-name" id="logo-name">BARTOSZ PORĘBSKI</a>
-	<main>
-		<section class="starting-page">
-			<div class="heading">
-				<h1><span>WITAJ ŚWIECIE!</span> MAM NA IMIĘ BARTEK.
-				JESTEM JUNIOR FRONT-END DEVELOPEREM
-				ORAZ PRZYSZŁYM WEB DEVELOPEREM.</h1>
+
+
+
+<div id="fullpage">
+	<section class="section" id="section0">
+		<header class="navbar" id="navbar">
+			<nav id="nav">
+				<ul id="nav-ul" id="menu">
+					<li><a href="#">O MNIE</a></li>
+					<li><a href="#">PROJEKTY</a></li>
+					<li><a href="#">KONTAKT</a></li>
+				</ul>
+			</nav>
+		</header>			
+		<div id="nav-icon">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>		
+		<a href="#" class="logo" id="logo"></a>
+		<a href="#" class="logo-name" id="logo-name">BARTOSZ PORĘBSKI</a>
+
+		
+			<div class="starting-page">
+				<div class="heading">
+					<h1><span>WITAJ ŚWIECIE!</span> MAM NA IMIĘ BARTEK.
+					JESTEM JUNIOR FRONT-END DEVELOPEREM
+					ORAZ PRZYSZŁYM WEB DEVELOPEREM.</h1>
+				</div>
+			
 			</div>
-		</section>
-		<div class="back2">
-			<section class="content-page">
+	</section>
+	<main>
+		<section id="section1" class="section1">
+			<div class="content-page">
 				<article>
-					<h1>O mnie</h1>
-					<p>Quisque ac urna vitae nulla fermentum tristique nec vel mi. Donec mi orci, tincidunt ac lectus nec, vestibulum pretium diam. Cras facilisis nunc sed dui sodales, vel condimentum magna bibendum. Sed sit amet pretium augue, quis bibendum augue. Nam nec nulla malesuada, cursus risus eu, semper nibh. Nulla luctus magna vitae commodo elementum. Sed odio velit, suscipit posuere quam eget, fringilla tincidunt neque. Integer leo arcu, blandit iaculis felis vel, porta bibendum sem.
+					<h1 class="h1-title">O mnie</h1>
+					<p>Quisque ac urna vitae nulla fermentum tristique nec vel mi. Donec mi orci, tincidunt ac lectus nec, vestibulum pretium diam. Cras facilisis nunc sed dui sodales porta bibendum sem.
 					</p>
 				</article>
+				<div class="skills">
+					<h2>Moje umiejętności: </h2>
+					<ul class="circle-container">
+						<li  data-tooltip="Poziom: średnio-zaawansowany"><img src="img/html5.png" width="50px"></li>
+						<li data-tooltip="Poziom: średnio-zaawansowany"><img src="img/css3.png" width="50px"></li>
+						<li data-tooltip="Poziom: podstawowy"><img src="img/sass.png" width="50px"></li>
+						<li data-tooltip="Poziom: podstawowy"><img src="img/js.png" width="50px"></li>
+						<li data-tooltip="Poziom: podstawowy"><img src="img/php.png" width="50px"></li>
+						<li data-tooltip="Poziom: podstawowy"><img src="img/git.ico" width="50px"></li>
+						<li data-tooltip="Poziom: podstawowy"><img src="img/gulp.png" width="50px"></li>
+						<li data-tooltip="Poziom: podstawowy"><img src="img/bootstrap.png" width="50px"></li>
+						<li data-tooltip="Poziom: podstawowy"><img src="img/ps.png" width="50px"></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section id="section2">
 				<div class="page-middle">
-					<h1>Projekty</h1>
+					<h1 class="h1-title">Projekty</h1>
 					<div class="flex-container">
-						<div class="flex-item item-1">
-							
+						<div class="flex-item item-1" data-div="#divId1">	
+							<img class="img-responsive" src="img/pm.png" alt="projektmatma.pl" >
+							<figcaption id="divId1" class="item-tech" >
+								<h3>Technologie</h3>
+								<ul>
+									<li>1</li>
+									<li>2</li>
+									<li>3</li>
+									<li>4</li>
+									<li>5</li>
+								</ul>
+							</figcaption>	
 						</div>
-						<div class="flex-item item-2">
-							
+						<div class="flex-item item-2" data-div="#divId2" >
+							<img class="img-responsive" src="img/cache.png" alt="projektmatma.pl" >
+							<figcaption id="divId2" class="item-tech" >
+								<h3>Technologie</h3>
+								<ul>
+									<li>1</li>
+									<li>2</li>
+									<li>3</li>
+									<li>4</li>
+									<li>5</li>
+								</ul>
+							</figcaption>	
 						</div>
-						<div class="flex-item item-3">
-							
+						<div class="flex-item item-3" data-div="#divId3">
+							<img class="img-responsive" src="img/pm.png" alt="projektmatma.pl" >
+							<figcaption id="divId3" class="item-tech" >
+								<h3>Technologie</h3>
+								<ul>
+									<li>1</li>
+									<li>2</li>
+									<li>3</li>
+									<li>4</li>
+									<li>5</li>
+								</ul>
+							</figcaption>	
 						</div>
 					</div>
-
-			</section>
-
-
-			<section class="contact">
-			  	
 				
-	<!-- <div class="page-contact">
-					
-					<form>
-						<div>
-							<label for="name-input">Imię i nazwisko:</label>
-							<input type="text" name="name" id="name-input"  required>
-							
-							<span></span>
-						</div>
-						<div>
-							<label for="email-input">Adres E-mail:</label>
-							<input type="text" name="email" id="email-input" required>
-							<span></span>
-						</div>
-						<div>
-							<label for="email-input">Tytuł:</label>
-							<input type="text" name="title" id="title-input" required>
-							<span></span>
-						</div>
-						<div>
-							<textarea name="message" id="message-input" required class="textarea-contact" placeholder="Wiadomość..."></textarea>
-							<span></span>
-						</div>
-						<input class="submit" type="submit" name="form-send" value="Wyślij">
-					</form>
-					-->
-					<div id="form">
-						<div class="fish" id="fish"></div>
+				<div class="padding-div" id="padding-div"></div>
+				</div>	
+		</section>
+		<section id="section3">
+				<div class="contact" id="form"><div class="fish" id="fish"></div>
 			  			<div class="fish" id="fish2"></div>
+					<div class="form-container">
+						
+			  			<h1 class="h1-title">Kontakt</h1>
 					  	<form id="waterform" method="post">
-					  		<h1>Kontakt</h1>
 						    <div class="formgroup" id="name-form">
 						      <label for="name">Imię*</label>
 						      <input type="text" id="name" name="name" />
@@ -116,25 +143,25 @@
 						    <input type="submit" value="Wyślij" />
 					  </form>
 					</div>
-	<!-- 
 				</div>
-	-->	
-			
-			<footer>
-				<div class="social">
-					<div class="social-icon">
-						<a href="#" class="git icon-transition"></a>
-						<a href="#" class="linkedin icon-transition"></a>
-						<a href="#" class="facebook icon-transition"></a>
-					</div>
-				<p class="copy">
-					@ Bartosz Porębski 2016
-				</p>
-				</div>
-			</footer>
 		</section>
-	</div>
+		<section id="section4">			
+				<footer>
+					<div class="social">
+						<div class="social-icon">
+							<a href="#" class="git icon-transition"></a>
+							<a href="#" class="linkedin icon-transition"></a>
+							<a href="#" class="facebook icon-transition"></a>
+						</div>
+					<p class="copy">
+						@ Bartosz Porębski 2016
+					</p>
+					</div>
+				</footer>
+			
+		</section>
 	</main>
+</div>
 
 
 
@@ -142,96 +169,81 @@
 
 
 
-<!--  
+
+
+
+
+
+
+
+
+
+
+
 
 <script type="text/javascript">
-	var z = $(window).height();
 
-	$(document).scroll(function() {
-    var y = $(document).scrollTop(),
-     //get page y value 
-        header = $("#navbar");
-        nav = $("#nav");
-        logo = $("#logo");
-        logoName = $("#logo-name");
-        navUl = $("#nav-ul");
-        navlink = $(".nav-link");
-    if(y >= z)  {
-        header.css({position: "fixed", "top" : "0", "left" : "0"});
-        nav.css({"background" : "rgba(23, 22, 26, 0.95)", "min-height": "61px","transition": ".5s background linear" });
-        navlink.css({"color": "#c7d4e5"});
-        logo.css({"margin": "10px", "width": "40px", "height": "40px"});
-        logoName.css({"top": "20px", "left" : "60px"});
-        navUl.css({"top": "20px"});
-        header.fadeIn(3000);
-        nav.fadeIn(3000);
-        logo.fadeIn(3000);
-        logoName.fadeIn(3000);
-        navUl.fadeIn(3000);
-    } else {
-        header.css("position", "absolute");
-        nav.css({"background" : "rgba(0, 0, 0, 0.0)","min-height": "120px" ,"transition": "none"});
-        logo.css({"margin": "20px", "width": "80px", "height": "80px"});
-        logoName.css({"top": "50px", "left" : "120px"});
-        navUl.css({"top": "50px"});
-        navlink.css({"color": "#0C2032"});
-    
-    }
-});
-</script>
--->
+$(function(){
 
-<script type="text/javascript">
-	
-$(document).ready(function(){
+	$('.flex-item').on('click', function(){
+		var divId = $(this).attr('data-div');
+		$(divId).stop().fadeToggle();
+	});
+	$(document).mouseup(function (e){
+	    var container = $(".item-tech");
+	    if (!container.is(e.target)){	
+	    	container.fadeOut();  
+	    }
+  	});
+
 	$('#nav-icon').click(function(){	
 		$(this).toggleClass('open');
 		$("#navbar").toggle();
 	});
-});  
+  
 
 
-$(document).scroll(function() {
+	$(document).scroll(function() {
 
-	var y = $(document).scrollTop();
-	var z = $(window).height();
-	var w = $(window).width();
+		var y = $(document).scrollTop();
+		var z = $(window).height();
+		var w = $(window).width();
 
-	if(y >= z && w >= 752){
+		if(y >= z && w >= 752){
 
-		$("#navbar").addClass("navbar-fixed");
-		$("#nav").addClass("nav-fixed");
-		$("#nav-ul").addClass("position-fixed");
-		$("#logo-name").addClass("position-fixed");
-		$("#nav-icon").addClass("nav-icon-fixed");
-		$("#logo").addClass("logo-fixed");
-    } else if(w < 752){
-    	$("#navbar").addClass("navbar-fixed");
-    	$("#logo").addClass("logo-fixed");
-    	$("#nav-icon").addClass("nav-icon-fixed");
-    	$("#logo-name").removeClass("position-fixed");	
-    }else if(y < z && w >= 752) {
-    	$("#nav").removeClass("nav-fixed");
-		$("#navbar").removeClass("navbar-fixed");
-		$("#logo-name").removeClass("position-fixed");
-    	$("#nav-ul").removeClass("position-fixed");	
-    }else if( w >= 752){
-			$("#navbar").attr("style", "display: block!important");
-			$("#nav").removeClass("nav-fixed");
-			$("#nav-ul").removeClass("position-fixed");
-	}else {
-		$("#logo-name").removeClass("position-fixed");
-		$("#nav-icon").removeClass("nav-icon-fixed");
-		$("#logo").removeClass("logo-fixed");		
-    }
-}); 
+			$("#navbar").addClass("navbar-fixed");
+			$("#nav").addClass("nav-fixed");
+			$("#nav-ul").addClass("position-fixed");
+			$("#logo-name").addClass("position-fixed");
+			$("#nav-icon").addClass("nav-icon-fixed");
+			$("#logo").addClass("logo-fixed");
+	    } else if(w < 752){
+	    	$("#navbar").addClass("navbar-fixed");
+	    	$("#logo").addClass("logo-fixed");
+	    	$("#nav-icon").addClass("nav-icon-fixed");
+	    	$("#logo-name").removeClass("position-fixed");	
+	    }else if(y < z && w >= 752) {
+	    	$("#nav").removeClass("nav-fixed");
+			$("#navbar").removeClass("navbar-fixed");
+			$("#logo-name").removeClass("position-fixed");
+	    	$("#nav-ul").removeClass("position-fixed");	
+	    }else if( w >= 752){
+				$("#navbar").attr("style", "display: block!important");
+				$("#nav").removeClass("nav-fixed");
+				$("#nav-ul").removeClass("position-fixed");
+		}else {
+			$("#logo-name").removeClass("position-fixed");
+			$("#nav-icon").removeClass("nav-icon-fixed");
+			$("#logo").removeClass("logo-fixed");		
+	    }
+	}); 
 
 
 	
-$( window ).resize(function() {
-  	var w = $(window).width();
-	var y = $(document).scrollTop();
-	var z = $(window).height();
+	$( window ).resize(function() {
+	  	var w = $(window).width();
+		var y = $(document).scrollTop();
+		var z = $(window).height();
 		if( w >= 752){
 			$("#navbar").attr("style", "display: block!important");
 			$("#nav").removeClass("nav-fixed");
@@ -253,9 +265,9 @@ $( window ).resize(function() {
 			$("#nav-icon").removeClass("open");
 
 		}
+	});
+
 });
-
-
 </script>
 
 
