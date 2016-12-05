@@ -14,7 +14,6 @@
         overflow: hidden
         text-align: right
     +e('item')
-        font-family: Tahoma
         display: inline
         font-weight: bold
         text-transform: uppercase
@@ -51,8 +50,13 @@
     overflow: hidden
     clip: rect(0,0,0,0)
     border: 0
+.active
+    border-top: 7px solid #0081ff!important
 
 @media (max-width: 1000px) 
+    .active
+        border-top: 7px solid #0081ff!important
+        border-bottom: 7px solid #0081ff!important
     .topnav
         width: 100%
         background-color: rgba(0,0,0, 0.9)
