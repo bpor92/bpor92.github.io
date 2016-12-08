@@ -45,7 +45,7 @@ $(function(){
         $(divId).stop().fadeToggle();
     });
     $(document).mouseup(function (e){
-        var container = $(".project-container__figcpt");
+        var container = $(".project-container__technology");
         if (!container.is(e.target)){   
             container.fadeOut();  
         }

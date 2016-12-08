@@ -8,15 +8,15 @@
 	<meta name="author" content="Bartosz Porębski">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-Ua-Compatible" content="IE=edge">
-	<link href="https://fonts.googleapis.com/css?family=Lato|Amatic+SC" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato%7CAmatic+SC" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 
-<header>
+<header id="home">
 	<nav class="topnav">
 		<ul class="topnav__list" id="myTopnav">
-		  <li class="topnav__logo"><a href=""><img src="img/me.png" class="topnav__img"></a><span class="topnav__logo-name">Bartosz Porębski</span></li>
+		  <li class="topnav__logo"><a href="#home"><img src="img/me.png" class="topnav__img" alt="my photo"></a><span class="topnav__logo-name">Bartosz Porębski</span></li>
 		  <li class="topnav__item topnav__item--first"><a href="#about" class="topnav__a-item">O mnie</a></li>
 		  <li class="topnav__item"><a href="#projects" class="topnav__a-item">Projekty</a></li>
 		  <li class="topnav__item topnav__item--last"><a href="#contact" class="topnav__a-item">Kontakt</a></li>
@@ -45,25 +45,25 @@
 		</p>
 		<h2>Moje umiejętności: </h2>
 		<ul class="about__list">
-			<li data-tooltip="Poziom: średnio-zaawansowany" class="about__item"><img src="img/html5.png" width="50px"></li>
-			<li data-tooltip="Poziom: średnio-zaawansowany" class="about__item"><img src="img/css3.png" width="50px"></li>
-			<li data-tooltip="Poziom: podstawowy" class="about__item"><img src="img/sass.png" width="50px"></li>
-			<li data-tooltip="Poziom: podstawowy" class="about__item"><img src="img/js.png" width="50px"></li>
-			<li data-tooltip="Poziom: podstawowy" class="about__item"><img src="img/php.png" width="50px"></li>
-			<li data-tooltip="Poziom: podstawowy" class="about__item"><img src="img/git.ico" width="50px"></li>
-			<li data-tooltip="Poziom: podstawowy" class="about__item"><img src="img/gulp.png" width="50px"></li>
-			<li data-tooltip="Poziom: podstawowy" class="about__item"><img src="img/bootstrap.png" width="50px"></li>
-			<li data-tooltip="Poziom: podstawowy" class="about__item"><img src="img/ps.png" width="50px"></li>
+			<li data-tooltip="Poziom: średnio-zaawansowany" class="about__item"><img src="img/html5.png" alt="html5" width="50"></li>
+			<li data-tooltip="Poziom: średnio-zaawansowany" class="about__item"><img src="img/css3.png" alt="css3" width="50"></li>
+			<li data-tooltip="Poziom: podstawowy" class="about__item"><img src="img/sass.png" alt="sass" width="50"></li>
+			<li data-tooltip="Poziom: podstawowy" class="about__item"><img src="img/js.png" alt="javascript" width="50"></li>
+			<li data-tooltip="Poziom: podstawowy" class="about__item"><img src="img/php.png" alt="php and mysql" width="50"></li>
+			<li data-tooltip="Poziom: podstawowy" class="about__item"><img src="img/git.ico" alt="git" width="50"></li>
+			<li data-tooltip="Poziom: podstawowy" class="about__item"><img src="img/gulp.png" alt="gulp" width="50"></li>
+			<li data-tooltip="Poziom: podstawowy" class="about__item"><img src="img/bootstrap.png" alt="bootstrap" width="50"></li>
+			<li data-tooltip="Poziom: podstawowy" class="about__item"><img src="img/ps.png" alt="photoshop" width="50"></li>
 		</ul>
 	</section>
 	<section class="projects" id="projects">
 		<h1 class="h1-title">Projekty</h1>
 		<div class="project-container">
 			<div class="project-container__item" data-div="#divId1">	
-				<img class="project-container__img" src="img/pm.png" alt="projektmatma.pl" >
-				<figcaption id="divId1" class="project-container__figcpt" >
+				<img class="project-container__img" src="img/pm.png" alt="projektmatma" >
+				<div id="divId1" class="project-container__technology" >
 					<h3>Technologie</h3>
-					<h4>Live: <a href="https://erugby.pl/projektmatma"> Link</a></h4>
+					<p>Live: <a href="erugby.pl/projektmatma" target="_blank">Link</a></p>
 					<ul>
 						<li>1</li>
 						<li>2</li>
@@ -71,13 +71,13 @@
 						<li>4</li>
 						<li>5</li>
 					</ul>
-				</figcaption>	
+				</div>	
 			</div>
 			<div class="project-container__item" data-div="#divId2" >
-				<img class="project-container__img" src="img/cache.png" alt="projektmatma.pl" >
-				<figcaption id="divId2" class="project-container__figcpt" >
+				<img class="project-container__img" src="img/cache.png" alt="cache" >
+				<div id="divId2" class="project-container__technology" >
 					<h3>Technologie</h3>
-					<h4>Live: <a href="https://bpor92.github.io/challange23/"> Link</a></h4>
+					<p>Live: <a href="https://bpor92.github.io/challange2/" target="_blank">Link</a></p>
 					<ul>
 						<li>1</li>
 						<li>2</li>
@@ -85,13 +85,13 @@
 						<li>4</li>
 						<li>5</li>
 					</ul>
-				</figcaption>	
+				</div>	
 			</div>
 			<div class="project-container__item" data-div="#divId3">
-				<img class="project-container__img" src="img/master.png" alt="projektmatma.pl" >
-				<figcaption id="divId3" class="project-container__figcpt" >
+				<img class="project-container__img" src="img/master.png" alt="masterlabl" >
+				<div id="divId3" class="project-container__technology" >
 					<h3>Technologie</h3>
-					<h4>Live: <a href="https://bpor92.github.io/challange23/"> Link</a></h4>
+					<p>Live: <a href="https://bpor92.github.io/challange1/" target="_blank">Link</a></p>
 					<ul>
 						<li>1</li>
 						<li>2</li>
@@ -99,13 +99,13 @@
 						<li>4</li>
 						<li>5</li>
 					</ul>
-				</figcaption>	
+				</div>	
 			</div>
 			<div class="project-container__item" data-div="#divId4">
-				<img class="project-container__img" src="img/ag.png" alt="projektmatma.pl" >
-				<figcaption id="divId4" class="project-container__figcpt" >
+				<img class="project-container__img" src="img/ag.png" alt="agency" >
+				<div id="divId4" class="project-container__technology" >
 					<h3>Technologie</h3>
-					<h4>Live: <a href="https://bpor92.github.io/challange23/"> Link</a></h4>
+					<p>Live: <a href="https://bpor92.github.io/challange23/" target="_blank">Link</a></p>
 					<ul>
 						<li>1</li>
 						<li>2</li>
@@ -113,7 +113,7 @@
 						<li>4</li>
 						<li>5</li>
 					</ul>
-				</figcaption>	
+				</div>	
 			</div>			
 		</div>	
 	</section>
