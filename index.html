@@ -4,275 +4,170 @@
 	<meta charset="UTF-8">	
 	<title>Bartosz Porębski - Portfolio </title>
 	<meta name="description" content="Bartosz Porębski - Portfolio - Zrealizowane projekty, kontakt">
-	<meta name="keywords" content="Bartosz, Porebski, portfolio, projekt-matma">
+	<meta name="keywords" content="Bartosz, Porebski, portfolio">
 	<meta name="author" content="Bartosz Porębski">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-Ua-Compatible" content="IE=edge">
-	<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Neuton:200,400,700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Gentium+Basic:400,700&subset=latin-ext" rel="stylesheet">
-	<link href="styles/main.css" rel="stylesheet">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> 
+	<link href="https://fonts.googleapis.com/css?family=Lato|Amatic+SC" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 
-
-
-
-
-<div id="fullpage">
-	<section class="section" id="section0">
-		<header class="navbar" id="navbar">
-			<nav id="nav">
-				<ul id="nav-ul" id="menu">
-					<li><a href="#">O MNIE</a></li>
-					<li><a href="#">PROJEKTY</a></li>
-					<li><a href="#">KONTAKT</a></li>
-				</ul>
-			</nav>
-		</header>			
-		<div id="nav-icon">
-			<span></span>
-			<span></span>
-			<span></span>
-		</div>		
-		<a href="#" class="logo" id="logo"></a>
-		<a href="#" class="logo-name" id="logo-name">BARTOSZ PORĘBSKI</a>
-
-		
-			<div class="starting-page">
-				<div class="heading">
-					<h1><span>WITAJ ŚWIECIE!</span> MAM NA IMIĘ BARTEK.
-					JESTEM JUNIOR FRONT-END DEVELOPEREM
-					ORAZ PRZYSZŁYM WEB DEVELOPEREM.</h1>
-				</div>
-			
-			</div>
+<header>
+	<nav class="topnav">
+		<ul class="topnav__list" id="myTopnav">
+		  <li class="topnav__logo"><a href=""><img src="img/me.png" class="topnav__img"></a><span class="topnav__logo-name">Bartosz Porębski</span></li>
+		  <li class="topnav__item topnav__item--first"><a href="#about" class="topnav__a-item">O mnie</a></li>
+		  <li class="topnav__item"><a href="#projects" class="topnav__a-item">Projekty</a></li>
+		  <li class="topnav__item topnav__item--last"><a href="#contact" class="topnav__a-item">Kontakt</a></li>
+		  <li class="topnav__icon">
+		  	<button class="btn-hamburger">
+		  		<span class="sr-only">Menu</span>
+				<span class="btn-hamburger__line"></span>
+				<span class="btn-hamburger__line"></span>
+				<span class="btn-hamburger__line"></span>
+			</button>
+		  </li>
+		</ul>
+	</nav>
+	<div class="jumbotron">
+		<h1><span class="dark-blue">WITAJ ŚWIECIE!</span> MAM NA IMIĘ BARTEK.
+		JESTEM JUNIOR FRONT-END DEVELOPEREM
+		ORAZ PRZYSZŁYM WEB DEVELOPEREM.</h1>
+	</div>
+	
+</header>
+<div class="background">
+	<div class="background__shadow"></div>
+	<section class="about" id="about">
+		<h1 class="h1-title">O mnie</h1>
+		<p class="white-background">Quisque ac urna vitae nulla fermentum tristique nec vel mi. Donec mi orci, tincidunt ac lectus nec, vestibulum pretium diam. Cras facilisis nunc sed dui sodales porta bibendum sem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque earum, accusantium beatae consequuntur velit quisquam debitis odit dolore dolorum, adipisci sed molestias. Incidunt numquam ab ut vel impedit sint veniam consequatur, dolores, cumque eos vitae voluptas ipsum excepturi cum repudiandae molestias commodi libero dolore nostrum, voluptatum debitis! Iste, doloremque autem qui hic sunt. Eaque harum dolor molestias dolorum velit nisi sequi, laboriosam, vel vitae minima totam. Ullam impedit, doloribus velit, vero beatae placeat quasi eius animi reprehenderit. Magnam possimus quaerat soluta eum laudantium, quod sunt. Assumenda impedit et numquam omnis doloremque expedita reiciendis reprehenderit. Cupiditate nesciunt eligendi, ipsum et ab!
+		</p>
+		<h2>Moje umiejętności: </h2>
+		<ul class="about__list">
+			<li data-tooltip="Poziom: średnio-zaawansowany" class="about__item"><img src="img/html5.png" width="50px"></li>
+			<li data-tooltip="Poziom: średnio-zaawansowany" class="about__item"><img src="img/css3.png" width="50px"></li>
+			<li data-tooltip="Poziom: podstawowy" class="about__item"><img src="img/sass.png" width="50px"></li>
+			<li data-tooltip="Poziom: podstawowy" class="about__item"><img src="img/js.png" width="50px"></li>
+			<li data-tooltip="Poziom: podstawowy" class="about__item"><img src="img/php.png" width="50px"></li>
+			<li data-tooltip="Poziom: podstawowy" class="about__item"><img src="img/git.ico" width="50px"></li>
+			<li data-tooltip="Poziom: podstawowy" class="about__item"><img src="img/gulp.png" width="50px"></li>
+			<li data-tooltip="Poziom: podstawowy" class="about__item"><img src="img/bootstrap.png" width="50px"></li>
+			<li data-tooltip="Poziom: podstawowy" class="about__item"><img src="img/ps.png" width="50px"></li>
+		</ul>
 	</section>
-	<main>
-		<section id="section1" class="section1">
-			<div class="content-page">
-				<article>
-					<h1 class="h1-title">O mnie</h1>
-					<p>Quisque ac urna vitae nulla fermentum tristique nec vel mi. Donec mi orci, tincidunt ac lectus nec, vestibulum pretium diam. Cras facilisis nunc sed dui sodales porta bibendum sem.
-					</p>
-				</article>
-				<div class="skills">
-					<h2>Moje umiejętności: </h2>
-					<ul class="circle-container">
-						<li  data-tooltip="Poziom: średnio-zaawansowany"><img src="img/html5.png" width="50px"></li>
-						<li data-tooltip="Poziom: średnio-zaawansowany"><img src="img/css3.png" width="50px"></li>
-						<li data-tooltip="Poziom: podstawowy"><img src="img/sass.png" width="50px"></li>
-						<li data-tooltip="Poziom: podstawowy"><img src="img/js.png" width="50px"></li>
-						<li data-tooltip="Poziom: podstawowy"><img src="img/php.png" width="50px"></li>
-						<li data-tooltip="Poziom: podstawowy"><img src="img/git.ico" width="50px"></li>
-						<li data-tooltip="Poziom: podstawowy"><img src="img/gulp.png" width="50px"></li>
-						<li data-tooltip="Poziom: podstawowy"><img src="img/bootstrap.png" width="50px"></li>
-						<li data-tooltip="Poziom: podstawowy"><img src="img/ps.png" width="50px"></li>
+	<section class="projects" id="projects">
+		<h1 class="h1-title">Projekty</h1>
+		<div class="project-container">
+			<div class="project-container__item" data-div="#divId1">	
+				<img class="project-container__img" src="img/pm.png" alt="projektmatma.pl" >
+				<figcaption id="divId1" class="project-container__figcpt" >
+					<h3>Technologie</h3>
+					<h4>Live: <a href="https://erugby.pl/projektmatma"> Link</a></h4>
+					<ul>
+						<li>1</li>
+						<li>2</li>
+						<li>3</li>
+						<li>4</li>
+						<li>5</li>
 					</ul>
-				</div>
+				</figcaption>	
 			</div>
-		</section>
-		<section id="section2">
-				<div class="page-middle">
-					<h1 class="h1-title">Projekty</h1>
-					<div class="flex-container">
-						<div class="flex-item item-1" data-div="#divId1">	
-							<img class="img-responsive" src="img/pm.png" alt="projektmatma.pl" >
-							<figcaption id="divId1" class="item-tech" >
-								<h3>Technologie</h3>
-								<ul>
-									<li>1</li>
-									<li>2</li>
-									<li>3</li>
-									<li>4</li>
-									<li>5</li>
-								</ul>
-							</figcaption>	
-						</div>
-						<div class="flex-item item-2" data-div="#divId2" >
-							<img class="img-responsive" src="img/cache.png" alt="projektmatma.pl" >
-							<figcaption id="divId2" class="item-tech" >
-								<h3>Technologie</h3>
-								<ul>
-									<li>1</li>
-									<li>2</li>
-									<li>3</li>
-									<li>4</li>
-									<li>5</li>
-								</ul>
-							</figcaption>	
-						</div>
-						<div class="flex-item item-3" data-div="#divId3">
-							<img class="img-responsive" src="img/pm.png" alt="projektmatma.pl" >
-							<figcaption id="divId3" class="item-tech" >
-								<h3>Technologie</h3>
-								<ul>
-									<li>1</li>
-									<li>2</li>
-									<li>3</li>
-									<li>4</li>
-									<li>5</li>
-								</ul>
-							</figcaption>	
-						</div>
-					</div>
-				
-				<div class="padding-div" id="padding-div"></div>
-				</div>	
-		</section>
-		<section id="section3">
-				<div class="contact" id="form"><div class="fish" id="fish"></div>
-			  			<div class="fish" id="fish2"></div>
-					<div class="form-container">
-						
-			  			<h1 class="h1-title">Kontakt</h1>
-					  	<form id="waterform" method="post">
-						    <div class="formgroup" id="name-form">
-						      <label for="name">Imię*</label>
-						      <input type="text" id="name" name="name" />
-						    </div>
-						    <div class="formgroup" id="email-form">
-						      <label for="email">Adres E-mail*</label>
-						      <input type="email" id="email" name="email" />
-						    </div>
-						    <div class="formgroup" id="message-form">
-						      <label for="message">Wiadomość</label>
-						      <textarea id="message" name="message"></textarea>
-						    </div>
-						    <input type="submit" value="Wyślij" />
-					  </form>
-					</div>
-				</div>
-		</section>
-		<section id="section4">			
-				<footer>
-					<div class="social">
-						<div class="social-icon">
-							<a href="#" class="git icon-transition"></a>
-							<a href="#" class="linkedin icon-transition"></a>
-							<a href="#" class="facebook icon-transition"></a>
-						</div>
-					<p class="copy">
-						@ Bartosz Porębski 2016
-					</p>
-					</div>
-				</footer>
-			
-		</section>
-	</main>
-</div>
+			<div class="project-container__item" data-div="#divId2" >
+				<img class="project-container__img" src="img/cache.png" alt="projektmatma.pl" >
+				<figcaption id="divId2" class="project-container__figcpt" >
+					<h3>Technologie</h3>
+					<h4>Live: <a href="https://bpor92.github.io/challange23/"> Link</a></h4>
+					<ul>
+						<li>1</li>
+						<li>2</li>
+						<li>3</li>
+						<li>4</li>
+						<li>5</li>
+					</ul>
+				</figcaption>	
+			</div>
+			<div class="project-container__item" data-div="#divId3">
+				<img class="project-container__img" src="img/masterlab.png" alt="projektmatma.pl" >
+				<figcaption id="divId3" class="project-container__figcpt" >
+					<h3>Technologie</h3>
+					<h4>Live: <a href="https://bpor92.github.io/challange23/"> Link</a></h4>
+					<ul>
+						<li>1</li>
+						<li>2</li>
+						<li>3</li>
+						<li>4</li>
+						<li>5</li>
+					</ul>
+				</figcaption>	
+			</div>
+			<div class="project-container__item" data-div="#divId4">
+				<img class="project-container__img" src="img/agency.png" alt="projektmatma.pl" >
+				<figcaption id="divId4" class="project-container__figcpt" >
+					<h3>Technologie</h3>
+					<h4>Live: <a href="https://bpor92.github.io/challange23/"> Link</a></h4>
+					<ul>
+						<li>1</li>
+						<li>2</li>
+						<li>3</li>
+						<li>4</li>
+						<li>5</li>
+					</ul>
+				</figcaption>	
+			</div>			
+		</div>	
+	</section>
+	<section class="contact" id="contact">
+		<div class="fish" id="fish"></div>
+		<div class="fish" id="fish2"></div>
+		<h1 class="h1-title">Kontakt</h1>
+	  	<form class="contact__form" method="post">
+		    <div class="contact__form-group" id="name-form">
+		      	<label for="name">Imię*</label>
+		      	<input type="text" id="name" name="name" />
+		    </div>
+		    <div class="contact__form-group" id="email-form">
+	      		<label for="email">Adres E-mail*</label>
+		      	<input type="email" id="email" name="email" />
+		    </div>
+		    <div class="contact__form-group" id="message-form">
+		      	<label for="message">Wiadomość</label>
+		      	<textarea id="message" name="message"></textarea>
+		    </div>
+		    <button type="submit" value="Wyślij" class="btn-submit">Wyślij</button>
+	  	</form>
+	</section>
+	<footer>
+		<div class="social">
+			<a href="#" class="social__git"></a>
+			<a href="#" class="social__fb"></a>
+			<a href="#" class="social__linkedin"></a>
+		</div>
+		<p class="copyright">
+			@ Bartosz Porębski 2016
+		</p>
+		
+	</footer>
+</div>	
+	
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<script type="text/javascript">
-
-$(function(){
-
-	$('.flex-item').on('click', function(){
-		var divId = $(this).attr('data-div');
-		$(divId).stop().fadeToggle();
-	});
-	$(document).mouseup(function (e){
-	    var container = $(".item-tech");
-	    if (!container.is(e.target)){	
-	    	container.fadeOut();  
-	    }
-  	});
-
-	$('#nav-icon').click(function(){	
-		$(this).toggleClass('open');
-		$("#navbar").toggle();
-	});
-  
-
-
-	$(document).scroll(function() {
-
-		var y = $(document).scrollTop();
-		var z = $(window).height();
-		var w = $(window).width();
-
-		if(y >= z && w >= 752){
-
-			$("#navbar").addClass("navbar-fixed");
-			$("#nav").addClass("nav-fixed");
-			$("#nav-ul").addClass("position-fixed");
-			$("#logo-name").addClass("position-fixed");
-			$("#nav-icon").addClass("nav-icon-fixed");
-			$("#logo").addClass("logo-fixed");
-	    } else if(w < 752){
-	    	$("#navbar").addClass("navbar-fixed");
-	    	$("#logo").addClass("logo-fixed");
-	    	$("#nav-icon").addClass("nav-icon-fixed");
-	    	$("#logo-name").removeClass("position-fixed");	
-	    }else if(y < z && w >= 752) {
-	    	$("#nav").removeClass("nav-fixed");
-			$("#navbar").removeClass("navbar-fixed");
-			$("#logo-name").removeClass("position-fixed");
-	    	$("#nav-ul").removeClass("position-fixed");	
-	    }else if( w >= 752){
-				$("#navbar").attr("style", "display: block!important");
-				$("#nav").removeClass("nav-fixed");
-				$("#nav-ul").removeClass("position-fixed");
-		}else {
-			$("#logo-name").removeClass("position-fixed");
-			$("#nav-icon").removeClass("nav-icon-fixed");
-			$("#logo").removeClass("logo-fixed");		
-	    }
-	}); 
 
 
 	
-	$( window ).resize(function() {
-	  	var w = $(window).width();
-		var y = $(document).scrollTop();
-		var z = $(window).height();
-		if( w >= 752){
-			$("#navbar").attr("style", "display: block!important");
-			$("#nav").removeClass("nav-fixed");
-			$("#navbar").removeClass("navbar-fixed");
-			$("#logo-name").removeClass("position-fixed");
-	    	$("#nav-ul").removeClass("position-fixed");	
-
-		}else if(y >= z && w >= 752){
-			$("#navbar").addClass("navbar-fixed");
-			$("#nav").addClass("nav-fixed");
-			$("#nav-ul").addClass("position-fixed");
-			$("#logo-name").addClass("position-fixed");
-			$("#nav-icon").addClass("nav-icon-fixed");
-			$("#logo").addClass("logo-fixed");
-
-
-		}else{
-			$("#navbar").attr("style", "display: none!important");
-			$("#nav-icon").removeClass("open");
-
-		}
-	});
-
-});
-</script>
 
 
 
 
 
+
+
+
+
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> 
+	<script src="js/main.js"></script>
+	
 </body>
-
+</html>
