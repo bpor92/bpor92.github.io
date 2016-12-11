@@ -1,6 +1,6 @@
 $(function(){
     $(window).on('load' , function(){
-        $('.loader').css('display', 'none');
+        $('.loader').fadeOut(1000);
     });
 
     $('.btn-hamburger').on('click', function(){
