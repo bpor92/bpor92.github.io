@@ -1,4 +1,7 @@
 $(function(){
+    $(window).on('load' , function(){
+        $('.loader').css('display', 'none');
+    });
 
     $('.btn-hamburger').on('click', function(){
         $('#myTopnav').toggleClass('responsive');
@@ -46,7 +49,7 @@ $(function(){
     });
     $(document).mouseup(function (e){
         var container = $(".project-container__technology");
-        if (!container.is(e.target)){   
+        if (!container.is(e.target)){ 
             container.fadeOut();  
         }
     });
