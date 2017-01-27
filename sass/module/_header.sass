@@ -1,0 +1,47 @@
+body
+	font-family: $body-font
+
+
+@media (min-width: 220px)
+	header
+		background: url(../img/background-first.jpg) bottom no-repeat
+		background-size: cover
+		min-height: 890px
+		height: 100vh
+		&:after
+			content: ''
+			position: fixed
+			top: 0
+			right: 0
+			left: 0
+			bottom: 0
+			background-color: rgba(0,0,0,0.2)
+
+	.jumbotron
+		position: relative
+		padding: 200px 0px 0px 0px
+		color: #fff
+		font-size: 32px
+		text-align: center
+		width: 90%
+		margin: 0 auto
+		z-index: 15
+		min-height: 100vh
+	.dark-blue
+		color: #021e2f
+		font-weight: 700
+		
+
+
+@media (min-width: 866px)
+	header
+		position: relative
+		overflow: hidden
+	.jumbotron
+		padding: 280px 0px 0px 0px
+		width: 65%
+
+
+
+
+

@@ -1,0 +1,173 @@
+/*navigation*/
+
+.topnav
+    @include clearfix
+    position: absolute
+    left: 0
+    right: 0
+    z-index: 20
+    background-color: transparent
+    +m('fixed')
+        position: fixed
+        background-color: rgba(0,0,0,0.9)
+    +e('list') 
+        list-style-type: none
+        margin: 0 auto
+        padding: 0px 20px
+        overflow: hidden
+        text-align: right
+        +m('fixed')
+            height: 60px
+    +e('item')
+        display: inline
+        font-weight: bold
+        text-transform: uppercase
+        &:not(:first-child)
+            padding-top: 15px;
+    +e('a-item')
+        display: inline-block
+        color: #fff
+        padding: 13px 5px
+        text-decoration: none
+        transition: 0.3s
+        font-size: 25px
+        margin: 40px 0px 0px 0px
+        border: 7px solid transparent
+        &:hover
+            border-top: 7px solid $dark-blue
+        +m('fixed')
+            padding: 10px 5px
+            margin: 3px 0px 0px 0px
+    +e('logo')
+        padding: 27px 0px
+        float: left
+        a
+            text-decoration: none
+            color: #fff 
+            line-height: 115px
+        
+        +m('fixed')
+            position: absolute
+            padding: 9px 0px
+    +e('logo-name')
+        font-family: $logo-font
+        font-size: 50px
+        +m('fixed')
+            display: none
+
+    +e('img')
+        float: left
+        margin: 0px 20px 0px 0px
+        border-radius: 100px
+        box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.15)
+
+    +e('icon')
+        display: none
+.sr-only
+    position: absolute
+    width: 1px
+    height: 1px
+    padding: 0
+    margin: -1px
+    overflow: hidden
+    clip: rect(0,0,0,0)
+    border: 0
+.active
+    border-top: 7px solid #739cc6!important
+.fixed
+    position: fixed
+
+
+@media (max-width: 866px) 
+    .active
+        border-top: 7px solid #739cc6!important
+        border-bottom: 7px solid #739cc6!important
+    .topnav
+        position: fixed
+        width: 100%
+        background-color: rgba(33, 32, 35,0.9)
+        box-shadow: 0px 0px 10px 10px rgba(33,32,35,0.9)
+        max-height: 79px
+        +e('list')
+            padding: 0px 10px
+        +e('item')
+            &:not(:first-child)
+                display: none
+            a
+                &:hover
+                    border-top: 7px solid #739cc6
+                    border-bottom: 7px solid #739cc6
+
+            +m('last')
+                a
+                    margin-bottom: 16px
+                 
+            +m('first')
+                a
+                    margin-top: 120px
+        +e('icon')
+            float: right
+            display: inline-block
+        +e('logo')
+            font-family: 'Montserrat', sans-serif;
+            font-size: 30px
+            font-weight: bold
+            padding: 10px 0px
+            a
+                text-decoration: none
+                color: #fff
+        +e('logo-name')
+            display: none
+    .responsive
+        background-color: rgba(0,0,0, 0.95)
+        box-shadow: 0px 0px 50px 30px #000;
+        webkit-overflow-scrolling: touch
+        .btn-hamburger
+            position: absolute
+            top: 44px
+            right: 44px
+            width: 44px
+            padding: 0
+            background-color: transparent
+            +e('line')
+                display: block
+                background-color: darken(#dcdcdc, 50%)
+                width: 40px
+                height: 5px
+                margin: 5px auto
+                border-radius: 5px
+
+        .topnav
+            +e('item')
+                float: none
+                display: inline
+                a 
+                    padding: 10px 5px
+                    text-align: center;
+                    display: block
+    .btn-hamburger 
+        position: absolute
+        top: 44px
+        right: 44px
+        width: 44px
+        padding: 0
+        background-color: transparent
+        border: none;
+        outline: 0;
+        cursor: pointer;
+        +e('line')
+            display: block
+            background-color: #739cc6
+            width: 40px
+            height: 5px
+            margin: 5px auto
+            border-radius: 5px  
+
+        
+
+
+
+
+
+
+     

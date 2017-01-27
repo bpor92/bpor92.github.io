@@ -1,0 +1,62 @@
+/* Variables */
+
+$body-font: 'Lato', sans-serif
+$logo-font: 'Amatic SC', cursive
+
+
+
+$h1-size: 50px
+$h1-size-tablet: 45px
+$h1-size-small: 29px
+
+$dark-blue: #021e2f
+
+
+
+@media (min-width: 220px)
+	section
+		padding: 0px 20px
+		max-width: 1270px
+		margin: 0 auto
+	h1 
+		font-weight: lighter
+		font-size: $h1-size-small
+	    
+	.h1-title
+	    border-radius: 20px
+	    background-color: #151418
+	    width: 100%
+	    padding: 20px 0px 20px 0px
+	    color: #fff
+	    text-align: center
+	    text-transform: uppercase
+	    margin: 20px 0px
+	    +m('article')
+	    	margin-top: -50px
+	h2
+	    font-size: 20px
+	    text-transform: uppercase
+	    text-align: center
+	    border-radius: 15px
+	    background-color: black
+	    width: 50%
+	    padding: 15px 0px 15px 0px
+	    margin: 50px auto 0px auto
+	    color: #fff
+	    min-width: 200px
+	    line-height: 24px
+
+@media (min-width: 500px)
+	h1
+		font-size: $h1-size-tablet
+
+@media (min-width: 866px)
+	h1
+		font-size: $h1-size
+	h2
+		width: 300px
+	.h1-title
+	    width: 300px
+	    margin: 0 auto
+
+

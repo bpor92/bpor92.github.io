@@ -1,0 +1,166 @@
+/*
+
+    Timeline - Responsive, jQuery-based timeline
+    Version 1.0.0
+    Ryan Fitzgerald
+    http://RyanFitzgerald.ca/
+    ---
+    Repo: http://github.com/ryanfitzgerald/timeline
+    Issues: http://github.com/ryanfitzgerald/timeline/issues
+    Licensed under MIT Open Source
+
+ */
+.timeline-wrap {
+  position: relative;
+  padding: 30px 0;
+  margin: 0 30px; }
+  .timeline-wrap:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 100%;
+    width: 4px;
+    background: -webkit-linear-gradient(#417abd, #002478);
+    background: -o-linear-gradient(#417abd, #002478);
+    background: linear-gradient(#417abd, #002478); }
+
+.timeline-point {
+  position: relative;
+  clear: both;
+  content: "";
+  display: table;
+  width: 100%;
+  margin-top: -125px; }
+
+.timeline-point__first{
+  margin-top: 0px;
+}
+
+.timeline-content {
+  margin-bottom: 30px;
+  width: 45%;
+  min-height: 60px;
+  color: #fff;
+  background-color: #021e2f;
+  border-radius: 10px; }
+  .timeline-content:after {
+    content: ' ';
+    left: 45%;
+    top: 20px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid #021e2f;
+    position: absolute; }
+
+.timeline-describe{
+  padding: 0px 20px 10px 20px;
+  background-color: #021e2f;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.timeline-describe a{
+  text-decoration: none;
+  font-style: italic;
+  color: #2E7D32;
+  font-weight: 700;
+}
+.timeline-describe p{
+  text-align: center;
+  font-size: 20px;
+  padding: 0px 0px 10px 0px;
+}
+.timeline-describe h3{
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.timeline-right .timeline-content {
+  float: right; }
+  .timeline-right .timeline-content:after {
+    left: auto;
+    right: 45%;
+    top: 20px;
+    border-left: none;
+    border-right: 10px solid #021e2f;
+    position: absolute; }
+
+.timeline-user {
+  padding: 15px; }
+
+.timeline-icon {
+  position: absolute;
+  margin-left: -13px;
+  top: 15px;
+  left: 50%;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #031d2f; }
+
+.timeline-wrap-right:before {
+  left: 0; }
+.timeline-wrap-right .timeline-content-right {
+  margin-left: 10%;
+  width: 90%; }
+  .timeline-wrap-right .timeline-content-right:after {
+    left: auto;
+    right: 90%;
+    border-left: none;
+    border-right: 10px solid #eee; }
+.timeline-wrap-right .timeline-icon-right {
+  left: 0; }
+
+.timeline-wrap-left:before {
+  left: auto;
+  right: 0; }
+.timeline-wrap-left .timeline-content-left {
+  margin-left: 0;
+  margin-right: 10%;
+  width: 90%; }
+  .timeline-wrap-left .timeline-content-left:after {
+    right: auto;
+    left: 90%;
+    border-right: none;
+    border-left: 10px solid #eee; }
+.timeline-wrap-left .timeline-icon-left {
+  left: auto;
+  right: 0;
+  margin-right: -13px; }
+
+@media only screen and (max-width: 768px) {
+  .timeline-point{
+    margin-top: 0px;
+  }
+  .timeline-wrap:not(.timeline-wrap-left) {
+    margin: 0 15px; }
+    .timeline-wrap:not(.timeline-wrap-left):before {
+      left: 0; }
+
+  .timeline-content {
+    margin-left: 10%;
+    width: 90%; }
+    .timeline-content:after {
+      left: auto;
+      right: 90%;
+      border-left: none;
+      border-right: 10px solid #021e2f; }
+
+  .timeline-icon {
+    left: 0;
+    width: 25px;
+    height: 25px;
+    top: 17px;
+    margin-left: -11px; }
+
+  .timeline-right .timeline-content {
+    float: none; }
+    .timeline-right .timeline-content:after {
+      left: auto;
+      right: 90%; } }
+
+/*# sourceMappingURL=timeline.css.map */

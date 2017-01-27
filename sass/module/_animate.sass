@@ -1,0 +1,45 @@
+@keyframes cloud
+	0%
+ 		left: -150%
+	100%
+    	left: 100%
+
+
+@keyframes fish 
+  	0% 
+    	left: 100%
+  	100% 
+    	left: -50%
+
+@media (min-width: 866px)
+
+	.fish
+		overflow: hidden
+		margin-left: -250px
+		&:after
+		    content: ''
+		    position: absolute
+		    top: 0
+		    right: 0
+		    left: 0
+		    bottom: 0
+		    background-color: rgba(0, 0, 0, 0.7)
+		    z-index: 1
+		+e('animation')
+			background-image: url(../img/footer-fish.png)
+			width: 1200px
+			height: 150px
+			margin-left: 0px
+			position: relative
+			animation: fish 30s infinite linear
+			z-index: 1
+	.wind
+	    position: absolute
+	    left: -100%
+	    background: url(../img/cloud2.png)
+	    display: block
+	    width: 3000px
+	    height: 800px
+	    top: 0
+	    animation: cloud 30s infinite linear
+	    z-index: 15

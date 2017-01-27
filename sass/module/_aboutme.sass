@@ -1,0 +1,64 @@
+@media (min-width: 220px)
+	.background
+		background: url(../img/3in1v2.jpg) top no-repeat
+		background-size: cover
+		position: relative
+		min-height: 3900px
+		+e('shadow')
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			width: 100%
+			background-color: rgba(0,0,0, 0.7)
+			box-shadow: 10px 0px 100px 40px rgba(0,0,0,0.8)
+	.about
+		padding: 150px 20px
+		+e('list')
+			border: 1px solid #000
+			border-radius: 10px
+			margin: 20px auto
+			max-width: 800px
+			padding: 20px
+		+e('item')
+			border-radius: 15px
+			margin: 20px 0px
+			text-align: center
+			position: relative
+			&:hover:before
+			    content: attr(data-tooltip)
+			    font-size: 13px
+			    padding: 25px 0px
+			    border-radius: 10px
+			    background-color: rgba(0, 0, 0, 0.9)
+			    top: 0px
+			    left: 0px
+			    right: 0px
+			    bottom: 0px
+			    color: #ffffff
+			    position: absolute
+			img
+				width: 60px			    
+	.white-background
+	    padding: 15px
+	    background-color: rgba(255, 245, 245, 0.55)
+	    border-radius: 10px
+	    border: 1px solid
+	    margin: 20px auto
+	    max-width: 800px
+	    line-height: 28px
+	    text-align: justify
+	    font-size: 20px
+
+@media (min-width: 800px)
+	.about
+		+e('list')
+			@include clearfix
+		+e('item')
+			width: 33%
+			float: left
+			box-sizing: border-box
+			padding: 20px
+			&:hover:before
+				padding: 45px 0px
+				font-size: 16px

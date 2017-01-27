@@ -1,0 +1,119 @@
+@media (min-width: 220px)
+	footer
+		min-height: 200px
+		box-shadow: 10px 0px 100px 40px rgba(0,0,0,0.8)
+		background-color: rgba(0,0,0,0.7)
+		padding: 50px 0px 0px 0px
+	.contact
+		padding: 115px 20px
+		+e('form')
+			width: calc(100% - 20px)
+			margin: 0 auto
+		+e('form-group')
+			margin: 20px 0px
+			label
+				font-size: 18px
+				color: #fff 
+			input, textarea
+				background-color: rgba(0,0,0,0.4)
+				padding: 10px 
+				font-size: 18px
+				color: #fff
+				border: none
+				height: 55px
+				outline: 0
+				border: 1px solid transparent
+				border-radius: 10px
+				transition: 0.5s border
+				width: calc(100% - 20px)
+				margin: 5px 0px 0px 0px
+				&:focus
+					background-color: rgba(0,0,0,0.6)
+					border: 1px solid #77bde0
+			textarea
+				resize: none
+				height: 200px
+
+	.btn-submit
+		font-family: $body-font
+		padding: 15px 30px
+		border-radius: 20px
+		text-decoration: none
+		text-transform: uppercase
+		color: #fff
+		font-size: 18px
+		border: 1px solid transparent
+		border-radius: 10px
+		outline: 0
+		width: 200px
+		background-color: #2E7D32
+		cursor: pointer
+		display: block
+		&:hover
+			background-color: darken(#2E7D32,5%)
+		&:active
+			background-color: darken(#2E7D32, 15%)
+			border: 1px solid #000
+
+
+
+	.social
+		display: flex
+		width: 220px
+		margin: 0 auto
+		text-align: center
+		a
+			transition: background .5s
+		+e('list')
+			width: 200px
+			margin: 0 auto
+			display: block
+		+e('git')
+			background: url("../img/git.png") center no-repeat
+			display: block
+			margin: 0 auto
+			width: 48px
+			height: 48px
+			&:hover
+				background: url('../img/git-hover.png') center no-repeat
+		+e('fb')
+			background: url("../img/fb.png") center no-repeat
+			display: block
+			margin: 0 auto
+			width: 48px
+			height: 48px
+			&:hover
+				background: url('../img/fb-hover.png') center no-repeat
+		+e('linkedin')
+			background: url("../img/in.png") center no-repeat
+			display: block
+			margin: 0 auto
+			width: 48px
+			height: 48px
+			&:hover
+				background: url('../img/in-hover.png') center no-repeat
+			
+	
+	.copyright
+		color: #fff
+		text-align: center
+		margin: 50px 0px 0px 0px
+
+
+
+
+@media (min-width: 670px)
+	.contact
+		+e('form')
+			width: 500px
+			display: block
+			text-align: center
+		+e('form-group')
+			label
+				text-transform: uppercase
+				display: block
+				text-align: left
+			input, textarea
+				font-family: $body-font
+				width: 100%
+
