@@ -1,0 +1,58 @@
+<!doctype html>
+<html ng-app="ToDo">
+  <head>
+  	
+  	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  	<link rel="stylesheet" href="css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+  </head>
+  <body>
+  	<div ng-controller="todoController" class="app">
+  		<form name="frm" ng-submit="addTodo()" class="app-form">
+  			<input type="text" name="newtodo" ng-model="newtodo" required />
+  			<button ng-disabled="frm.$invalid">Add task</button>
+  		</form>
+  		<button ng-click="clearCompleted()" class="clear-button">Clear completed task</button>
+  		<ul class="todo-list">
+			<li ng-repeat="todo in todos track by $index">
+				<label ng-class="{done:todo.done}" ng-click="isChecked()" ng-model="todo.done">
+					<input type="checkbox" ng-model="todo.done" ng-click="saveCheck()"/>
+					<span>{{todo.title}}</span>
+				</label>
+			</li>
+
+		</ul>
+
+		
+  	</div>
+	
+
+
+  	<script>
+  		var app = angular.module('ToDo', []);
+  		var appCrtl = app.controller('todoController', ['$scope', function($scope){
+  			$scope.saved = localStorage.getItem('todoList');
+  			$scope.todos = (localStorage.getItem('todoList') !== null) ? JSON.parse($scope.saved) : [];
+  			$scope.addTodo = function(){
+  				$scope.todos.push({
+  					title: angular.lowercase($scope.newtodo),
+  					done: false
+  				});
+  				$scope.newtodo = '',
+  				localStorage.setItem('todoList', JSON.stringify($scope.todos));
+  			}
+  			$scope.clearCompleted = function(){
+  				$scope.todos = $scope.todos.filter(function(item){
+  					return !item.done;
+  				});
+  				localStorage.setItem('todoList', JSON.stringify($scope.todos));
+  			}
+  			$scope.saveCheck = function(){
+  				localStorage.setItem('todoList', JSON.stringify($scope.todos));
+  			}
+
+
+  		}]);
+  	</script>
+  </body>
+</html>
