@@ -66,7 +66,6 @@ function saveFacture(e){
 	const priceForm = document.querySelector('#priceForm');
 
 	const price = document.querySelector('#price').value;
-	const id = chance.guid();
 	getTime();
 	const facture = {
 		costumerName: costumerName,
