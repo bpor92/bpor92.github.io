@@ -1,0 +1,164 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+	<div class="container">
+		<div class="jumbotron title">
+			<h1 class="display-3 text-center">Dane do faktury</h1>
+			<hr class="my-4">
+		</div>
+			
+		<div class="row">
+
+			<form action="" id="costumerForm" class="col-sm-12 col-md-6 ">
+				<h3 class="text-center">Dane klienta: </h3>
+				<div class="form-group row">
+					<label class="col-4  col-form-label  text-right" for="costumerName">Imie: </label>
+					<div class="col-8 ">
+						<input type="text" id="costumerName" class="form-control">
+					</div>
+					<div class="col-12 form-control-feedback error">Wprowadz poprawne dane</div>
+				</div>
+				<div class="form-group row">
+					<label class="col-4 col-form-label text-right" for="costumerSurname">Nazwisko: </label>
+					<div class="col-8">
+						<input type="text" id="costumerSurname" class="form-control">
+					</div>
+					<div class="col-12 form-control-feedback error">Wprowadz poprawne dane</div>
+				</div>
+				<div class="form-group row">
+					<label class="col-4 col-form-label text-right" for="costumerStreet">Ulica: </label>
+					<div class="col-8">
+						<input type="text" id="costumerStreet" class="form-control">
+					</div>
+					<div class="col-12 form-control-feedback error">Wprowadz poprawną nazwe firmy</div>
+				</div>
+				<div class="form-group row">
+					<label class="col-4 col-form-label text-right" for="costumerCity">Miasto: </label>
+					<div class="col-8">
+						<input type="text" id="costumerCity" class="form-control">
+					</div>
+					<div class="col-12 form-control-feedback error">Wprowadz poprawne dane</div>
+				</div>
+				<div class="form-group row">
+					<label class="col-4 col-form-label text-right" for="costumerPostal">Kod pocztowy: </label>
+					<div class="col-8">
+						<input type="text" id="costumerPostal" class="form-control">
+					</div>
+					<div class="col-12 form-control-feedback error">Wpisz poprawny kod pocztowy np 81-500</div>
+				</div>
+			</form>
+
+
+
+
+			<form action="" id="corporationForm" class="col-xs-12 col-md-6">
+				<h3 class="text-center">Dane firmy: </h3>
+				<div class="form-group row">
+					<label class="col-4  col-form-label  text-right" for="corporationName">Nazwa firmy: </label>
+					<div class="col-8 ">
+						<input type="text" id="corporationName" class="form-control">
+					</div>
+					<div class="col-12 form-control-feedback error">Wprowadz poprawną nazwe firmy</div>
+				</div>
+				<div class="form-group row">
+					<label class="col-4 col-form-label text-right" for="corporationStreet">Ulica: </label>
+					<div class="col-8">
+						<input type="text" id="corporationStreet" class="form-control">
+					</div>
+					<div class="col-12 form-control-feedback error">Wprowadz poprawny adres</div>
+				</div>
+				<div class="form-group row">
+					<label class="col-4 col-form-label text-right" for="corporationCity">Miasto: </label>
+					<div class="col-8">
+						<input type="text" id="corporationCity" class="form-control">
+					</div>
+					<div class="col-12 form-control-feedback error" >Wprowadz poprawne dane</div>
+				</div>
+				<div class="form-group row">
+					<label class="col-4 col-form-label text-right" for="corporationPostal">Kod pocztowy: </label>
+					<div class="col-8">
+						<input type="text" id="corporationPostal" class="form-control">
+					</div>
+					<div class="col-12 form-control-feedback error">Wpisz poprawny kod pocztowy np 81-500</div>
+				</div>
+				<div class="form-group row">
+					<label class="col-4 col-form-label text-right" for="corporationId">NIP: </label>
+					<div class="col-8">
+						<input type="text" id="corporationId" class="form-control">
+					</div>
+					<div class="col-12 form-control-feedback error">Wpisz poprawny NIP np. 123-456-32-18</div>
+				</div>
+			</form>
+		</div>
+		<div class="row justify-content-center">
+			<form action="" class="price text-center col-sm-12 col-md-6 col-lg-4" id="priceForm" >
+				<label for="price">Kwota</label>
+					<div class="col-sm-12 price-content">
+					<input class="form-control" type="text" id="price">
+					</div>
+					<span class="currency">ZŁ</span>
+				
+				<div class="col-12 form-control-feedback error">Podaj prawidłową kwote</div>
+				
+				
+			</form>
+		</div>
+		<div class="row justify-content-center">
+			<form action="" class="invoice-status col-sm-12 col-md-10">
+	 			<fieldset class="form-group row">
+				 	<legend class="status-legend text-center">STATUS FAKTURY:</legend>
+	 			 	<div class="row custom-controls-stacked radio-content">
+						<label class="custom-control custom-radio">
+							<input id="status-exposed" name="radio-stacked" type="radio" class="custom-control-input" data-name="Wystawiona" checked>
+							<span class="custom-control-indicator"></span>
+							<span class="custom-control-description">Wystawiona</span>
+						</label>
+						<label class="custom-control custom-radio">
+							<input id="status-delivered" name="radio-stacked" type="radio" class="custom-control-input" data-name="Doreczona">
+							<span class="custom-control-indicator"></span>
+							<span class="custom-control-description">Doręczona</span>
+						</label>
+						<label class="custom-control custom-radio">
+							<input id="status-paid" name="radio-stacked" type="radio" class="custom-control-input" data-name="Oplacona">
+							<span class="custom-control-indicator"></span>
+							<span class="custom-control-description">Opłacona</span>
+						</label>
+						<label class="custom-control custom-radio">
+							<input id="status-late" name="radio-stacked" type="radio" class="custom-control-input" data-name="Spozniona">
+							<span class="custom-control-indicator"></span>
+							<span class="custom-control-description">Spozniona</span>
+						</label>
+					</div>
+				</fieldset>		
+			</form>
+		</div>
+		<button class="btn btn-success" id="save">Zapisz fakture</button>
+
+		<div id="history"></div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
+	<script src="http://chancejs.com/chance.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+	<script src="js/main.js"></script>	
+</body>
+</html>
