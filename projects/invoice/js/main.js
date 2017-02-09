@@ -81,7 +81,6 @@ function saveFacture(e){
 		corporationId: corporationId,
 		status: status,
 		price: price,
-		id: id,
 		time: time
 	}
 	console.log(facture);
@@ -124,7 +123,6 @@ function loadHistory(){
 					<span class="history-data">Firma: </span> ${factur.corporationName}, ${factur.corporationCity} ${factur.corporationStreet} <br/>
 					<span class="history-data">Status: </span> ${factur.status}<br/>
 					<span class="history-data">Kwota: </span> ${factur.price} zł<br/>
-					<span class="history-data">ID faktury: </span> ${factur.id} <br/> 
 					<button class="btn btn-danger" onclick="deleteFacture('${factur.id}')">Usuń fakture</button>
 				</div>
 			</div>
