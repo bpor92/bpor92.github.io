@@ -66,6 +66,7 @@ function saveFacture(e){
 	const priceForm = document.querySelector('#priceForm');
 
 	const price = document.querySelector('#price').value;
+	let id = 0;
 	getTime();
 	const facture = {
 		costumerName: costumerName,
@@ -80,7 +81,8 @@ function saveFacture(e){
 		corporationId: corporationId,
 		status: status,
 		price: price,
-		time: time
+		time: time,
+		id: id
 	}
 	console.log(facture);
 	if(formIsValid === true){
@@ -92,6 +94,7 @@ function saveFacture(e){
 				facture.status = radio.parentElement.innerText;	
 			}
 		});
+		facture.id = id;
 		facture.time = time;
 		factures.push(facture);
 		localStorage.setItem('factures', JSON.stringify(factures));
@@ -101,6 +104,7 @@ function saveFacture(e){
 		clearInputs(e);
 		formIsValid = false;
 		loadHistory();
+		id++;
 	}else{
 		console.log('prosze poprawnie wypelnic formularz');
 	}
@@ -111,7 +115,7 @@ function loadHistory(){
 	history.innerHTML = '';
 	if(localStorage.getItem('factures')){
 		factures = JSON.parse(localStorage.getItem('factures'));
-
+		let i = 0;
 		factures.forEach(factur => {
 			history.innerHTML += `
 			<div class="row justify-content-center">
@@ -119,13 +123,27 @@ function loadHistory(){
 				<div class="jumbotron history-content col-sm-12 col-md-6">
 					<span class="badge badge-default time">${factur.time}</span><br/>
 					<span class="history-data">Klient: </span> ${factur.costumerName} ${factur.costumerSurname} <br/>
-					<span class="history-data">Firma: </span> ${factur.corporationName}, ${factur.corporationCity} ${factur.corporationStreet} <br/>
+					<span class="history-data">Firma: </span> ${factur.corporationName}<br/>
 					<span class="history-data">Status: </span> ${factur.status}<br/>
 					<span class="history-data">Kwota: </span> ${factur.price} zł<br/>
+					
+					<div class="" id="accordion">
+					<div class="card">
+						<div class="card-block">
+							<h4 class="">
+							  <a data-toggle="collapse" data-parent="#accordion" href="#collapse${i}" class="btn btn-primary details">Szczegóły</a>
+							</h4>
+						</div>
+						<div id="collapse${i}" class=" collapse in">
+							<span class="history-data">Adres klienta: </span>${factur.costumerPostal} ${factur.costumerCity}, ul.${factur.costumerStreet}<br/>
+							<span class="history-data">Adres firmy: </span>${factur.corporationPostal} ${factur.corporationCity} ${factur.corporationStreet}	
+						</div>
+					</div> 
 					<button class="btn btn-danger" onclick="deleteFacture('${factur.id}')">Usuń fakture</button>
 				</div>
 			</div>
-		`
+		`;
+		i++;
 		})
 		
 	}else{
@@ -222,7 +240,7 @@ function clearInputs(e){
 
 loadHistory();
 submit.addEventListener('click', saveFacture);
-inputs.forEach(input => { input.addEventListener('input', _.debounce(validate, 1))});
+inputs.forEach(input => { input.addEventListener('input', _.debounce(validate, 1000))});
 
 
 
