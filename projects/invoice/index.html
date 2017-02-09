@@ -1,21 +1,18 @@
-<html>
+<!DOCTYPE html>
+<html lang="pl">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Invoice editor</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-
 	<div class="container">
 		<div class="jumbotron title">
 			<h1 class="display-3 text-center">Dane do faktury</h1>
 			<hr class="my-4">
 		</div>
-			
 		<div class="row">
-
 			<form action="" id="costumerForm" class="col-sm-12 col-md-6 ">
 				<h3 class="text-center">Dane klienta: </h3>
 				<div class="form-group row">
@@ -54,10 +51,6 @@
 					<div class="col-12 form-control-feedback error">Wpisz poprawny kod pocztowy np 81-500</div>
 				</div>
 			</form>
-
-
-
-
 			<form action="" id="corporationForm" class="col-xs-12 col-md-6">
 				<h3 class="text-center">Dane firmy: </h3>
 				<div class="form-group row">
@@ -106,8 +99,6 @@
 					<span class="currency">ZŁ</span>
 				
 				<div class="col-12 form-control-feedback error">Podaj prawidłową kwote</div>
-				
-				
 			</form>
 		</div>
 		<div class="row justify-content-center">
@@ -140,25 +131,15 @@
 			</form>
 		</div>
 		<button class="btn btn-success" id="save">Zapisz fakture</button>
-
 		<div id="history"></div>
 	</div>
 
 
-
-
-
-
-
-
-
-
-
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
-	<script src="http://chancejs.com/chance.min.js"></script>
+	
 	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+	<script src="js/chance.min.js"></script>
 	<script src="js/main.js"></script>	
 </body>
 </html>
