@@ -66,8 +66,10 @@ function saveFacture(e){
 	const priceForm = document.querySelector('#priceForm');
 
 	const price = document.querySelector('#price').value;
-	let id = 0;
+
 	getTime();
+
+
 	const facture = {
 		costumerName: costumerName,
 		costumerSurname: costumerSurname,
@@ -82,9 +84,10 @@ function saveFacture(e){
 		status: status,
 		price: price,
 		time: time,
-		id: id
+		id: Math.random().toString(36).substr(2, 6)
 	}
-	console.log(facture);
+	facture.time = time;
+
 	if(formIsValid === true){
 		console.log('w srodku ifa formIsValid', isValid);
 
@@ -94,8 +97,8 @@ function saveFacture(e){
 				facture.status = radio.parentElement.innerText;	
 			}
 		});
-		facture.id = id;
-		facture.time = time;
+		
+		
 		factures.push(facture);
 		localStorage.setItem('factures', JSON.stringify(factures));
 		costumerForm.reset();
@@ -104,7 +107,7 @@ function saveFacture(e){
 		clearInputs(e);
 		formIsValid = false;
 		loadHistory();
-		id++;
+
 	}else{
 		console.log('prosze poprawnie wypelnic formularz');
 	}
@@ -115,7 +118,6 @@ function loadHistory(){
 	history.innerHTML = '';
 	if(localStorage.getItem('factures')){
 		factures = JSON.parse(localStorage.getItem('factures'));
-		let i = 0;
 		factures.forEach(factur => {
 			history.innerHTML += `
 			<div class="row justify-content-center">
@@ -126,15 +128,16 @@ function loadHistory(){
 					<span class="history-data">Firma: </span> ${factur.corporationName}<br/>
 					<span class="history-data">Status: </span> ${factur.status}<br/>
 					<span class="history-data">Kwota: </span> ${factur.price} zł<br/>
+					<span class="history-data">ID faktury: </span> ${factur.id}<br/>
 					
 					<div class="" id="accordion">
 					<div class="card">
 						<div class="card-block">
 							<h4 class="">
-							  <a data-toggle="collapse" data-parent="#accordion" href="#collapse${i}" class="btn btn-primary details">Szczegóły</a>
+							  <a data-toggle="collapse" data-parent="#accordion" href="#collapse${factur.id}" class="btn btn-primary details">Szczegóły</a>
 							</h4>
 						</div>
-						<div id="collapse${i}" class=" collapse in">
+						<div id="collapse${factur.id}" class=" collapse in">
 							<span class="history-data">Adres klienta: </span>${factur.costumerPostal} ${factur.costumerCity}, ul.${factur.costumerStreet}<br/>
 							<span class="history-data">Adres firmy: </span>${factur.corporationPostal} ${factur.corporationCity} ${factur.corporationStreet}	
 						</div>
@@ -143,7 +146,6 @@ function loadHistory(){
 				</div>
 			</div>
 		`;
-		i++;
 		})
 		
 	}else{
@@ -154,6 +156,7 @@ function loadHistory(){
 function deleteFacture(id){
 	for(var i = 0; i < factures.length; i++){
 		if(factures[i].id == id){
+			console.log(id)
 			factures.splice(id, 1);
 		}
 	}
@@ -236,7 +239,7 @@ function clearInputs(e){
 		$(input).parent().siblings().last().css('display', 'none');
 	})
 }
-	
+
 
 loadHistory();
 submit.addEventListener('click', saveFacture);
