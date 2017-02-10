@@ -1,0 +1,15 @@
+.bookmark-form{
+	width: 300px;
+	margin: 0 auto;
+}
+.panel{
+	width: 300px;
+	margin: 0 auto;
+}
+
+.btn-danger{
+	width: 300px;
+	display: block;
+	margin: 0 auto;
+	border-radius: 0px;
+}
