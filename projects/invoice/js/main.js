@@ -139,7 +139,7 @@ function loadHistory(){
 						</div>
 						<div id="collapse${factur.id}" class=" collapse in">
 							<span class="history-data">Adres klienta: </span>${factur.costumerPostal} ${factur.costumerCity}, ul.${factur.costumerStreet}<br/>
-							<span class="history-data">Adres firmy: </span>${factur.corporationPostal} ${factur.corporationCity} ${factur.corporationStreet}	
+							<span class="history-data">Adres firmy: </span>${factur.corporationPostal} ${factur.corporationCity} ${factur.corporationStreet}, NIP: ${factur.corporationId}	
 						</div>
 					</div> 
 					<button class="btn btn-danger" onclick="deleteFacture('${factur.id}')">Usuń fakture</button>
@@ -156,8 +156,8 @@ function loadHistory(){
 function deleteFacture(id){
 	for(var i = 0; i < factures.length; i++){
 		if(factures[i].id == id){
-			console.log(id)
-			factures.splice(id, 1);
+
+			factures.splice(i, 1);
 		}
 	}
 	localStorage.setItem('factures', JSON.stringify(factures));
